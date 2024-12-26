@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gpx>
+
+  <wpt lat="45.748921623453498" lon="4.82605199329555">
+    <sym>train</sym>
+  </wpt>
+
+  <wpt lat="47.742615379393101" lon="7.343065682798624">
+    <sym>train</sym>
+  </wpt>
+
+  <wpt lat="47.547856494784355" lon="7.587748104706407">
+    <sym>train</sym>
+  </wpt>
+
+  <wpt lat="47.376855695620179" lon="8.539784364402294">
+    <sym>train</sym>
+  </wpt>
+
+  <wpt lat="46.058729253709316" lon="14.512953199446201">
+    <sym>train</sym>
+  </wpt>
+
+  <wpt lat="46.562047535553575" lon="15.658208504319191">
+    <sym>train</sym>
+  </wpt>
+
+</gpx>

@@ -1,0 +1,614 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="fr" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>De Irjan à Umm Qays - Les aventures du Gros Mickey</title>
+<meta name="description" content="">
+
+
+  <meta name="author" content="Le Gros Mickey">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Les aventures du Gros Mickey">
+<meta property="og:title" content="De Irjan à Umm Qays">
+<meta property="og:url" content="/Jordanie/J30-J31-J32/">
+
+
+  <meta property="og:description" content="">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="/Jordanie/J30-J31-J32/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Le Gros Mickey",
+      "url": "/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <!-- https://github.com/fancyapps/fancybox -->
+    <script src="/assets/js/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/assets/js/jquery-fancybox/3.5.6/jquery.fancybox.min.css"/>
+    <script src="/assets/js/jquery-fancybox/3.5.6/jquery.fancybox.min.js"></script>
+    <script>
+      $.fancybox.defaults.animationEffect = "zoom";
+      $.fancybox.defaults.transitionEffect = "tube";
+      $.fancybox.defaults.buttons = [ "fullScreen", "close" ];
+    </script>
+
+    
+      <!-- https://github.com/Leaflet/Leaflet -->
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+      <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+      <!-- https://github.com/mpetazzoni/leaflet-gpx -->
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.4.0/gpx.min.js"></script> -->
+      <script src="/assets/js/leaflet-gpx/1.4.0/gpx-custom.min.js"></script>
+      <!-- https://github.com/elfalem/Leaflet.curve -->
+      <script src="https://cdn.jsdelivr.net/npm/leaflet-curve@1.0.0/leaflet.curve.min.js" integrity="sha384-NGXMSwSy7xysMCI1I+AjcNggRki+cUVXxqBnMX/nxCD5a/lDebdBH7Qqm63t4zpU" crossorigin="anonymous"></script>
+      <!-- https://github.com/leaflet-extras/leaflet-providers -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/1.9.1/leaflet-providers.min.js" integrity="sha384-VXljvKBDJTJymzdt6ZCMeIKzB66kkZJpSpgPZOb8w19sMwJj+e2D3EFeTnINldBL" crossorigin="anonymous"></script>
+      <!-- https://github.com/Leaflet/Leaflet.fullscreen -->
+      <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+      <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+      <!-- https://github.com/FortAwesome/Font-Awesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <!-- https://github.com/lvoogdt/Leaflet.awesome-markers -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" integrity="sha384-AHhmp36MxTYxqK8q9BF7ifcAjDEpcCT+OOmZrBb8vBP6At1I/htDyRK/M8wgzuqx" crossorigin="anonymous">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js" integrity="sha384-e3K/MgD3PfLJJFhUTg4y1zJciOSfdvRZpcgb0IBjxmbvyyyZuuQTKvs3x27hZpLr" crossorigin="anonymous"></script>
+      <!-- set default marker icons -->
+      <script>
+        L.AwesomeMarkers.Icon.prototype.options.prefix = 'fa';
+        const DEFAULT_MARKER_OPTIONS = {
+          wptIcons: {
+            '':         new L.AwesomeMarkers.icon({ icon: 'circle',         markerColor: 'blue'      }),
+            'tente':    new L.AwesomeMarkers.icon({ icon: 'campground',     markerColor: 'black'     }),
+            'logement': new L.AwesomeMarkers.icon({ icon: 'bed',            markerColor: 'black'     }),
+            'train':    new L.AwesomeMarkers.icon({ icon: 'train',          markerColor: 'darkgreen' }),
+            'bus':    new L.AwesomeMarkers.icon({ icon: 'bus',            markerColor: 'cadetblue' })
+          },
+          startIcon:    new L.AwesomeMarkers.icon({ icon: 'flag',           markerColor: 'red'       }),
+          endIcon:      new L.AwesomeMarkers.icon({ icon: 'flag-checkered', markerColor: 'green'     })
+        }
+      </script>
+    
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Les aventures du Gros Mickey
+          
+        </a>
+        <ul class="visible-links">
+<li class="masthead__menu-item">
+              <a href="/treks/">Treks</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/voyages/">Voyages</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/divers/">Divers</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/citations/">Citations</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/a-propos/">À propos</a>
+            </li>
+</ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox">
+  <label for="ac-toc">Menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <span class="nav__sub-title">Mille-et-une nuits en Jordanie</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/Jordanie/preambule/">Préambule</a></li>
+          
+            <li><a href="/Jordanie/J1-J2-J3-J4-J5/">De Aqaba à Humeima</a></li>
+          
+            <li><a href="/Jordanie/J6-J7-J8-J9/">De Humeima à Wadi Musa</a></li>
+          
+            <li><a href="/Jordanie/J10-J11/">Pétra</a></li>
+          
+            <li><a href="/Jordanie/J12-J13-J14/">De Wadi Musa à Dana</a></li>
+          
+            <li><a href="/Jordanie/J15-J16-J17-J18/">De Dana à Karak</a></li>
+          
+            <li><a href="/Jordanie/J19-J20-J21/">De Karak à Wadi Zarqa' Ma'in</a></li>
+          
+            <li><a href="/Jordanie/J22-J23-J24-J25-J26/">De Wadi Zarqa' Ma'in à Salt</a></li>
+          
+            <li><a href="/Jordanie/J27-J28-J29/">De Salt à Irjan</a></li>
+          
+            <li><a href="/Jordanie/J30-J31-J32/" class="active">De Irjan à Umm Qays</a></li>
+          
+            <li><a href="/Jordanie/bref/">En bref</a></li>
+          
+            <li><a href="/Jordanie/FAQ/">FAQ</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="De Irjan à Umm Qays">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="/Jordanie/J30-J31-J32/" class="u-url" itemprop="url">De Irjan à Umm Qays
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <p>On a beau se réveiller de bonne heure, soleil et chaleur nous rattrapent rapidement !</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Jordanie/J30-J31-J32/fe48cee6-a910-4e3e-9aa3-f31b137a2003.jpg" data-caption="&lt;p&gt;Heureusement, les &lt;em&gt;wadis&lt;/em&gt; à arpenter sont en sous-bois…&lt;/p&gt;
+">
+    <img src="/assets/images/Jordanie/J30-J31-J32/fe48cee6-a910-4e3e-9aa3-f31b137a2003.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Heureusement, les <em>wadis</em> à arpenter sont en sous-bois…</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Jordanie/J30-J31-J32/fe48cee6-a910-4e3e-9aa3-f31b137a2004.jpg" data-caption="&lt;p&gt;…ou simplement assez profonds pour nous faire de l’ombre&lt;/p&gt;
+">
+    <img src="/assets/images/Jordanie/J30-J31-J32/fe48cee6-a910-4e3e-9aa3-f31b137a2004.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>…ou simplement assez profonds pour nous faire de l’ombre</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Jordanie/J30-J31-J32/fe48cee6-a910-4e3e-9aa3-f31b137a2005.jpg" data-caption="&lt;p&gt;On apprécie notre dernier coucher de soleil sur la vallée du Jourdain&lt;/p&gt;
+">
+    <img src="/assets/images/Jordanie/J30-J31-J32/fe48cee6-a910-4e3e-9aa3-f31b137a2005.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>On apprécie notre dernier coucher de soleil sur la vallée du Jourdain</p>
+</figcaption>
+</figure>
+
+<p>On partage bien sûr notre campement avec notre nouvel ami, Jordan :</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Jordanie/J30-J31-J32/fe48cee6-a910-4e3e-9aa3-f31b137a2006.jpg" data-caption="
+&lt;p&gt;Salam
+(&lt;ruby&gt;&lt;rb&gt;سلام&lt;/rb&gt;&lt;rt&gt;salām&lt;/rt&gt;&lt;/ruby&gt;, “paix”),
+silencieux saurien souhaitant s’assoupir sereinement céans !&lt;/p&gt;
+">
+    <img src="/assets/images/Jordanie/J30-J31-J32/fe48cee6-a910-4e3e-9aa3-f31b137a2006.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p>Salam
+(<ruby><rb>سلام</rb><rt>salām</rt></ruby>, “paix”),
+silencieux saurien souhaitant s’assoupir sereinement céans !</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Jordanie/J30-J31-J32/fe48cee6-a910-4e3e-9aa3-f31b137a2007.jpg" data-caption="&lt;p&gt;On se perd dans les Alpes autrichiennes&lt;/p&gt;
+">
+    <img src="/assets/images/Jordanie/J30-J31-J32/fe48cee6-a910-4e3e-9aa3-f31b137a2007.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>On se perd dans les Alpes autrichiennes</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Jordanie/J30-J31-J32/fe48cee6-a910-4e3e-9aa3-f31b137a2008.jpg" data-caption="
+&lt;p&gt;On passe par les ruines de &lt;em&gt;Pella&lt;/em&gt;
+(&lt;ruby&gt;&lt;rb&gt;بيلا&lt;/rb&gt;&lt;rt&gt;Bīla&lt;/rt&gt;&lt;/ruby&gt;), une des cités de la Décapole&lt;/p&gt;
+">
+    <img src="/assets/images/Jordanie/J30-J31-J32/fe48cee6-a910-4e3e-9aa3-f31b137a2008.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p>On passe par les ruines de <em>Pella</em>
+(<ruby><rb>بيلا</rb><rt>Bīla</rt></ruby>), une des cités de la Décapole</p>
+</figcaption>
+</figure>
+
+<p>Juan prend ensuite la direction de la frontière, pour tenter de se rendre à Nazareth, avant de finir son expédition à Jérusalem.
+On se souhaite mutuellement une belle vie, avant de se séparer.</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Jordanie/J30-J31-J32/fe48cee6-a910-4e3e-9aa3-f31b137a2009.jpg" data-caption="&lt;p&gt;Je dis au revoir à la vallée du Jourdain, sans regarder en arrière&lt;/p&gt;
+">
+    <img src="/assets/images/Jordanie/J30-J31-J32/fe48cee6-a910-4e3e-9aa3-f31b137a2009.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Je dis au revoir à la vallée du Jourdain, sans regarder en arrière</p>
+</figcaption>
+</figure>
+
+<p>Je passe ma dernière nuit au Jordan EcoPark, qui, comme pour la Feynan Ecolodge, prône le développement durable.
+Ce seraient d’ailleurs les 2 seuls endroits de Jordanie à œuvrer activement dans ce sens.</p>
+
+<p>Je dîne au camping en compagnie d’Ilaria et Thomas, un couple franco-italien, qui parcourt différentes portions du trek, mais de façon plutôt erratique.</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Jordanie/J30-J31-J32/fe48cee6-a910-4e3e-9aa3-f31b137a2010.jpg" data-caption="
+&lt;p&gt;À &lt;em&gt;Zabdaʰ&lt;/em&gt;
+(&lt;ruby&gt;&lt;rb&gt;زبدة&lt;/rb&gt;&lt;/ruby&gt;),
+il ne fait pas assez chaud pour que je tombe la chemise&lt;/p&gt;
+">
+    <img src="/assets/images/Jordanie/J30-J31-J32/fe48cee6-a910-4e3e-9aa3-f31b137a2010.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p>À <em>Zabdaʰ</em>
+(<ruby><rb>زبدة</rb></ruby>),
+il ne fait pas assez chaud pour que je tombe la chemise</p>
+</figcaption>
+</figure>
+
+<p>Je sirote mon dernier thé offert par un berger âgé, Mohammed “le paisible”, pendant qu’il fume la chicha
+(<ruby><rb>شيشة</rb><rt>shīshaʰ</rt></ruby>)
+près des citronniers.</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Jordanie/J30-J31-J32/fe48cee6-a910-4e3e-9aa3-f31b137a2011.jpg" data-caption="&lt;p&gt;Serait-ce un signe ? La vie de princesse approche ?&lt;/p&gt;
+">
+    <img src="/assets/images/Jordanie/J30-J31-J32/fe48cee6-a910-4e3e-9aa3-f31b137a2011.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Serait-ce un signe ? La vie de princesse approche ?</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Jordanie/J30-J31-J32/fe48cee6-a910-4e3e-9aa3-f31b137a2012.jpg" data-caption="&lt;p&gt;Au loin, je devine la fin du périple, cachée par la colline&lt;/p&gt;
+">
+    <img src="/assets/images/Jordanie/J30-J31-J32/fe48cee6-a910-4e3e-9aa3-f31b137a2012.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Au loin, je devine la fin du périple, cachée par la colline</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Jordanie/J30-J31-J32/fe48cee6-a910-4e3e-9aa3-f31b137a2013.jpg" data-caption="&lt;p&gt;Un ultime petit &lt;em&gt;wadi&lt;/em&gt;, histoire de respecter le fil rouge du trek !&lt;/p&gt;
+">
+    <img src="/assets/images/Jordanie/J30-J31-J32/fe48cee6-a910-4e3e-9aa3-f31b137a2013.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Un ultime petit <em>wadi</em>, histoire de respecter le fil rouge du trek !</p>
+</figcaption>
+</figure>
+
+<p>Juste avant la pluie et l’orage, me voilà déjà à <em>Umm Qays</em>
+(<ruby><rb>أم قيس</rb><rt>ʿUm Qaīs</rt></ruby>),
+la ville d’arrivée de ce périple !</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Jordanie/J30-J31-J32/fe48cee6-a910-4e3e-9aa3-f31b137a2014.jpg" data-caption="
+&lt;p&gt;Demain, lors de ma visite des ruines de &lt;em&gt;Gadara&lt;/em&gt;
+(&lt;ruby&gt;&lt;rb&gt;جدارا&lt;/rb&gt;&lt;rt&gt;Djedarā&lt;/rt&gt;&lt;/ruby&gt;),
+je serai récompensé par une splendide vue sur le Lac de Tibériade
+(&lt;ruby&gt;&lt;rb&gt;بحيرة طبريا&lt;/rb&gt;&lt;rt&gt;Buḥīraʰ Ṭabarīa&lt;/rt&gt;&lt;/ruby&gt;)
+et sur le plateau du &lt;em&gt;Golan&lt;/em&gt;
+(&lt;ruby&gt;&lt;rb&gt;الجولان&lt;/rb&gt;&lt;rt&gt;Al-Djwlān&lt;/rt&gt;&lt;/ruby&gt;)&lt;/p&gt;
+">
+    <img src="/assets/images/Jordanie/J30-J31-J32/fe48cee6-a910-4e3e-9aa3-f31b137a2014.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p>Demain, lors de ma visite des ruines de <em>Gadara</em>
+(<ruby><rb>جدارا</rb><rt>Djedarā</rt></ruby>),
+je serai récompensé par une splendide vue sur le Lac de Tibériade
+(<ruby><rb>بحيرة طبريا</rb><rt>Buḥīraʰ Ṭabarīa</rt></ruby>)
+et sur le plateau du <em>Golan</em>
+(<ruby><rb>الجولان</rb><rt>Al-Djwlān</rt></ruby>)</p>
+</figcaption>
+</figure>
+
+<div id="my-one-and-only-map" style="height: 400px;"></div>
+<p></p>
+<script>
+  if (typeof widgets == 'undefined') { widgets = { } }
+  widgets['my-one-and-only-map'] = { layers: { }, track: { }, map: { } }
+
+  for ([i, alias] of 'TF,OTM,OSM,OSMFR'.split(',').entries()) {
+    if (alias == 'TF')    current_layer = widgets['my-one-and-only-map'].layers['Thunderforest'] =        L.tileLayer.provider('Thunderforest.Landscape', { apikey: 'aa6d138c951e413cae47373621fa6464' })
+    if (alias == 'OTM')   current_layer = widgets['my-one-and-only-map'].layers['OpenTopoMap'] =          L.tileLayer.provider('OpenTopoMap')
+    if (alias == 'OSM')   current_layer = widgets['my-one-and-only-map'].layers['OpenStreetMap'] =        L.tileLayer.provider('OpenStreetMap')
+    if (alias == 'Ortho') current_layer = widgets['my-one-and-only-map'].layers['Orthophoto'] =           L.tileLayer.provider('GeoportailFrance.orthos')
+    if (alias == 'OSMFR') current_layer = widgets['my-one-and-only-map'].layers['OpenStreetMap France'] = L.tileLayer.provider('OpenStreetMap.France')
+    if (i == 0) widgets['my-one-and-only-map'].map = L.map('my-one-and-only-map', { layers: [ current_layer ] })
+  }
+
+  if ('' == 'custom-start-and-end-points') {
+    marker_options = {
+      wptIcons: DEFAULT_MARKER_OPTIONS.wptIcons
+    }
+    marker_options.wptIcons['depart']  = DEFAULT_MARKER_OPTIONS.startIcon
+    marker_options.wptIcons['arrivee'] = DEFAULT_MARKER_OPTIONS.endIcon
+  } else {
+    marker_options = DEFAULT_MARKER_OPTIONS
+  }
+  widgets['my-one-and-only-map'].track = new L.GPX('/assets/tracks/Jordanie/J30-J31-J32.gpx', { async: true, marker_options: marker_options })
+  if (true) {
+    initialize_map = function(e) { widgets['my-one-and-only-map'].map.fitBounds(e.target.getBounds()) }
+  } else {
+    initialize_map = function(e) { widgets['my-one-and-only-map'].map.setView(e.target.getBounds().getCenter(), 12) }
+  }
+  widgets['my-one-and-only-map'].track.on('loaded', initialize_map)
+
+  widgets['my-one-and-only-map'].map.addLayer(widgets['my-one-and-only-map'].track)
+  L.control.scale().addTo(widgets['my-one-and-only-map'].map)
+  L.control.layers(widgets['my-one-and-only-map'].layers).addTo(widgets['my-one-and-only-map'].map)
+  widgets['my-one-and-only-map'].map.addControl(new L.control.fullscreen())
+</script>
+
+<p>Détails d’étapes :</p>
+<ul>
+  <li>3 étapes</li>
+  <li>grand soleil <img class="emoji" title=":sunny:" alt=":sunny:" src="https://github.githubassets.com/images/icons/emoji/unicode/2600.png" height="20" width="20">
+</li>
+  <li>orage juste avant la ligne d’arrivée <img class="emoji" title=":cloud_with_lightning_and_rain:" alt=":cloud_with_lightning_and_rain:" src="https://github.githubassets.com/images/icons/emoji/unicode/26c8.png" height="20" width="20">
+</li>
+  <li>66 km</li>
+  <li>+2800 m</li>
+  <li>-3100 m</li>
+</ul>
+
+        
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+    
+
+
+<p>
+<!-- TODO: avoid inline styles please!-->
+</p>
+<table style="display: table; table-layout: fixed;">
+  <tr>
+    <td style="border-bottom: none; width: 50%;"><a href="/Jordanie/J27-J28-J29/" style="width: 100%;" class="btn btn--primary ">‹ Page précédente</a></td>
+    <td style="border-bottom: none; width: 50%;"><a href="/Jordanie/bref/" style="width: 100%;" class="btn btn--primary ">Page suivante ›</a></td>
+  </tr>
+</table>
+
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-copyright">© 2025 Le Gros Mickey. Propulsé par <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

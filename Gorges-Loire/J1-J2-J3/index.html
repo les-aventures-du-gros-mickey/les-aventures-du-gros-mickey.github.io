@@ -1,0 +1,493 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="fr" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>De Saint-Étienne au Chambon-sur-Loire - Les aventures du Gros Mickey</title>
+<meta name="description" content="">
+
+
+  <meta name="author" content="Le Gros Mickey">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Les aventures du Gros Mickey">
+<meta property="og:title" content="De Saint-Étienne au Chambon-sur-Loire">
+<meta property="og:url" content="/Gorges-Loire/J1-J2-J3/">
+
+
+  <meta property="og:description" content="">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="/Gorges-Loire/J1-J2-J3/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Le Gros Mickey",
+      "url": "/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <!-- https://github.com/fancyapps/fancybox -->
+    <script src="/assets/js/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/assets/js/jquery-fancybox/3.5.6/jquery.fancybox.min.css"/>
+    <script src="/assets/js/jquery-fancybox/3.5.6/jquery.fancybox.min.js"></script>
+    <script>
+      $.fancybox.defaults.animationEffect = "zoom";
+      $.fancybox.defaults.transitionEffect = "tube";
+      $.fancybox.defaults.buttons = [ "fullScreen", "close" ];
+    </script>
+
+    
+      <!-- https://github.com/Leaflet/Leaflet -->
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+      <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+      <!-- https://github.com/mpetazzoni/leaflet-gpx -->
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.4.0/gpx.min.js"></script> -->
+      <script src="/assets/js/leaflet-gpx/1.4.0/gpx-custom.min.js"></script>
+      <!-- https://github.com/elfalem/Leaflet.curve -->
+      <script src="https://cdn.jsdelivr.net/npm/leaflet-curve@1.0.0/leaflet.curve.min.js" integrity="sha384-NGXMSwSy7xysMCI1I+AjcNggRki+cUVXxqBnMX/nxCD5a/lDebdBH7Qqm63t4zpU" crossorigin="anonymous"></script>
+      <!-- https://github.com/leaflet-extras/leaflet-providers -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/1.9.1/leaflet-providers.min.js" integrity="sha384-VXljvKBDJTJymzdt6ZCMeIKzB66kkZJpSpgPZOb8w19sMwJj+e2D3EFeTnINldBL" crossorigin="anonymous"></script>
+      <!-- https://github.com/Leaflet/Leaflet.fullscreen -->
+      <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+      <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+      <!-- https://github.com/FortAwesome/Font-Awesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <!-- https://github.com/lvoogdt/Leaflet.awesome-markers -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" integrity="sha384-AHhmp36MxTYxqK8q9BF7ifcAjDEpcCT+OOmZrBb8vBP6At1I/htDyRK/M8wgzuqx" crossorigin="anonymous">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js" integrity="sha384-e3K/MgD3PfLJJFhUTg4y1zJciOSfdvRZpcgb0IBjxmbvyyyZuuQTKvs3x27hZpLr" crossorigin="anonymous"></script>
+      <!-- set default marker icons -->
+      <script>
+        L.AwesomeMarkers.Icon.prototype.options.prefix = 'fa';
+        const DEFAULT_MARKER_OPTIONS = {
+          wptIcons: {
+            '':         new L.AwesomeMarkers.icon({ icon: 'circle',         markerColor: 'blue'      }),
+            'tente':    new L.AwesomeMarkers.icon({ icon: 'campground',     markerColor: 'black'     }),
+            'logement': new L.AwesomeMarkers.icon({ icon: 'bed',            markerColor: 'black'     }),
+            'train':    new L.AwesomeMarkers.icon({ icon: 'train',          markerColor: 'darkgreen' }),
+            'bus':    new L.AwesomeMarkers.icon({ icon: 'bus',            markerColor: 'cadetblue' })
+          },
+          startIcon:    new L.AwesomeMarkers.icon({ icon: 'flag',           markerColor: 'red'       }),
+          endIcon:      new L.AwesomeMarkers.icon({ icon: 'flag-checkered', markerColor: 'green'     })
+        }
+      </script>
+    
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Les aventures du Gros Mickey
+          
+        </a>
+        <ul class="visible-links">
+<li class="masthead__menu-item">
+              <a href="/treks/">Treks</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/voyages/">Voyages</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/divers/">Divers</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/citations/">Citations</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/a-propos/">À propos</a>
+            </li>
+</ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox">
+  <label for="ac-toc">Menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <span class="nav__sub-title">Gorges de la Loire</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/Gorges-Loire/J1-J2-J3/" class="active">De Saint-Étienne à Chambon-sur-Loire</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="De Saint-Étienne au Chambon-sur-Loire">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="/Gorges-Loire/J1-J2-J3/" class="u-url" itemprop="url">De Saint-Étienne au Chambon-sur-Loire
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Gorges-Loire/J1-J2-J3/4307cdda-39ac-425e-9f95-661f7a19d264.jpg" data-caption="&lt;p&gt;On s’échauffe en douceur avec une brève session de parkour&lt;/p&gt;
+">
+    <img src="/assets/images/Gorges-Loire/J1-J2-J3/4307cdda-39ac-425e-9f95-661f7a19d264.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>On s’échauffe en douceur avec une brève session de parkour</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Gorges-Loire/J1-J2-J3/4307cdda-39ac-425e-9f95-661f7a19d265.jpg" data-caption="&lt;p&gt;Heureux comme Ulysse, on suit les flots du Lizeron qui nous aiguille vers le fleuve-muse de Joachim du Bellay&lt;/p&gt;
+">
+    <img src="/assets/images/Gorges-Loire/J1-J2-J3/4307cdda-39ac-425e-9f95-661f7a19d265.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Heureux comme Ulysse, on suit les flots du Lizeron qui nous aiguille vers le fleuve-muse de Joachim du Bellay</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Gorges-Loire/J1-J2-J3/4307cdda-39ac-425e-9f95-661f7a19d266.jpg" data-caption="&lt;p&gt;Une fois dans les gorges, on chemine le long du flanc de la somnolente vouivre d’eau&lt;/p&gt;
+">
+    <img src="/assets/images/Gorges-Loire/J1-J2-J3/4307cdda-39ac-425e-9f95-661f7a19d266.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Une fois dans les gorges, on chemine le long du flanc de la somnolente vouivre d’eau</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Gorges-Loire/J1-J2-J3/4307cdda-39ac-425e-9f95-661f7a19d267.jpg" data-caption="&lt;p&gt;Un adorable personnage, qu’on croirait membre des ZZ Top, nous suggère de passer la nuit dans un centre nautique, abandonné pour la saison hivernale&lt;/p&gt;
+">
+    <img src="/assets/images/Gorges-Loire/J1-J2-J3/4307cdda-39ac-425e-9f95-661f7a19d267.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Un adorable personnage, qu’on croirait membre des ZZ Top, nous suggère de passer la nuit dans un centre nautique, abandonné pour la saison hivernale</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Gorges-Loire/J1-J2-J3/4307cdda-39ac-425e-9f95-661f7a19d268.jpg" data-caption="&lt;p&gt;On hésite à finir le trek à l’énergie éolienne&lt;/p&gt;
+">
+    <img src="/assets/images/Gorges-Loire/J1-J2-J3/4307cdda-39ac-425e-9f95-661f7a19d268.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>On hésite à finir le trek à l’énergie éolienne</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Gorges-Loire/J1-J2-J3/4307cdda-39ac-425e-9f95-661f7a19d269.jpg" data-caption="&lt;p&gt;Le ruissellement urbain nous incite à nous ravitailler en eau dans un affluent plutôt que dans la Loire elle-même&lt;/p&gt;
+">
+    <img src="/assets/images/Gorges-Loire/J1-J2-J3/4307cdda-39ac-425e-9f95-661f7a19d269.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Le ruissellement urbain nous incite à nous ravitailler en eau dans un affluent plutôt que dans la Loire elle-même</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Gorges-Loire/J1-J2-J3/4307cdda-39ac-425e-9f95-661f7a19d270.jpg" data-caption="&lt;p&gt;Le fleuve sauvage se laisse docilement chevaucher par le pont du Pertuiset&lt;/p&gt;
+">
+    <img src="/assets/images/Gorges-Loire/J1-J2-J3/4307cdda-39ac-425e-9f95-661f7a19d270.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Le fleuve sauvage se laisse docilement chevaucher par le pont du Pertuiset</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Gorges-Loire/J1-J2-J3/4307cdda-39ac-425e-9f95-661f7a19d271.jpg" data-caption="&lt;p&gt;Les ultraviolets, malgré leur célérité, traînassent à chauffer l’atmosphère&lt;/p&gt;
+">
+    <img src="/assets/images/Gorges-Loire/J1-J2-J3/4307cdda-39ac-425e-9f95-661f7a19d271.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Les ultraviolets, malgré leur célérité, traînassent à chauffer l’atmosphère</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Gorges-Loire/J1-J2-J3/4307cdda-39ac-425e-9f95-661f7a19d272.jpg" data-caption="&lt;p&gt;Ça n’est que peu avant qu’Inti atteigne son point culminant que les marmottes humanoïdes daignent sortir de leur terrier&lt;/p&gt;
+">
+    <img src="/assets/images/Gorges-Loire/J1-J2-J3/4307cdda-39ac-425e-9f95-661f7a19d272.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Ça n’est que peu avant qu’Inti atteigne son point culminant que les marmottes humanoïdes daignent sortir de leur terrier</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Gorges-Loire/J1-J2-J3/4307cdda-39ac-425e-9f95-661f7a19d273.jpg" data-caption="&lt;p&gt;À défaut de bambouseraie, le panda ligérien évolue dans les crinières de lavande&lt;/p&gt;
+">
+    <img src="/assets/images/Gorges-Loire/J1-J2-J3/4307cdda-39ac-425e-9f95-661f7a19d273.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>À défaut de bambouseraie, le panda ligérien évolue dans les crinières de lavande</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Gorges-Loire/J1-J2-J3/4307cdda-39ac-425e-9f95-661f7a19d274.jpg" data-caption="&lt;p&gt;La forêt se dénude pour nous former un moelleux parterre de feuilles mortes&lt;/p&gt;
+">
+    <img src="/assets/images/Gorges-Loire/J1-J2-J3/4307cdda-39ac-425e-9f95-661f7a19d274.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>La forêt se dénude pour nous former un moelleux parterre de feuilles mortes</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Gorges-Loire/J1-J2-J3/4307cdda-39ac-425e-9f95-661f7a19d275.jpg" data-caption="&lt;p&gt;De joyeux drilles singulièrement accoutrés nous accueillent pour une cérémonie de mariage quelque peu atypique, on tente de se fondre dans la masse&lt;/p&gt;
+">
+    <img src="/assets/images/Gorges-Loire/J1-J2-J3/4307cdda-39ac-425e-9f95-661f7a19d275.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>De joyeux drilles singulièrement accoutrés nous accueillent pour une cérémonie de mariage quelque peu atypique, on tente de se fondre dans la masse</p>
+</figcaption>
+</figure>
+
+<div id="my-one-and-only-map" style="height: 400px;"></div>
+<p></p>
+<script>
+  if (typeof widgets == 'undefined') { widgets = { } }
+  widgets['my-one-and-only-map'] = { layers: { }, track: { }, map: { } }
+
+  for ([i, alias] of 'TF,OTM,OSM,Ortho'.split(',').entries()) {
+    if (alias == 'TF')    current_layer = widgets['my-one-and-only-map'].layers['Thunderforest'] =        L.tileLayer.provider('Thunderforest.Landscape', { apikey: 'aa6d138c951e413cae47373621fa6464' })
+    if (alias == 'OTM')   current_layer = widgets['my-one-and-only-map'].layers['OpenTopoMap'] =          L.tileLayer.provider('OpenTopoMap')
+    if (alias == 'OSM')   current_layer = widgets['my-one-and-only-map'].layers['OpenStreetMap'] =        L.tileLayer.provider('OpenStreetMap')
+    if (alias == 'Ortho') current_layer = widgets['my-one-and-only-map'].layers['Orthophoto'] =           L.tileLayer.provider('GeoportailFrance.orthos')
+    if (alias == 'OSMFR') current_layer = widgets['my-one-and-only-map'].layers['OpenStreetMap France'] = L.tileLayer.provider('OpenStreetMap.France')
+    if (i == 0) widgets['my-one-and-only-map'].map = L.map('my-one-and-only-map', { layers: [ current_layer ] })
+  }
+
+  if ('' == 'custom-start-and-end-points') {
+    marker_options = {
+      wptIcons: DEFAULT_MARKER_OPTIONS.wptIcons
+    }
+    marker_options.wptIcons['depart']  = DEFAULT_MARKER_OPTIONS.startIcon
+    marker_options.wptIcons['arrivee'] = DEFAULT_MARKER_OPTIONS.endIcon
+  } else {
+    marker_options = DEFAULT_MARKER_OPTIONS
+  }
+  widgets['my-one-and-only-map'].track = new L.GPX('/assets/tracks/Gorges-Loire/J1-J2-J3.gpx', { async: true, marker_options: marker_options })
+  if (true) {
+    initialize_map = function(e) { widgets['my-one-and-only-map'].map.fitBounds(e.target.getBounds()) }
+  } else {
+    initialize_map = function(e) { widgets['my-one-and-only-map'].map.setView(e.target.getBounds().getCenter(), 12) }
+  }
+  widgets['my-one-and-only-map'].track.on('loaded', initialize_map)
+
+  widgets['my-one-and-only-map'].map.addLayer(widgets['my-one-and-only-map'].track)
+  L.control.scale().addTo(widgets['my-one-and-only-map'].map)
+  L.control.layers(widgets['my-one-and-only-map'].layers).addTo(widgets['my-one-and-only-map'].map)
+  widgets['my-one-and-only-map'].map.addControl(new L.control.fullscreen())
+</script>
+
+<p>Détails d’étapes :</p>
+<ul>
+  <li>3 étapes</li>
+  <li>Ciel automnal <img class="emoji" title=":sun_behind_large_cloud:" alt=":sun_behind_large_cloud:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f325.png" height="20" width="20">
+</li>
+  <li>49 km</li>
+  <li>+1600 m</li>
+  <li>-1650 m</li>
+</ul>
+
+        
+
+
+
+
+
+  
+  
+  
+
+
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-copyright">© 2025 Le Gros Mickey. Propulsé par <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

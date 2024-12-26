@@ -1,0 +1,547 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="fr" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>En bref - Les aventures du Gros Mickey</title>
+<meta name="description" content="">
+
+
+  <meta name="author" content="Le Gros Mickey">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Les aventures du Gros Mickey">
+<meta property="og:title" content="En bref">
+<meta property="og:url" content="/Gran-Paradiso/bref/">
+
+
+  <meta property="og:description" content="">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="/Gran-Paradiso/bref/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Le Gros Mickey",
+      "url": "/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <!-- https://github.com/fancyapps/fancybox -->
+    <script src="/assets/js/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/assets/js/jquery-fancybox/3.5.6/jquery.fancybox.min.css"/>
+    <script src="/assets/js/jquery-fancybox/3.5.6/jquery.fancybox.min.js"></script>
+    <script>
+      $.fancybox.defaults.animationEffect = "zoom";
+      $.fancybox.defaults.transitionEffect = "tube";
+      $.fancybox.defaults.buttons = [ "fullScreen", "close" ];
+    </script>
+
+    
+      <!-- https://github.com/Leaflet/Leaflet -->
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+      <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+      <!-- https://github.com/mpetazzoni/leaflet-gpx -->
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.4.0/gpx.min.js"></script> -->
+      <script src="/assets/js/leaflet-gpx/1.4.0/gpx-custom.min.js"></script>
+      <!-- https://github.com/elfalem/Leaflet.curve -->
+      <script src="https://cdn.jsdelivr.net/npm/leaflet-curve@1.0.0/leaflet.curve.min.js" integrity="sha384-NGXMSwSy7xysMCI1I+AjcNggRki+cUVXxqBnMX/nxCD5a/lDebdBH7Qqm63t4zpU" crossorigin="anonymous"></script>
+      <!-- https://github.com/leaflet-extras/leaflet-providers -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/1.9.1/leaflet-providers.min.js" integrity="sha384-VXljvKBDJTJymzdt6ZCMeIKzB66kkZJpSpgPZOb8w19sMwJj+e2D3EFeTnINldBL" crossorigin="anonymous"></script>
+      <!-- https://github.com/Leaflet/Leaflet.fullscreen -->
+      <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+      <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+      <!-- https://github.com/FortAwesome/Font-Awesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <!-- https://github.com/lvoogdt/Leaflet.awesome-markers -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" integrity="sha384-AHhmp36MxTYxqK8q9BF7ifcAjDEpcCT+OOmZrBb8vBP6At1I/htDyRK/M8wgzuqx" crossorigin="anonymous">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js" integrity="sha384-e3K/MgD3PfLJJFhUTg4y1zJciOSfdvRZpcgb0IBjxmbvyyyZuuQTKvs3x27hZpLr" crossorigin="anonymous"></script>
+      <!-- set default marker icons -->
+      <script>
+        L.AwesomeMarkers.Icon.prototype.options.prefix = 'fa';
+        const DEFAULT_MARKER_OPTIONS = {
+          wptIcons: {
+            '':         new L.AwesomeMarkers.icon({ icon: 'circle',         markerColor: 'blue'      }),
+            'tente':    new L.AwesomeMarkers.icon({ icon: 'campground',     markerColor: 'black'     }),
+            'logement': new L.AwesomeMarkers.icon({ icon: 'bed',            markerColor: 'black'     }),
+            'train':    new L.AwesomeMarkers.icon({ icon: 'train',          markerColor: 'darkgreen' }),
+            'bus':    new L.AwesomeMarkers.icon({ icon: 'bus',            markerColor: 'cadetblue' })
+          },
+          startIcon:    new L.AwesomeMarkers.icon({ icon: 'flag',           markerColor: 'red'       }),
+          endIcon:      new L.AwesomeMarkers.icon({ icon: 'flag-checkered', markerColor: 'green'     })
+        }
+      </script>
+    
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Les aventures du Gros Mickey
+          
+        </a>
+        <ul class="visible-links">
+<li class="masthead__menu-item">
+              <a href="/treks/">Treks</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/voyages/">Voyages</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/divers/">Divers</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/citations/">Citations</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/a-propos/">À propos</a>
+            </li>
+</ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox">
+  <label for="ac-toc">Menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <span class="nav__sub-title">Gran Paradiso</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/Gran-Paradiso/bestiaux/">Présentation des bestiaux</a></li>
+          
+            <li><a href="/Gran-Paradiso/J1/">De Cogne à la Costa Verde</a></li>
+          
+            <li><a href="/Gran-Paradiso/J2/">De la Costa Verde au Torrent Costa Savolera</a></li>
+          
+            <li><a href="/Gran-Paradiso/J3/">Du Torrent Costa Savolera aux Laghi del Nivolet</a></li>
+          
+            <li><a href="/Gran-Paradiso/J4/">Des Laghi del Nivolet au Lago di Goletta</a></li>
+          
+            <li><a href="/Gran-Paradiso/J5/">Du Lago di Goletta au Lago San Martino</a></li>
+          
+            <li><a href="/Gran-Paradiso/J6/">Du Lago San Martino à La Motte</a></li>
+          
+            <li><a href="/Gran-Paradiso/J7/">De La Motte à Bourg-Saint-Maurice</a></li>
+          
+            <li><a href="/Gran-Paradiso/bref/" class="active">En bref</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="En bref">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="/Gran-Paradiso/bref/" class="u-url" itemprop="url">En bref
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <h2 id="accomplissements">Accomplissements</h2>
+
+<p>On a préparé ce trek comme il se doit :</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Gran-Paradiso/bref/98ac50da-f026-46d6-af96-ff584283b409.jpg">
+    <img src="/assets/images/Gran-Paradiso/bref/98ac50da-f026-46d6-af96-ff584283b409.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  
+</figure>
+
+<p>On a étudié de fond en comble la topographie des lieux :</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Gran-Paradiso/bref/98ac50da-f026-46d6-af96-ff584283b410.jpg">
+    <img src="/assets/images/Gran-Paradiso/bref/98ac50da-f026-46d6-af96-ff584283b410.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  
+</figure>
+
+<p>On a œuvré à l’amitié franco-italienne :</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Gran-Paradiso/bref/98ac50da-f026-46d6-af96-ff584283b411.jpg">
+    <img src="/assets/images/Gran-Paradiso/bref/98ac50da-f026-46d6-af96-ff584283b411.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  
+</figure>
+
+<p>On a sauté de joie devant de fabuleux décors :</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Gran-Paradiso/bref/98ac50da-f026-46d6-af96-ff584283b412.jpg">
+    <img src="/assets/images/Gran-Paradiso/bref/98ac50da-f026-46d6-af96-ff584283b412.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  
+</figure>
+
+<p>On a joué au <del>frisbee</del> <em>frisbouse</em> :</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Gran-Paradiso/bref/98ac50da-f026-46d6-af96-ff584283b413.jpg">
+    <img src="/assets/images/Gran-Paradiso/bref/98ac50da-f026-46d6-af96-ff584283b413.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  
+</figure>
+
+<p>On n’a pas rencontré d’ours :</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Gran-Paradiso/bref/98ac50da-f026-46d6-af96-ff584283b414.jpg">
+    <img src="/assets/images/Gran-Paradiso/bref/98ac50da-f026-46d6-af96-ff584283b414.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  
+</figure>
+
+<p>Tel King-Kong, on a gravi des monuments :</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Gran-Paradiso/bref/98ac50da-f026-46d6-af96-ff584283b415.jpg">
+    <img src="/assets/images/Gran-Paradiso/bref/98ac50da-f026-46d6-af96-ff584283b415.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  
+</figure>
+
+<p>On est passés par le GPT (Gran Paradiso Trail) mais on n’en a pas fait des caisses :</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Gran-Paradiso/bref/98ac50da-f026-46d6-af96-ff584283b416.jpg">
+    <img src="/assets/images/Gran-Paradiso/bref/98ac50da-f026-46d6-af96-ff584283b416.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  
+</figure>
+
+<p>On a visité une maison de hobbit :</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Gran-Paradiso/bref/98ac50da-f026-46d6-af96-ff584283b417.jpg">
+    <img src="/assets/images/Gran-Paradiso/bref/98ac50da-f026-46d6-af96-ff584283b417.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  
+</figure>
+
+<p>On a déjoué des pièges sournois :</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Gran-Paradiso/bref/98ac50da-f026-46d6-af96-ff584283b418.jpg">
+    <img src="/assets/images/Gran-Paradiso/bref/98ac50da-f026-46d6-af96-ff584283b418.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  
+</figure>
+
+<p>Bref, on est allés vers l’infini et au-delà :</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Gran-Paradiso/bref/98ac50da-f026-46d6-af96-ff584283b419.jpg">
+    <img src="/assets/images/Gran-Paradiso/bref/98ac50da-f026-46d6-af96-ff584283b419.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  
+</figure>
+
+<h2 id="itinéraire-complet">Itinéraire complet</h2>
+
+<div id="my-one-and-only-map" style="height: 400px;"></div>
+<p></p>
+<script>
+  if (typeof widgets == 'undefined') { widgets = { } }
+  widgets['my-one-and-only-map'] = { layers: { }, track: { }, map: { } }
+
+  for ([i, alias] of 'TF,OTM,OSM,Ortho'.split(',').entries()) {
+    if (alias == 'TF')    current_layer = widgets['my-one-and-only-map'].layers['Thunderforest'] =        L.tileLayer.provider('Thunderforest.Landscape', { apikey: 'aa6d138c951e413cae47373621fa6464' })
+    if (alias == 'OTM')   current_layer = widgets['my-one-and-only-map'].layers['OpenTopoMap'] =          L.tileLayer.provider('OpenTopoMap')
+    if (alias == 'OSM')   current_layer = widgets['my-one-and-only-map'].layers['OpenStreetMap'] =        L.tileLayer.provider('OpenStreetMap')
+    if (alias == 'Ortho') current_layer = widgets['my-one-and-only-map'].layers['Orthophoto'] =           L.tileLayer.provider('GeoportailFrance.orthos')
+    if (alias == 'OSMFR') current_layer = widgets['my-one-and-only-map'].layers['OpenStreetMap France'] = L.tileLayer.provider('OpenStreetMap.France')
+    if (i == 0) widgets['my-one-and-only-map'].map = L.map('my-one-and-only-map', { layers: [ current_layer ] })
+  }
+
+  if ('' == 'custom-start-and-end-points') {
+    marker_options = {
+      wptIcons: DEFAULT_MARKER_OPTIONS.wptIcons
+    }
+    marker_options.wptIcons['depart']  = DEFAULT_MARKER_OPTIONS.startIcon
+    marker_options.wptIcons['arrivee'] = DEFAULT_MARKER_OPTIONS.endIcon
+  } else {
+    marker_options = DEFAULT_MARKER_OPTIONS
+  }
+  widgets['my-one-and-only-map'].track = new L.GPX('/assets/tracks/Gran-Paradiso/bref.gpx', { async: true, marker_options: marker_options })
+  if (true) {
+    initialize_map = function(e) { widgets['my-one-and-only-map'].map.fitBounds(e.target.getBounds()) }
+  } else {
+    initialize_map = function(e) { widgets['my-one-and-only-map'].map.setView(e.target.getBounds().getCenter(), 12) }
+  }
+  widgets['my-one-and-only-map'].track.on('loaded', initialize_map)
+
+  widgets['my-one-and-only-map'].map.addLayer(widgets['my-one-and-only-map'].track)
+  L.control.scale().addTo(widgets['my-one-and-only-map'].map)
+  L.control.layers(widgets['my-one-and-only-map'].layers).addTo(widgets['my-one-and-only-map'].map)
+  widgets['my-one-and-only-map'].map.addControl(new L.control.fullscreen())
+</script>
+
+<p>Détails :</p>
+<ul>
+  <li>nuageux en début et fin de trek <img class="emoji" title=":partly_sunny:" alt=":partly_sunny:" src="https://github.githubassets.com/images/icons/emoji/unicode/26c5.png" height="20" width="20">
+</li>
+  <li>ciel bleu le reste du temps <img class="emoji" title=":sunny:" alt=":sunny:" src="https://github.githubassets.com/images/icons/emoji/unicode/2600.png" height="20" width="20">
+</li>
+  <li>7 étapes</li>
+  <li>100 km</li>
+  <li>+8 km</li>
+  <li>-8,5 km</li>
+</ul>
+
+        
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+
+
+<p>
+<!-- TODO: avoid inline styles please!-->
+</p>
+<table style="display: table; table-layout: fixed;">
+  <tr>
+    <td style="border-bottom: none; width: 50%;"><a href="/Gran-Paradiso/J7/" style="width: 100%;" class="btn btn--primary ">‹ Page précédente</a></td>
+    <td style="border-bottom: none; width: 50%;"><a href="" style="width: 100%;" class="btn btn--primary btn--disabled ">Page suivante ›</a></td>
+  </tr>
+</table>
+
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-copyright">© 2025 Le Gros Mickey. Propulsé par <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

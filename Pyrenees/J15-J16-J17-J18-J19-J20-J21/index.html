@@ -1,0 +1,773 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="fr" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>À la recherche du puits - Les aventures du Gros Mickey</title>
+<meta name="description" content="">
+
+
+  <meta name="author" content="Le Gros Mickey">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Les aventures du Gros Mickey">
+<meta property="og:title" content="À la recherche du puits">
+<meta property="og:url" content="/Pyrenees/J15-J16-J17-J18-J19-J20-J21/">
+
+
+  <meta property="og:description" content="">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="/Pyrenees/J15-J16-J17-J18-J19-J20-J21/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Le Gros Mickey",
+      "url": "/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <!-- https://github.com/fancyapps/fancybox -->
+    <script src="/assets/js/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/assets/js/jquery-fancybox/3.5.6/jquery.fancybox.min.css"/>
+    <script src="/assets/js/jquery-fancybox/3.5.6/jquery.fancybox.min.js"></script>
+    <script>
+      $.fancybox.defaults.animationEffect = "zoom";
+      $.fancybox.defaults.transitionEffect = "tube";
+      $.fancybox.defaults.buttons = [ "fullScreen", "close" ];
+    </script>
+
+    
+      <!-- https://github.com/Leaflet/Leaflet -->
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+      <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+      <!-- https://github.com/mpetazzoni/leaflet-gpx -->
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.4.0/gpx.min.js"></script> -->
+      <script src="/assets/js/leaflet-gpx/1.4.0/gpx-custom.min.js"></script>
+      <!-- https://github.com/elfalem/Leaflet.curve -->
+      <script src="https://cdn.jsdelivr.net/npm/leaflet-curve@1.0.0/leaflet.curve.min.js" integrity="sha384-NGXMSwSy7xysMCI1I+AjcNggRki+cUVXxqBnMX/nxCD5a/lDebdBH7Qqm63t4zpU" crossorigin="anonymous"></script>
+      <!-- https://github.com/leaflet-extras/leaflet-providers -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/1.9.1/leaflet-providers.min.js" integrity="sha384-VXljvKBDJTJymzdt6ZCMeIKzB66kkZJpSpgPZOb8w19sMwJj+e2D3EFeTnINldBL" crossorigin="anonymous"></script>
+      <!-- https://github.com/Leaflet/Leaflet.fullscreen -->
+      <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+      <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+      <!-- https://github.com/FortAwesome/Font-Awesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <!-- https://github.com/lvoogdt/Leaflet.awesome-markers -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" integrity="sha384-AHhmp36MxTYxqK8q9BF7ifcAjDEpcCT+OOmZrBb8vBP6At1I/htDyRK/M8wgzuqx" crossorigin="anonymous">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js" integrity="sha384-e3K/MgD3PfLJJFhUTg4y1zJciOSfdvRZpcgb0IBjxmbvyyyZuuQTKvs3x27hZpLr" crossorigin="anonymous"></script>
+      <!-- set default marker icons -->
+      <script>
+        L.AwesomeMarkers.Icon.prototype.options.prefix = 'fa';
+        const DEFAULT_MARKER_OPTIONS = {
+          wptIcons: {
+            '':         new L.AwesomeMarkers.icon({ icon: 'circle',         markerColor: 'blue'      }),
+            'tente':    new L.AwesomeMarkers.icon({ icon: 'campground',     markerColor: 'black'     }),
+            'logement': new L.AwesomeMarkers.icon({ icon: 'bed',            markerColor: 'black'     }),
+            'train':    new L.AwesomeMarkers.icon({ icon: 'train',          markerColor: 'darkgreen' }),
+            'bus':    new L.AwesomeMarkers.icon({ icon: 'bus',            markerColor: 'cadetblue' })
+          },
+          startIcon:    new L.AwesomeMarkers.icon({ icon: 'flag',           markerColor: 'red'       }),
+          endIcon:      new L.AwesomeMarkers.icon({ icon: 'flag-checkered', markerColor: 'green'     })
+        }
+      </script>
+    
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Les aventures du Gros Mickey
+          
+        </a>
+        <ul class="visible-links">
+<li class="masthead__menu-item">
+              <a href="/treks/">Treks</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/voyages/">Voyages</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/divers/">Divers</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/citations/">Citations</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/a-propos/">À propos</a>
+            </li>
+</ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox">
+  <label for="ac-toc">Menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <span class="nav__sub-title">Petit Prince en périple dans les Pyrénées</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/Pyrenees/J1-J2-J3-J4-J5/">L'évasion</a></li>
+          
+            <li><a href="/Pyrenees/J7-J8-J9-J10-J11-J12-J13/">La drôle de planète</a></li>
+          
+            <li><a href="/Pyrenees/J15-J16-J17-J18-J19-J20-J21/" class="active">À la recherche du puits</a></li>
+          
+            <li><a href="/Pyrenees/J23-J24-J25-J26-J27-J28-J29-J30/">Le jardin fleuri</a></li>
+          
+            <li><a href="/Pyrenees/J32-J33-J34-J35-J36-J37-J38-J39/">Les 43 couchers de soleil</a></li>
+          
+            <li><a href="/Pyrenees/faq/">FAQ</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="À la recherche du puits">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="/Pyrenees/J15-J16-J17-J18-J19-J20-J21/" class="u-url" itemprop="url">À la recherche du puits
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <p>La journée d’hier étant désastreuse, je suis resté au refuge pour me reposer. J’ai été rejoint par Gabriel dans la soirée, trempé des pieds à la tête. Il trace pour sa traversée des Pyrénées, à une cadence infernale digne d’un <em>allumeur de réverbères</em>, pour espérer être à l’heure à un festival qui lui tient à cœur</p>
+
+<p>Anouk nous a rejoint plus tard, encore plus adorable en vrai qu’au téléphone. Ce matin, je prends mon petit-déjeuner avec elle, après que le soleil et les pépiements des moineaux m’aient doucement extirpé de mon sommeil. Elle me raconte quelques perles des hébergements qu’elle a pu faire. Je me sens flatté quand elle m’annonce que sa population préférée sont les trekkeurs</p>
+
+<p>Je démarre mon étape alors que la rosée scintille arc-en-ciel dans les brins d’herbes</p>
+
+<blockquote>
+  <p><ruby><rb>Коли сонце зійде</rb><rt>Koly sontse ziyde</rt><rtc><rt>Quand le soleil se lève</rt></rtc></ruby><br>
+<ruby><rb>Не затримуй мене</rb><rt>Ne zatrymuy mene</rt><rtc><rt>Ne me retiens pas</rt></rtc></ruby><br>
+<ruby><rb>Якщо хочеш побачити знов</rb><rt>Yakshcho khochesh pobachyty znov</rt><rtc><rt>Si tu veux me revoir</rt></rtc></ruby><br></p>
+</blockquote>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12379.jpg" data-caption="&lt;p&gt;Je débarque relativement tôt dans une suffocante Luz-Saint-Sauveur&lt;/p&gt;
+">
+    <img src="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12379.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Je débarque relativement tôt dans une suffocante Luz-Saint-Sauveur</p>
+</figcaption>
+</figure>
+
+<p>Je surnage dans ma sueur et avance tel un zombie. Au milieu des hôtels et des feulements des moteurs, je ne me sens pas à ma place dans la vallée touristique qui mène au célèbre col du Tourmalet</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12380.jpg" data-caption="&lt;p&gt;Je préfère revenir à mes moutons des montagnes, loin des moutons des villes&lt;/p&gt;
+">
+    <img src="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12380.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Je préfère revenir à mes moutons des montagnes, loin des moutons des villes</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12381.jpg" data-caption="&lt;p&gt;Au lac de Madaméte, un aguerri de la vallée me fait un petit tour des noms des sommets, cols et lacs&lt;/p&gt;
+">
+    <img src="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12381.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Au lac de Madaméte, un aguerri de la vallée me fait un petit tour des noms des sommets, cols et lacs</p>
+</figcaption>
+</figure>
+
+<p>Plutôt que de me demander si j’ai l’esprit apaisé en cet instant présent, il me questionne sur mon lieu de repos pour la nuit prochaine. L’astre diurne vient à peine de se lever, <em>les grandes personnes sont décidément très très bizarres</em></p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12382.jpg" data-caption="&lt;p&gt;Neige molle et peu épaisse par ici, je franchis le col nonchalamment&lt;/p&gt;
+">
+    <img src="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12382.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Neige molle et peu épaisse par ici, je franchis le col nonchalamment</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12383.jpg" data-caption='&lt;p&gt;Les &lt;a href="https://fr.wikipedia.org/wiki/Grenouille_rousse"&gt;grenouilles&lt;/a&gt; du gourg de Rabas m’accompagnent dans une fabuleuse sieste bronzante&lt;/p&gt;
+'>
+    <img src="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12383.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Les <a href="https://fr.wikipedia.org/wiki/Grenouille_rousse">grenouilles</a> du gourg de Rabas m’accompagnent dans une fabuleuse sieste bronzante</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12384.jpg" data-caption="&lt;p&gt;Le bleu turquoise du lac d’Aumar m’a tuer&lt;/p&gt;
+">
+    <img src="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12384.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Le bleu turquoise du lac d’Aumar m’a tuer</p>
+</figcaption>
+</figure>
+
+<p>Je lambine, sous les sifflets des marmottes, au milieu des lacs de la réserve du Néouvielle et papote avec tous les randonneurs que je croise, ravis de profiter de cette formidable journée. Un duo me félicite pour ma traversée pyrénéenne, un peu prématurément je trouve</p>
+
+<blockquote>
+  <p>Daydreamer and a traitor<br>
+An idol and a stranger<br>
+A voyager and a selfish freak […]<br>
+We are the ones we choose us to be<br></p>
+</blockquote>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12385.jpg" data-caption="&lt;p&gt;J’imite les locaux et profite des zones d’ombre toute l’après-midi pour souffler entre les portions exposées au soleil&lt;/p&gt;
+">
+    <img src="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12385.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>J’imite les locaux et profite des zones d’ombre toute l’après-midi pour souffler entre les portions exposées au soleil</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12386.jpg" data-caption="&lt;p&gt;Ma motivation décide de s’arrêter au bord d’un cours d’eau, ce soir c’est dodo avec vaches et marmottes !&lt;/p&gt;
+">
+    <img src="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12386.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Ma motivation décide de s’arrêter au bord d’un cours d’eau, ce soir c’est dodo avec vaches et marmottes !</p>
+</figcaption>
+</figure>
+
+<p>En cette matinée brumeuse, j’enchaîne sur un sentier relativement plat, de quoi calmer les moteurs, et une descente bien raide que n’apprécient pas beaucoup mes talons fourbus</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12387.jpg" data-caption='&lt;p&gt;Des &lt;a href="https://fr.wikipedia.org/wiki/Gen%C3%AAt"&gt;genêts&lt;/a&gt; sur l’herbe, &lt;em&gt;nés en même temps que le soleil, qui se sont habillés lentement et ont ajusté un à un leurs pétales, pour apparaître dans le plein rayonnement de leur beautée, mais j’étais trop jeune pour savoir les aimer&lt;/em&gt;&lt;/p&gt;
+'>
+    <img src="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12387.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Des <a href="https://fr.wikipedia.org/wiki/Gen%C3%AAt">genêts</a> sur l’herbe, <em>nés en même temps que le soleil, qui se sont habillés lentement et ont ajusté un à un leurs pétales, pour apparaître dans le plein rayonnement de leur beautée, mais j’étais trop jeune pour savoir les aimer</em></p>
+</figcaption>
+</figure>
+
+<p>L’après-midi je reprends avec une ascension tranquillement, car préoccupé par mes pieds qui continuent de rouspéter</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12388.jpg" data-caption="&lt;p&gt;Ma longue-vue ne parvient pas à repérer d’endroit discret où bivouaquer avant Loudenvielle&lt;/p&gt;
+">
+    <img src="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12388.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Ma longue-vue ne parvient pas à repérer d’endroit discret où bivouaquer avant Loudenvielle</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12389.jpg" data-caption="&lt;p&gt;Vu que &lt;em&gt;chez moi c’est tout petit&lt;/em&gt;, je choisis de me caser dans un sous-bois attenant à la ville&lt;/p&gt;
+">
+    <img src="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12389.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Vu que <em>chez moi c’est tout petit</em>, je choisis de me caser dans un sous-bois attenant à la ville</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12390.jpg" data-caption="&lt;p&gt;La douce nuit forestière a porté conseil et m’a surtout apporté du repos à mes articulations, je repars tout doux vers de vertes cascades&lt;/p&gt;
+">
+    <img src="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12390.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>La douce nuit forestière a porté conseil et m’a surtout apporté du repos à mes articulations, je repars tout doux vers de vertes cascades</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12391.jpg" data-caption="&lt;p&gt;Étendue d’eau pléonastique, très appréciée des cruciverbistes, le lac d’Oô reste impassible sous les hurlements de la chute d’eau qui l’alimente&lt;/p&gt;
+">
+    <img src="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12391.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Étendue d’eau pléonastique, très appréciée des cruciverbistes, le lac d’Oô reste impassible sous les hurlements de la chute d’eau qui l’alimente</p>
+</figcaption>
+</figure>
+
+<p>Je termine ma journée au lac Saussat, dans un cirque où je m’imprègne de la magie des ténèbres étincelantes</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12392.jpg" data-caption="
+&lt;p&gt;Enivré par la beauté des lieux, je vois double au petit déjeuner&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Strong voice and airy lungs&lt;br /&gt;
+Three lives are not enough&lt;br /&gt;
+To sing of all the wonders I’ve seen&lt;br /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+">
+    <img src="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12392.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p>Enivré par la beauté des lieux, je vois double au petit déjeuner</p>
+
+<blockquote>
+  <p>Strong voice and airy lungs<br>
+Three lives are not enough<br>
+To sing of all the wonders I’ve seen<br></p>
+</blockquote>
+</figcaption>
+</figure>
+
+<p>Au détour d’une corniche de neige embrumée, je rencontre 3 randonneurs plutôt inquiets pour la suite de leur circuit. Je tente de les rassurer en leur précisant que ça sera le seul névé qu’ils auront à contourner pour atteindre le refuge d’Espingo, non-loin de mon dernier lieu de bivouac. Ils me demandent alors si je n’ai pas eu trop froid et n’évoquent nullement la beauté des merveilles minérales alentours, <em>les grandes personnes sont décidément tout à fait extraordinaires</em></p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12393.jpg" data-caption="
+&lt;p&gt;Les joyaux de granit deviennent néanmoins plus hostiles, je m’enlise dans les névés de plus en plus pentus, blottis dans le dense brouillard&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;ruby&gt;&lt;rb&gt;Kven skal synge meg&lt;/rb&gt;&lt;rtc&gt;&lt;rt&gt;Qui me chantera&lt;/rt&gt;&lt;/rtc&gt;&lt;/ruby&gt;&lt;br /&gt;
+&lt;ruby&gt;&lt;rb&gt;I daudsvevna slynge meg&lt;/rb&gt;&lt;rtc&gt;&lt;rt&gt;M’enverra dans le sommeil de la mort&lt;/rt&gt;&lt;/rtc&gt;&lt;/ruby&gt;&lt;br /&gt;
+&lt;ruby&gt;&lt;rb&gt;Når eg helvegen går&lt;/rb&gt;&lt;rtc&gt;&lt;rt&gt;Quand j’emprunterai le chemin de l’enfer&lt;/rt&gt;&lt;/rtc&gt;&lt;/ruby&gt;&lt;br /&gt;
+&lt;ruby&gt;&lt;rb&gt;Og dei spora eg trår&lt;/rb&gt;&lt;rtc&gt;&lt;rt&gt;Et ce sentier que j’arpente&lt;/rt&gt;&lt;/rtc&gt;&lt;/ruby&gt;&lt;br /&gt;
+&lt;ruby&gt;&lt;rb&gt;Er kalde, så kalde&lt;/rb&gt;&lt;rtc&gt;&lt;rt&gt;Est froid, si froid&lt;/rt&gt;&lt;/rtc&gt;&lt;/ruby&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Wardruna &lt;cite&gt;&lt;ruby&gt;&lt;rb&gt;Helvegen&lt;/rb&gt;&lt;rtc&gt;&lt;rt&gt;Le chemin de l’enfer&lt;/rt&gt;&lt;/rtc&gt;&lt;/ruby&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+">
+    <img src="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12393.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p>Les joyaux de granit deviennent néanmoins plus hostiles, je m’enlise dans les névés de plus en plus pentus, blottis dans le dense brouillard</p>
+
+<blockquote>
+  <p><ruby><rb>Kven skal synge meg</rb><rtc><rt>Qui me chantera</rt></rtc></ruby><br>
+<ruby><rb>I daudsvevna slynge meg</rb><rtc><rt>M’enverra dans le sommeil de la mort</rt></rtc></ruby><br>
+<ruby><rb>Når eg helvegen går</rb><rtc><rt>Quand j’emprunterai le chemin de l’enfer</rt></rtc></ruby><br>
+<ruby><rb>Og dei spora eg trår</rb><rtc><rt>Et ce sentier que j’arpente</rt></rtc></ruby><br>
+<ruby><rb>Er kalde, så kalde</rb><rtc><rt>Est froid, si froid</rt></rtc></ruby><br></p>
+</blockquote>
+
+<blockquote>
+  <p>Wardruna <cite><ruby><rb>Helvegen</rb><rtc><rt>Le chemin de l’enfer</rt></rtc></ruby></cite></p>
+</blockquote>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12394.jpg" data-caption="&lt;p&gt;Un abri de berger exigu mais salutaire m’offre une protection contre la grêle qui se rajoute aux émotions de la matinée, je m’installe sur son seuil pour reprendre quelques forces sucrées&lt;/p&gt;
+">
+    <img src="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12394.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Un abri de berger exigu mais salutaire m’offre une protection contre la grêle qui se rajoute aux émotions de la matinée, je m’installe sur son seuil pour reprendre quelques forces sucrées</p>
+</figcaption>
+</figure>
+
+<p>La suite se complique encore, cairns dissimulés, pentes herbeuses glissantes, pierriers saillants et courtes sections d’escalade, l’adrénaline joue au flipper dans mon corps en somme</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12395.jpg" data-caption="&lt;p&gt;Je souffle à nouveau dans un véritable abri cette fois-ci, notamment pour essorrer chaussettes et semelles&lt;/p&gt;
+">
+    <img src="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12395.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Je souffle à nouveau dans un véritable abri cette fois-ci, notamment pour essorrer chaussettes et semelles</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12396.jpg" data-caption="&lt;p&gt;Alors que je grignote à la porte, le temps d’une courte éclaircie, j’aperçois un mur blanc. &lt;em&gt;Droit devant moi, je ne peux pas aller bien loin…&lt;/em&gt;&lt;/p&gt;
+">
+    <img src="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12396.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Alors que je grignote à la porte, le temps d’une courte éclaircie, j’aperçois un mur blanc. <em>Droit devant moi, je ne peux pas aller bien loin…</em></p>
+</figcaption>
+</figure>
+
+<p>Ma raison, en accord avec mon cœur pour une fois, opte pour redescendre dans la vallée, tant pis pour le large détour. J’embarque 2 boîtes de conserves rouillées millésimées 2022 avant de partir en me moquant de moi-même et de mon projet irréaliste d’aujourd’hui</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12397.jpg" data-caption="&lt;p&gt;Les pieds déjà bien imbibés, je n’hésite aucunement pour enjamber les cascades savonneuses&lt;/p&gt;
+">
+    <img src="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12397.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Les pieds déjà bien imbibés, je n’hésite aucunement pour enjamber les cascades savonneuses</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12398.jpg" data-caption="&lt;p&gt;Après la douche dans un petit bain au bord du ruisseau, ma serviette rejoint l’équipe des frusques trempées&lt;/p&gt;
+">
+    <img src="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12398.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Après la douche dans un petit bain au bord du ruisseau, ma serviette rejoint l’équipe des frusques trempées</p>
+</figcaption>
+</figure>
+
+<p>Je sors de ma léthargie ce matin avec le haut du corps tout courbaturé des sessions de varappe d’hier. Je me réconforte en me disant que mon étape du jour devrait être plus pépère</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12399.jpg" data-caption="&lt;p&gt;J’ai tout de même un micro-cirque à traverser à flanc&lt;/p&gt;
+">
+    <img src="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12399.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>J’ai tout de même un micro-cirque à traverser à flanc</p>
+</figcaption>
+</figure>
+
+<p>Je devine à l’autre bout du semi-cratère 2 randonneurs qui viennent à moi. Donnant-donnant, je leur crée de belles traces dans les névés, et leurs tous petits pieds me laissent également des empreintes minuscules. Raquettes sur leurs sacs à dos, ils ont préféré comme moi ne pas tenter le diable et choisi de randonner plus bas pour leur flânerie de la journée</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12400.jpg" data-caption='&lt;p&gt;&lt;em&gt;Planète toute encombrée par un magnifique manteau d’hermine&lt;/em&gt;, c’est tout naturellement que je finis par rencontrer sa majesté le &lt;em&gt;roi&lt;/em&gt;, surmonté de sa couronne de &lt;a href="https://fr.wikipedia.org/wiki/Gentiane_acaule"&gt;gentiane&lt;/a&gt;&lt;/p&gt;
+'>
+    <img src="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12400.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p><em>Planète toute encombrée par un magnifique manteau d’hermine</em>, c’est tout naturellement que je finis par rencontrer sa majesté le <em>roi</em>, surmonté de sa couronne de <a href="https://fr.wikipedia.org/wiki/Gentiane_acaule">gentiane</a></p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12401.jpg" data-caption="&lt;p&gt;Après leur longue léthargie hivernale, les fougères déroulent leur colonne vertébrale délicatement&lt;/p&gt;
+">
+    <img src="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12401.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Après leur longue léthargie hivernale, les fougères déroulent leur colonne vertébrale délicatement</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12402.jpg" data-caption="&lt;p&gt;Je me fais cadeau d’un moment calme digestif dans le cirque de la Glère, pendant que l’humidité de mes chaussures s’évapore vers les nuages blottis dans le giron minéral&lt;/p&gt;
+">
+    <img src="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12402.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Je me fais cadeau d’un moment calme digestif dans le cirque de la Glère, pendant que l’humidité de mes chaussures s’évapore vers les nuages blottis dans le giron minéral</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12403.jpg" data-caption="&lt;p&gt;La cabane du Pesson me régale de fée verte et de force Popeyesque pour mon retour prochain au pays de la &lt;em&gt;tortilla&lt;/em&gt;&lt;/p&gt;
+">
+    <img src="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12403.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>La cabane du Pesson me régale de fée verte et de force Popeyesque pour mon retour prochain au pays de la <em>tortilla</em></p>
+</figcaption>
+</figure>
+
+<p>Surprise côté espagnol, les cours d’eau repérés sur ma carte ont passé l’arme à gauche et les lacs s’apparentent plutôt à des étangs rachitiques et vaseux</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12404.jpg" data-caption="&lt;p&gt;&lt;em&gt;Je découvre un puits&lt;/em&gt; avant le coucher du jour, et, &lt;em&gt;dans l’eau qui tremble encore, je vois trembler le soleil&lt;/em&gt;&lt;/p&gt;
+">
+    <img src="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12404.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p><em>Je découvre un puits</em> avant le coucher du jour, et, <em>dans l’eau qui tremble encore, je vois trembler le soleil</em></p>
+</figcaption>
+</figure>
+
+<p>Le seul névé du coin me procure de la glace pillée. Je l’utilise astucieusement pour une “douche” avec soin exfoliant inclus. J’en mélange aussi avec l’eau marécageuse pour me préparer un cocktail “<del>whisky</del> eau tourbée <em>on the rocks</em>” pour une belle nuitée hydratée, lendemain garanti sans gueule de bois !</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12405.jpg" data-caption="&lt;p&gt;J’abandonne une nouvelle fois les frais sommets français pour un azur catalan éclatant&lt;/p&gt;
+">
+    <img src="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12405.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>J’abandonne une nouvelle fois les frais sommets français pour un azur catalan éclatant</p>
+</figcaption>
+</figure>
+
+<p>Coup de chaud alors que j’arpente la vallée d’Aran, la fatigue des dernières étapes me pousse à un roupillon ombragé. Mes chastes chausses n’ont pas cette chance, je les agence sans chichi sur une souche sèche pour qu’elles soient archi-sèches, au ressortir, sang chaud et iris chassieux, de ma sieste</p>
+
+<p>J’avance flegmatique jusqu’à Vielha durant l’après-midi</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12406.jpg" data-caption="&lt;p&gt;Rendu à la ville catalane, je succombe à l’œillade langoureuse d’un immense lit douillet, sous-classé volontaire de nuitées à &lt;em&gt;501 622 731 étoiles&lt;/em&gt; pour du 2 étoiles&lt;/p&gt;
+">
+    <img src="/assets/images/Pyrenees/J15-J16-J17-J18-J19-J20-J21/3003f42b-f979-47fc-badc-3ad5d1f12406.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Rendu à la ville catalane, je succombe à l’œillade langoureuse d’un immense lit douillet, sous-classé volontaire de nuitées à <em>501 622 731 étoiles</em> pour du 2 étoiles</p>
+</figcaption>
+</figure>
+
+<div id="my-one-and-only-map" style="height: 400px;"></div>
+<p></p>
+<script>
+  if (typeof widgets == 'undefined') { widgets = { } }
+  widgets['my-one-and-only-map'] = { layers: { }, track: { }, map: { } }
+
+  for ([i, alias] of 'TF,OTM,OSM,Ortho'.split(',').entries()) {
+    if (alias == 'TF')    current_layer = widgets['my-one-and-only-map'].layers['Thunderforest'] =        L.tileLayer.provider('Thunderforest.Landscape', { apikey: 'aa6d138c951e413cae47373621fa6464' })
+    if (alias == 'OTM')   current_layer = widgets['my-one-and-only-map'].layers['OpenTopoMap'] =          L.tileLayer.provider('OpenTopoMap')
+    if (alias == 'OSM')   current_layer = widgets['my-one-and-only-map'].layers['OpenStreetMap'] =        L.tileLayer.provider('OpenStreetMap')
+    if (alias == 'Ortho') current_layer = widgets['my-one-and-only-map'].layers['Orthophoto'] =           L.tileLayer.provider('GeoportailFrance.orthos')
+    if (alias == 'OSMFR') current_layer = widgets['my-one-and-only-map'].layers['OpenStreetMap France'] = L.tileLayer.provider('OpenStreetMap.France')
+    if (i == 0) widgets['my-one-and-only-map'].map = L.map('my-one-and-only-map', { layers: [ current_layer ] })
+  }
+
+  if ('' == 'custom-start-and-end-points') {
+    marker_options = {
+      wptIcons: DEFAULT_MARKER_OPTIONS.wptIcons
+    }
+    marker_options.wptIcons['depart']  = DEFAULT_MARKER_OPTIONS.startIcon
+    marker_options.wptIcons['arrivee'] = DEFAULT_MARKER_OPTIONS.endIcon
+  } else {
+    marker_options = DEFAULT_MARKER_OPTIONS
+  }
+  widgets['my-one-and-only-map'].track = new L.GPX('/assets/tracks/Pyrenees/J15-J16-J17-J18-J19-J20-J21.gpx', { async: true, marker_options: marker_options })
+  if (true) {
+    initialize_map = function(e) { widgets['my-one-and-only-map'].map.fitBounds(e.target.getBounds()) }
+  } else {
+    initialize_map = function(e) { widgets['my-one-and-only-map'].map.setView(e.target.getBounds().getCenter(), 12) }
+  }
+  widgets['my-one-and-only-map'].track.on('loaded', initialize_map)
+
+  widgets['my-one-and-only-map'].map.addLayer(widgets['my-one-and-only-map'].track)
+  L.control.scale().addTo(widgets['my-one-and-only-map'].map)
+  L.control.layers(widgets['my-one-and-only-map'].layers).addTo(widgets['my-one-and-only-map'].map)
+  widgets['my-one-and-only-map'].map.addControl(new L.control.fullscreen())
+</script>
+
+<p>Détails d’étapes :</p>
+<ul>
+  <li>7 étapes</li>
+  <li>Grand soleil, brouillard, nuages, brouillard, grand soleil <img class="emoji" title=":sunny:" alt=":sunny:" src="https://github.githubassets.com/images/icons/emoji/unicode/2600.png" height="20" width="20"> <img class="emoji" title=":fog:" alt=":fog:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f32b.png" height="20" width="20"> <img class="emoji" title=":cloud:" alt=":cloud:" src="https://github.githubassets.com/images/icons/emoji/unicode/2601.png" height="20" width="20"> <img class="emoji" title=":fog:" alt=":fog:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f32b.png" height="20" width="20"> <img class="emoji" title=":sunny:" alt=":sunny:" src="https://github.githubassets.com/images/icons/emoji/unicode/2600.png" height="20" width="20">
+</li>
+  <li>140 km</li>
+  <li>+9400 m</li>
+  <li>-9400 m</li>
+</ul>
+
+        
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+    
+
+
+<p>
+<!-- TODO: avoid inline styles please!-->
+</p>
+<table style="display: table; table-layout: fixed;">
+  <tr>
+    <td style="border-bottom: none; width: 50%;"><a href="/Pyrenees/J7-J8-J9-J10-J11-J12-J13/" style="width: 100%;" class="btn btn--primary ">‹ Page précédente</a></td>
+    <td style="border-bottom: none; width: 50%;"><a href="/Pyrenees/J23-J24-J25-J26-J27-J28-J29-J30/" style="width: 100%;" class="btn btn--primary ">Page suivante ›</a></td>
+  </tr>
+</table>
+
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-copyright">© 2025 Le Gros Mickey. Propulsé par <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

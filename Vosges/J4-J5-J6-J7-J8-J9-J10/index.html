@@ -1,0 +1,754 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="fr" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Les ingrédients - Les aventures du Gros Mickey</title>
+<meta name="description" content="">
+
+
+  <meta name="author" content="Le Gros Mickey">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Les aventures du Gros Mickey">
+<meta property="og:title" content="Les ingrédients">
+<meta property="og:url" content="/Vosges/J4-J5-J6-J7-J8-J9-J10/">
+
+
+  <meta property="og:description" content="">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="/Vosges/J4-J5-J6-J7-J8-J9-J10/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Le Gros Mickey",
+      "url": "/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <!-- https://github.com/fancyapps/fancybox -->
+    <script src="/assets/js/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/assets/js/jquery-fancybox/3.5.6/jquery.fancybox.min.css"/>
+    <script src="/assets/js/jquery-fancybox/3.5.6/jquery.fancybox.min.js"></script>
+    <script>
+      $.fancybox.defaults.animationEffect = "zoom";
+      $.fancybox.defaults.transitionEffect = "tube";
+      $.fancybox.defaults.buttons = [ "fullScreen", "close" ];
+    </script>
+
+    
+      <!-- https://github.com/Leaflet/Leaflet -->
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+      <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+      <!-- https://github.com/mpetazzoni/leaflet-gpx -->
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.4.0/gpx.min.js"></script> -->
+      <script src="/assets/js/leaflet-gpx/1.4.0/gpx-custom.min.js"></script>
+      <!-- https://github.com/elfalem/Leaflet.curve -->
+      <script src="https://cdn.jsdelivr.net/npm/leaflet-curve@1.0.0/leaflet.curve.min.js" integrity="sha384-NGXMSwSy7xysMCI1I+AjcNggRki+cUVXxqBnMX/nxCD5a/lDebdBH7Qqm63t4zpU" crossorigin="anonymous"></script>
+      <!-- https://github.com/leaflet-extras/leaflet-providers -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/1.9.1/leaflet-providers.min.js" integrity="sha384-VXljvKBDJTJymzdt6ZCMeIKzB66kkZJpSpgPZOb8w19sMwJj+e2D3EFeTnINldBL" crossorigin="anonymous"></script>
+      <!-- https://github.com/Leaflet/Leaflet.fullscreen -->
+      <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+      <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+      <!-- https://github.com/FortAwesome/Font-Awesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <!-- https://github.com/lvoogdt/Leaflet.awesome-markers -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" integrity="sha384-AHhmp36MxTYxqK8q9BF7ifcAjDEpcCT+OOmZrBb8vBP6At1I/htDyRK/M8wgzuqx" crossorigin="anonymous">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js" integrity="sha384-e3K/MgD3PfLJJFhUTg4y1zJciOSfdvRZpcgb0IBjxmbvyyyZuuQTKvs3x27hZpLr" crossorigin="anonymous"></script>
+      <!-- set default marker icons -->
+      <script>
+        L.AwesomeMarkers.Icon.prototype.options.prefix = 'fa';
+        const DEFAULT_MARKER_OPTIONS = {
+          wptIcons: {
+            '':         new L.AwesomeMarkers.icon({ icon: 'circle',         markerColor: 'blue'      }),
+            'tente':    new L.AwesomeMarkers.icon({ icon: 'campground',     markerColor: 'black'     }),
+            'logement': new L.AwesomeMarkers.icon({ icon: 'bed',            markerColor: 'black'     }),
+            'train':    new L.AwesomeMarkers.icon({ icon: 'train',          markerColor: 'darkgreen' }),
+            'bus':    new L.AwesomeMarkers.icon({ icon: 'bus',            markerColor: 'cadetblue' })
+          },
+          startIcon:    new L.AwesomeMarkers.icon({ icon: 'flag',           markerColor: 'red'       }),
+          endIcon:      new L.AwesomeMarkers.icon({ icon: 'flag-checkered', markerColor: 'green'     })
+        }
+      </script>
+    
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Les aventures du Gros Mickey
+          
+        </a>
+        <ul class="visible-links">
+<li class="masthead__menu-item">
+              <a href="/treks/">Treks</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/voyages/">Voyages</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/divers/">Divers</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/citations/">Citations</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/a-propos/">À propos</a>
+            </li>
+</ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox">
+  <label for="ac-toc">Menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <span class="nav__sub-title">Rituel magique dans les Vosges</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/Vosges/J1-J2-J3/">La sorcière</a></li>
+          
+            <li><a href="/Vosges/J4-J5-J6-J7-J8-J9-J10/" class="active">Les ingrédients</a></li>
+          
+            <li><a href="/Vosges/J11-J12-J13/">La décoction</a></li>
+          
+            <li><a href="/Vosges/epilogue/">Épilogue</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Les ingrédients">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="/Vosges/J4-J5-J6-J7-J8-J9-J10/" class="u-url" itemprop="url">Les ingrédients
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249338.jpg" data-caption="&lt;p&gt;Je me retrouve à nouveau dans une étrange atmosphère, à longer une muraille épaisse et envoûtante sur plusieurs kilomètres, où d’immenses blocs cyclopéens verdissants résistent aux affres du temps&lt;/p&gt;
+">
+    <img src="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249338.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Je me retrouve à nouveau dans une étrange atmosphère, à longer une muraille épaisse et envoûtante sur plusieurs kilomètres, où d’immenses blocs cyclopéens verdissants résistent aux affres du temps</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249339.jpg" data-caption="&lt;p&gt;Lorsque je ressors de la forêt mystique, la lumière s’irrise au-dessus des vignes de sylvaner et de gewurztraminer, mes prunelles en font de même&lt;/p&gt;
+">
+    <img src="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249339.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Lorsque je ressors de la forêt mystique, la lumière s’irrise au-dessus des vignes de sylvaner et de gewurztraminer, mes prunelles en font de même</p>
+</figcaption>
+</figure>
+
+<p>Avec la météo humide des derniers jours, je patauge dans la gadoue autour des plantations de raisin, je n’en oublie pas pour autant de poursuivre ma collecte d’ingrédients pour l’élixir de la magicienne</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249340.jpg" data-caption='
+&lt;p&gt;&lt;span style="background-color: gold; border-radius: 8px; padding: 0 8px;"&gt;Gudrun :&lt;/span&gt; De la frange ruisselante de meuhmouth qui n’a pas froid aux yeux
+&lt;br /&gt;&lt;/p&gt;
+'>
+    <img src="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249340.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p><span style="background-color: gold; border-radius: 8px; padding: 0 8px;">Gudrun :</span> De la frange ruisselante de meuhmouth qui n’a pas froid aux yeux
+<br></p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249341.jpg" data-caption='
+&lt;p&gt;&lt;span style="background-color: gold; border-radius: 8px; padding: 0 8px;"&gt;Gudrun :&lt;/span&gt; Du poil dru de voltigeur roux
+&lt;br /&gt;&lt;/p&gt;
+'>
+    <img src="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249341.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p><span style="background-color: gold; border-radius: 8px; padding: 0 8px;">Gudrun :</span> Du poil dru de voltigeur roux
+<br></p>
+</figcaption>
+</figure>
+
+<p>Au château de Bernstein, je fais la connaissance de 7 bénévoles qui s’occupent de la restauration des ruines. Les compères m’invitent à déjeuner en leur compagnie à l’abri de la pluie. Les discussions avec un fort accent alsacien accompagnent le repas, même quelques phrases en alsacien se glissent dans les échanges</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249342.jpg" data-caption="&lt;p&gt;Leurs histoires drôles ramènent même de la clarté pour l’après-midi !&lt;/p&gt;
+">
+    <img src="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249342.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Leurs histoires drôles ramènent même de la clarté pour l’après-midi !</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249343.jpg" data-caption="&lt;p&gt;Mes déambulations m’emmènent du côté de la tour des sorcières de Châtenois, qui a servi de cachot aux individus accusés de pratiquer la magie&lt;/p&gt;
+">
+    <img src="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249343.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Mes déambulations m’emmènent du côté de la tour des sorcières de Châtenois, qui a servi de cachot aux individus accusés de pratiquer la magie</p>
+</figcaption>
+</figure>
+
+<p>Je pense à toutes ces personnes exceptionnelles qui ont péri au bûcher pour des prétextes complètement absurdes</p>
+
+<blockquote>
+  <p><ruby><rb>Digs ne lisantim ne licia</rb><rt>Qu’il ne puisse y avoir de sorcière par l’écriture</rt></ruby><br>
+<ruby><rb>Ne rodatim biont utu semnanom sagitiont</rb><rt>De sorcière par le fil, de sorcière donneuse</rt></ruby><br>
+<ruby><rb>Seuerim lissatim licia</rb><rt>Parmi ces femmes, qui sollicitent Severa,</rt></ruby><br>
+<ruby><rb>Tim anandognam acolut</rb><rt>La sorcière par l’écriture,</rt></ruby><br>
+<ruby><rb>Utanit andognam da bocca diomine</rb><rt>La sorcière par le fil, l’étrangère</rt></ruby><br></p>
+</blockquote>
+
+<blockquote>
+  <p><ruby><rb>Inside bnanom inside brictom</rb><rt>Envoie le charme de ces femmes</rt></ruby><br>
+<ruby><rb>In eainom anuana sanander</rb><rt>Contre leurs noms [qui sont] ci-dessous</rt></ruby><br></p>
+</blockquote>
+
+<blockquote>
+  <p>Eluveitie <cite><ruby><rb>Brictom</rb><rt>Charme</rt></ruby></cite></p>
+</blockquote>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249344.jpg" data-caption='
+&lt;p&gt;&lt;span style="background-color: gold; border-radius: 8px; padding: 0 8px;"&gt;Gudrun :&lt;/span&gt; Des aiguilles émeraude de mélèze imputrescible
+&lt;br /&gt;&lt;/p&gt;
+'>
+    <img src="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249344.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p><span style="background-color: gold; border-radius: 8px; padding: 0 8px;">Gudrun :</span> Des aiguilles émeraude de mélèze imputrescible
+<br></p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249345.jpg" data-caption='
+&lt;p&gt;&lt;span style="background-color: gold; border-radius: 8px; padding: 0 8px;"&gt;Gudrun :&lt;/span&gt; De la queue de reptile furtif, prête à être remplacée
+&lt;br /&gt;&lt;/p&gt;
+'>
+    <img src="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249345.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p><span style="background-color: gold; border-radius: 8px; padding: 0 8px;">Gudrun :</span> De la queue de reptile furtif, prête à être remplacée
+<br></p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249346.jpg" data-caption="&lt;p&gt;Le printemps se réveille enfin, quel régal que de fouler l’herbe sèche pieds nus et de déjeuner sous les cerisiers en fleur !&lt;/p&gt;
+">
+    <img src="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249346.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Le printemps se réveille enfin, quel régal que de fouler l’herbe sèche pieds nus et de déjeuner sous les cerisiers en fleur !</p>
+</figcaption>
+</figure>
+
+<p>Un randonneur vient partager avec moi sa joie de gambader dans les forêts alsaciennes sous de tels auspices. Il connaît bien le coin et me suggère même de multiples possibilités pour continuer ma route</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249347.jpg" data-caption='
+&lt;p&gt;&lt;span style="background-color: gold; border-radius: 8px; padding: 0 8px;"&gt;Gudrun :&lt;/span&gt; Du duvet soyeux de cigogne porte-bonheur
+&lt;br /&gt;&lt;/p&gt;
+'>
+    <img src="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249347.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p><span style="background-color: gold; border-radius: 8px; padding: 0 8px;">Gudrun :</span> Du duvet soyeux de cigogne porte-bonheur
+<br></p>
+</figcaption>
+</figure>
+
+<p>Ma cueillette d’ingrédients me prend tout de même beaucoup d’énergie, je rejoins la civilisation pour faire le plein de victuailles impies</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249348.jpg" data-caption="&lt;p&gt;À Ribeau c’est beau la vie !&lt;/p&gt;
+">
+    <img src="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249348.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>À Ribeau c’est beau la vie !</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249349.jpg" data-caption="&lt;p&gt;Je petit-déjeune avec les cigognes qui profitent du terrain de sport fraîchement tondu pour cueillir becquetance&lt;/p&gt;
+">
+    <img src="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249349.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Je petit-déjeune avec les cigognes qui profitent du terrain de sport fraîchement tondu pour cueillir becquetance</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249350.jpg" data-caption='
+&lt;p&gt;&lt;span style="background-color: gold; border-radius: 8px; padding: 0 8px;"&gt;Gudrun :&lt;/span&gt; Du venin délicat de batracien indolent
+&lt;br /&gt;&lt;/p&gt;
+'>
+    <img src="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249350.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p><span style="background-color: gold; border-radius: 8px; padding: 0 8px;">Gudrun :</span> Du venin délicat de batracien indolent
+<br></p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249351.jpg" data-caption='
+&lt;p&gt;&lt;span style="background-color: gold; border-radius: 8px; padding: 0 8px;"&gt;Gudrun :&lt;/span&gt; Des écailles humides de triton camouflé
+&lt;br /&gt;&lt;/p&gt;
+'>
+    <img src="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249351.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p><span style="background-color: gold; border-radius: 8px; padding: 0 8px;">Gudrun :</span> Des écailles humides de triton camouflé
+<br></p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249352.jpg" data-caption='
+&lt;p&gt;&lt;span style="background-color: gold; border-radius: 8px; padding: 0 8px;"&gt;Gudrun :&lt;/span&gt; Des spores rubis de polypore vénéneux
+&lt;br /&gt;&lt;/p&gt;
+'>
+    <img src="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249352.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p><span style="background-color: gold; border-radius: 8px; padding: 0 8px;">Gudrun :</span> Des spores rubis de polypore vénéneux
+<br></p>
+</figcaption>
+</figure>
+
+<p>Je tente une nuitée dans le minuscule abri Saint-Hubert, mais me fais griller de quelques minutes. Je m’installe à proximité et reviens dîner en terrasse ensoleillée avec Agathe et Tugdual, 2 adelphes scouts 1 jour, scouts toujours, qui n’ont aucun problème pour lire une carte topographique. Les adeptes des transports en commun et du trek à l’arrache m’offrent une pomme qui fait rudement plaisir à mes papilles</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249353.jpg" data-caption="&lt;p&gt;Les vestiges alentours remémorent les oscillations de la ligne de front de la Grande Guerre de part et d’autre de la crête&lt;/p&gt;
+">
+    <img src="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249353.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Les vestiges alentours remémorent les oscillations de la ligne de front de la Grande Guerre de part et d’autre de la crête</p>
+</figcaption>
+</figure>
+
+<p>À la tourbière du Faing, mes guiboles pratiquent le trampoline sur un moelleux au chocolat pendant que mes rétines profitent du panorama sur les lacs en contrebas</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249354.jpg" data-caption="&lt;p&gt;Pour la nuit suivante, une plage privée m’offre une halte paisible&lt;/p&gt;
+">
+    <img src="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249354.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Pour la nuit suivante, une plage privée m’offre une halte paisible</p>
+</figcaption>
+</figure>
+
+<p>Alors que les abords du lac s’assombrissent, les chauve-souris se donnent en spectacle dans un ballet baroque, sous l’orchestration d’une bergeronnette grise battant le tempo de sa queue</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249355.jpg" data-caption='
+&lt;p&gt;&lt;span style="background-color: gold; border-radius: 8px; padding: 0 8px;"&gt;Gudrun :&lt;/span&gt; Du pollen sirupeux de radieux narcisses
+&lt;br /&gt;&lt;/p&gt;
+'>
+    <img src="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249355.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p><span style="background-color: gold; border-radius: 8px; padding: 0 8px;">Gudrun :</span> Du pollen sirupeux de radieux narcisses
+<br></p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249356.jpg" data-caption="
+&lt;p&gt;Pendant que les caresses des sylphes font valser et frémir les ondines du lac de l’Altenweiher, je remonte vers le chemin des crêtes, où les grondements automobiles accompagneront mes tympans toute la journée&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;On quitte la grille, l’aiguille des compteurs, à coups d’accélérateurs&lt;br /&gt;
+S’hérisse et vrombissent les moteurs, d’un ronron prédateur&lt;br /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;La Ruda Salska &lt;cite&gt;Indianapolis&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+">
+    <img src="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249356.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p>Pendant que les caresses des sylphes font valser et frémir les ondines du lac de l’Altenweiher, je remonte vers le chemin des crêtes, où les grondements automobiles accompagneront mes tympans toute la journée</p>
+
+<blockquote>
+  <p>On quitte la grille, l’aiguille des compteurs, à coups d’accélérateurs<br>
+S’hérisse et vrombissent les moteurs, d’un ronron prédateur<br></p>
+</blockquote>
+
+<blockquote>
+  <p>La Ruda Salska <cite>Indianapolis</cite></p>
+</blockquote>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249357.jpg" data-caption='
+&lt;p&gt;&lt;span style="background-color: gold; border-radius: 8px; padding: 0 8px;"&gt;Gudrun :&lt;/span&gt; De revigorants cristaux célestes assénés par rafales
+&lt;br /&gt;&lt;/p&gt;
+'>
+    <img src="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249357.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p><span style="background-color: gold; border-radius: 8px; padding: 0 8px;">Gudrun :</span> De revigorants cristaux célestes assénés par rafales
+<br></p>
+</figcaption>
+</figure>
+
+<p>Il semblerait que les matous détestent la pluie, les ronronnements des moteurs de la route des crêtes se taisent sous la neige devenue crachin</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249358.jpg" data-caption="&lt;p&gt;Les ruines du château de Freundstein, ouvert aux 4 vents, m’hébergent provisoirement pour une collation engloutie fissa&lt;/p&gt;
+">
+    <img src="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249358.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Les ruines du château de Freundstein, ouvert aux 4 vents, m’hébergent provisoirement pour une collation engloutie fissa</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249359.jpg" data-caption='
+&lt;p&gt;&lt;span style="background-color: gold; border-radius: 8px; padding: 0 8px;"&gt;Gudrun :&lt;/span&gt; De la bave visqueuse de limace lambinante
+&lt;br /&gt;&lt;/p&gt;
+'>
+    <img src="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249359.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p><span style="background-color: gold; border-radius: 8px; padding: 0 8px;">Gudrun :</span> De la bave visqueuse de limace lambinante
+<br></p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249360.jpg" data-caption='
+&lt;p&gt;&lt;span style="background-color: gold; border-radius: 8px; padding: 0 8px;"&gt;Gudrun :&lt;/span&gt; De la toison satinée de chamois farouche
+&lt;br /&gt;&lt;/p&gt;
+'>
+    <img src="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249360.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p><span style="background-color: gold; border-radius: 8px; padding: 0 8px;">Gudrun :</span> De la toison satinée de chamois farouche
+<br></p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249361.jpg" data-caption='
+&lt;p&gt;&lt;span style="background-color: gold; border-radius: 8px; padding: 0 8px;"&gt;Gudrun :&lt;/span&gt; Du pigment végétal pour que le &lt;em&gt;charme&lt;/em&gt; opère
+&lt;br /&gt;&lt;/p&gt;
+'>
+    <img src="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249361.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p><span style="background-color: gold; border-radius: 8px; padding: 0 8px;">Gudrun :</span> Du pigment végétal pour que le <em>charme</em> opère
+<br></p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249362.jpg" data-caption="&lt;p&gt;Pupilles dilatées sur l’horizon, je sens l’œil de la sorcière guetter à distance ma récolte d’ingrédients&lt;/p&gt;
+">
+    <img src="/assets/images/Vosges/J4-J5-J6-J7-J8-J9-J10/29b446e7-84d1-493f-8496-b4322f249362.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Pupilles dilatées sur l’horizon, je sens l’œil de la sorcière guetter à distance ma récolte d’ingrédients</p>
+</figcaption>
+</figure>
+
+<div id="my-one-and-only-map" style="height: 400px;"></div>
+<p></p>
+<script>
+  if (typeof widgets == 'undefined') { widgets = { } }
+  widgets['my-one-and-only-map'] = { layers: { }, track: { }, map: { } }
+
+  for ([i, alias] of 'TF,OTM,OSM,Ortho'.split(',').entries()) {
+    if (alias == 'TF')    current_layer = widgets['my-one-and-only-map'].layers['Thunderforest'] =        L.tileLayer.provider('Thunderforest.Landscape', { apikey: 'aa6d138c951e413cae47373621fa6464' })
+    if (alias == 'OTM')   current_layer = widgets['my-one-and-only-map'].layers['OpenTopoMap'] =          L.tileLayer.provider('OpenTopoMap')
+    if (alias == 'OSM')   current_layer = widgets['my-one-and-only-map'].layers['OpenStreetMap'] =        L.tileLayer.provider('OpenStreetMap')
+    if (alias == 'Ortho') current_layer = widgets['my-one-and-only-map'].layers['Orthophoto'] =           L.tileLayer.provider('GeoportailFrance.orthos')
+    if (alias == 'OSMFR') current_layer = widgets['my-one-and-only-map'].layers['OpenStreetMap France'] = L.tileLayer.provider('OpenStreetMap.France')
+    if (i == 0) widgets['my-one-and-only-map'].map = L.map('my-one-and-only-map', { layers: [ current_layer ] })
+  }
+
+  if ('' == 'custom-start-and-end-points') {
+    marker_options = {
+      wptIcons: DEFAULT_MARKER_OPTIONS.wptIcons
+    }
+    marker_options.wptIcons['depart']  = DEFAULT_MARKER_OPTIONS.startIcon
+    marker_options.wptIcons['arrivee'] = DEFAULT_MARKER_OPTIONS.endIcon
+  } else {
+    marker_options = DEFAULT_MARKER_OPTIONS
+  }
+  widgets['my-one-and-only-map'].track = new L.GPX('/assets/tracks/Vosges/J4-J5-J6-J7-J8-J9-J10.gpx', { async: true, marker_options: marker_options })
+  if (true) {
+    initialize_map = function(e) { widgets['my-one-and-only-map'].map.fitBounds(e.target.getBounds()) }
+  } else {
+    initialize_map = function(e) { widgets['my-one-and-only-map'].map.setView(e.target.getBounds().getCenter(), 12) }
+  }
+  widgets['my-one-and-only-map'].track.on('loaded', initialize_map)
+
+  widgets['my-one-and-only-map'].map.addLayer(widgets['my-one-and-only-map'].track)
+  L.control.scale().addTo(widgets['my-one-and-only-map'].map)
+  L.control.layers(widgets['my-one-and-only-map'].layers).addTo(widgets['my-one-and-only-map'].map)
+  widgets['my-one-and-only-map'].map.addControl(new L.control.fullscreen())
+</script>
+
+<p>Détails d’étapes :</p>
+<ul>
+  <li>7 étapes</li>
+  <li>Bruine, belles éclaircies, soleil, neige <img class="emoji" title=":cloud_with_rain:" alt=":cloud_with_rain:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f327.png" height="20" width="20"> <img class="emoji" title=":sun_behind_small_cloud:" alt=":sun_behind_small_cloud:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f324.png" height="20" width="20"> <img class="emoji" title=":sunny:" alt=":sunny:" src="https://github.githubassets.com/images/icons/emoji/unicode/2600.png" height="20" width="20"> <img class="emoji" title=":snowflake:" alt=":snowflake:" src="https://github.githubassets.com/images/icons/emoji/unicode/2744.png" height="20" width="20">
+</li>
+  <li>162 km</li>
+  <li>+5550 m</li>
+  <li>-6200 m</li>
+</ul>
+
+        
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+    
+
+
+<p>
+<!-- TODO: avoid inline styles please!-->
+</p>
+<table style="display: table; table-layout: fixed;">
+  <tr>
+    <td style="border-bottom: none; width: 50%;"><a href="/Vosges/J1-J2-J3/" style="width: 100%;" class="btn btn--primary ">‹ Page précédente</a></td>
+    <td style="border-bottom: none; width: 50%;"><a href="/Vosges/J11-J12-J13/" style="width: 100%;" class="btn btn--primary ">Page suivante ›</a></td>
+  </tr>
+</table>
+
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-copyright">© 2025 Le Gros Mickey. Propulsé par <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

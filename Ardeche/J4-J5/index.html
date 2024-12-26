@@ -1,0 +1,533 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="fr" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Le châtiment - Les aventures du Gros Mickey</title>
+<meta name="description" content="">
+
+
+  <meta name="author" content="Le Gros Mickey">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Les aventures du Gros Mickey">
+<meta property="og:title" content="Le châtiment">
+<meta property="og:url" content="/Ardeche/J4-J5/">
+
+
+  <meta property="og:description" content="">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="/Ardeche/J4-J5/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Le Gros Mickey",
+      "url": "/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <!-- https://github.com/fancyapps/fancybox -->
+    <script src="/assets/js/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/assets/js/jquery-fancybox/3.5.6/jquery.fancybox.min.css"/>
+    <script src="/assets/js/jquery-fancybox/3.5.6/jquery.fancybox.min.js"></script>
+    <script>
+      $.fancybox.defaults.animationEffect = "zoom";
+      $.fancybox.defaults.transitionEffect = "tube";
+      $.fancybox.defaults.buttons = [ "fullScreen", "close" ];
+    </script>
+
+    
+      <!-- https://github.com/Leaflet/Leaflet -->
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+      <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+      <!-- https://github.com/mpetazzoni/leaflet-gpx -->
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.4.0/gpx.min.js"></script> -->
+      <script src="/assets/js/leaflet-gpx/1.4.0/gpx-custom.min.js"></script>
+      <!-- https://github.com/elfalem/Leaflet.curve -->
+      <script src="https://cdn.jsdelivr.net/npm/leaflet-curve@1.0.0/leaflet.curve.min.js" integrity="sha384-NGXMSwSy7xysMCI1I+AjcNggRki+cUVXxqBnMX/nxCD5a/lDebdBH7Qqm63t4zpU" crossorigin="anonymous"></script>
+      <!-- https://github.com/leaflet-extras/leaflet-providers -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/1.9.1/leaflet-providers.min.js" integrity="sha384-VXljvKBDJTJymzdt6ZCMeIKzB66kkZJpSpgPZOb8w19sMwJj+e2D3EFeTnINldBL" crossorigin="anonymous"></script>
+      <!-- https://github.com/Leaflet/Leaflet.fullscreen -->
+      <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+      <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+      <!-- https://github.com/FortAwesome/Font-Awesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <!-- https://github.com/lvoogdt/Leaflet.awesome-markers -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" integrity="sha384-AHhmp36MxTYxqK8q9BF7ifcAjDEpcCT+OOmZrBb8vBP6At1I/htDyRK/M8wgzuqx" crossorigin="anonymous">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js" integrity="sha384-e3K/MgD3PfLJJFhUTg4y1zJciOSfdvRZpcgb0IBjxmbvyyyZuuQTKvs3x27hZpLr" crossorigin="anonymous"></script>
+      <!-- set default marker icons -->
+      <script>
+        L.AwesomeMarkers.Icon.prototype.options.prefix = 'fa';
+        const DEFAULT_MARKER_OPTIONS = {
+          wptIcons: {
+            '':         new L.AwesomeMarkers.icon({ icon: 'circle',         markerColor: 'blue'      }),
+            'tente':    new L.AwesomeMarkers.icon({ icon: 'campground',     markerColor: 'black'     }),
+            'logement': new L.AwesomeMarkers.icon({ icon: 'bed',            markerColor: 'black'     }),
+            'train':    new L.AwesomeMarkers.icon({ icon: 'train',          markerColor: 'darkgreen' }),
+            'bus':    new L.AwesomeMarkers.icon({ icon: 'bus',            markerColor: 'cadetblue' })
+          },
+          startIcon:    new L.AwesomeMarkers.icon({ icon: 'flag',           markerColor: 'red'       }),
+          endIcon:      new L.AwesomeMarkers.icon({ icon: 'flag-checkered', markerColor: 'green'     })
+        }
+      </script>
+    
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Les aventures du Gros Mickey
+          
+        </a>
+        <ul class="visible-links">
+<li class="masthead__menu-item">
+              <a href="/treks/">Treks</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/voyages/">Voyages</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/divers/">Divers</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/citations/">Citations</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/a-propos/">À propos</a>
+            </li>
+</ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox">
+  <label for="ac-toc">Menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <span class="nav__sub-title">Dans la burle des Monts d'Ardèche</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/Ardeche/J1-J2-J3/">L'égo</a></li>
+          
+            <li><a href="/Ardeche/J4-J5/" class="active">Le châtiment</a></li>
+          
+            <li><a href="/Ardeche/J7-J8-J9/">Le renouveau</a></li>
+          
+            <li><a href="/Ardeche/epilogue/">Épilogue</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Le châtiment">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="/Ardeche/J4-J5/" class="u-url" itemprop="url">Le châtiment
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <p>Après cette nuit vivifiante, courte et hachée, j’étanche ma soif des icebergs présents dans mes réserves d’eau et tente de plier mes vêtements mis à sécher, plus rigides que l’acier</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Ardeche/J4-J5/3af54f96-08b7-470a-91aa-c9f331e2d020.jpg" data-caption="
+&lt;p&gt;À l’extérieur, Morana, qui m’a rappelé toute la nuit qu’elle était la divinité de l’hiver et de la mort, a laissé son haleine givrée dans l’herbe, jusqu’à la rendre blanche et hirsute&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;ruby&gt;&lt;rb&gt;Белая зима, ой, пришла да не спросила&lt;/rb&gt;&lt;rt&gt;Belaya zima, oy, prishla da ne sprosila&lt;/rt&gt;&lt;rtc&gt;&lt;rt&gt;Ô hiver blanc, sans crier gare tu es arrivé&lt;/rt&gt;&lt;/rtc&gt;&lt;/ruby&gt;&lt;br /&gt;
+&lt;ruby&gt;&lt;rb&gt;Лютая пришла, серебром снегов укрыла&lt;/rb&gt;&lt;rt&gt;Lyutaya prishla, serebrom snegov ukryla&lt;/rt&gt;&lt;rtc&gt;&lt;rt&gt;Féroce tu es arrivé, d’une neige argentée tu as [tout] dissimulé&lt;/rt&gt;&lt;/rtc&gt;&lt;/ruby&gt;&lt;br /&gt;
+&lt;ruby&gt;&lt;rb&gt;Превратила в лёд мою душу и сердечко&lt;/rb&gt;&lt;rt&gt;Prevratila v lyod moyu dushu i serdechko&lt;/rt&gt;&lt;rtc&gt;&lt;rt&gt;En glace tu as transformé mon âme et mon cœur&lt;/rt&gt;&lt;/rtc&gt;&lt;/ruby&gt;&lt;br /&gt;
+&lt;ruby&gt;&lt;rb&gt;Замерзшими слезами покрыла речку […]&lt;/rb&gt;&lt;rt&gt;Zamerzshimi slezami pokryla rechku […]&lt;/rt&gt;&lt;rtc&gt;&lt;rt&gt;De larmes gelées tu as recouvert la rivière […]&lt;/rt&gt;&lt;/rtc&gt;&lt;/ruby&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;ruby&gt;&lt;rb&gt;Лютая зима забрала в объятия Мары&lt;/rb&gt;&lt;rt&gt;Lyutaya zima zabrala v ob’yatiya Mary&lt;/rt&gt;&lt;rtc&gt;&lt;rt&gt;Féroce hiver, vers l’étreinte de Morana tu m’as mené&lt;/rt&gt;&lt;/rtc&gt;&lt;/ruby&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;ruby&gt;&lt;rb&gt;Грай&lt;/rb&gt;&lt;rtc&gt;&lt;rt&gt;Grai&lt;/rt&gt;&lt;/rtc&gt;&lt;/ruby&gt; &lt;cite&gt;&lt;ruby&gt;&lt;rb&gt;В объятиях Мары&lt;/rb&gt;&lt;rt&gt;V ob’yatiyakh Mary&lt;/rt&gt;&lt;rtc&gt;&lt;rt&gt;Dans l’étreinte de Morana&lt;/rt&gt;&lt;/rtc&gt;&lt;/ruby&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+">
+    <img src="/assets/images/Ardeche/J4-J5/3af54f96-08b7-470a-91aa-c9f331e2d020.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p>À l’extérieur, Morana, qui m’a rappelé toute la nuit qu’elle était la divinité de l’hiver et de la mort, a laissé son haleine givrée dans l’herbe, jusqu’à la rendre blanche et hirsute</p>
+
+<blockquote>
+  <p><ruby><rb>Белая зима, ой, пришла да не спросила</rb><rt>Belaya zima, oy, prishla da ne sprosila</rt><rtc><rt>Ô hiver blanc, sans crier gare tu es arrivé</rt></rtc></ruby><br>
+<ruby><rb>Лютая пришла, серебром снегов укрыла</rb><rt>Lyutaya prishla, serebrom snegov ukryla</rt><rtc><rt>Féroce tu es arrivé, d’une neige argentée tu as [tout] dissimulé</rt></rtc></ruby><br>
+<ruby><rb>Превратила в лёд мою душу и сердечко</rb><rt>Prevratila v lyod moyu dushu i serdechko</rt><rtc><rt>En glace tu as transformé mon âme et mon cœur</rt></rtc></ruby><br>
+<ruby><rb>Замерзшими слезами покрыла речку […]</rb><rt>Zamerzshimi slezami pokryla rechku […]</rt><rtc><rt>De larmes gelées tu as recouvert la rivière […]</rt></rtc></ruby><br></p>
+</blockquote>
+
+<blockquote>
+  <p><ruby><rb>Лютая зима забрала в объятия Мары</rb><rt>Lyutaya zima zabrala v ob’yatiya Mary</rt><rtc><rt>Féroce hiver, vers l’étreinte de Morana tu m’as mené</rt></rtc></ruby><br></p>
+</blockquote>
+
+<blockquote>
+  <p><ruby><rb>Грай</rb><rtc><rt>Grai</rt></rtc></ruby> <cite><ruby><rb>В объятиях Мары</rb><rt>V ob’yatiyakh Mary</rt><rtc><rt>Dans l’étreinte de Morana</rt></rtc></ruby></cite></p>
+</blockquote>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Ardeche/J4-J5/3af54f96-08b7-470a-91aa-c9f331e2d021.jpg" data-caption="&lt;p&gt;Les hêtres en berne après leur effeuillage burlesque d’hiver laissent traîner leurs froufrous passés de mode dans un bain où je perds pied&lt;/p&gt;
+">
+    <img src="/assets/images/Ardeche/J4-J5/3af54f96-08b7-470a-91aa-c9f331e2d021.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Les hêtres en berne après leur effeuillage burlesque d’hiver laissent traîner leurs froufrous passés de mode dans un bain où je perds pied</p>
+</figcaption>
+</figure>
+
+<p>J’avance avec difficulté aujourd’hui, la nuit peu reposante m’a doté d’une démarche zombiesque digne des marcheurs blancs du nord de Westeros</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Ardeche/J4-J5/3af54f96-08b7-470a-91aa-c9f331e2d022.jpg" data-caption="&lt;p&gt;Mon estomac tout barbouillé m’impose même de compléter ma nuit d’une sieste au creux des terrasses de schiste dédiées aux châtaigniers, à l’abri des potentielles averses annoncées&lt;/p&gt;
+">
+    <img src="/assets/images/Ardeche/J4-J5/3af54f96-08b7-470a-91aa-c9f331e2d022.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Mon estomac tout barbouillé m’impose même de compléter ma nuit d’une sieste au creux des terrasses de schiste dédiées aux châtaigniers, à l’abri des potentielles averses annoncées</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Ardeche/J4-J5/3af54f96-08b7-470a-91aa-c9f331e2d023.jpg" data-caption="&lt;p&gt;Les encouragements de la Schtroumpfette me ravigotent l’esprit&lt;/p&gt;
+">
+    <img src="/assets/images/Ardeche/J4-J5/3af54f96-08b7-470a-91aa-c9f331e2d023.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Les encouragements de la Schtroumpfette me ravigotent l’esprit</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Ardeche/J4-J5/3af54f96-08b7-470a-91aa-c9f331e2d024.jpg" data-caption="&lt;p&gt;La voie romaine serpente au milieu des châtaigneraies (ils sont fous ces romains à chercher la castagne) et me mène à Burzet, niché dans le giron de la Bourges&lt;/p&gt;
+">
+    <img src="/assets/images/Ardeche/J4-J5/3af54f96-08b7-470a-91aa-c9f331e2d024.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>La voie romaine serpente au milieu des châtaigneraies (ils sont fous ces romains à chercher la castagne) et me mène à Burzet, niché dans le giron de la Bourges</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Ardeche/J4-J5/3af54f96-08b7-470a-91aa-c9f331e2d025.jpg" data-caption="&lt;p&gt;Je pioche à peine dans mon ravitaillement et, tel le fakir, je pousse l’ascétisme en fermant l’œil sur un lit de bogues pointues, bien avant le déclin du jour, pour une abyssale nuit cette fois-ci&lt;/p&gt;
+">
+    <img src="/assets/images/Ardeche/J4-J5/3af54f96-08b7-470a-91aa-c9f331e2d025.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Je pioche à peine dans mon ravitaillement et, tel le fakir, je pousse l’ascétisme en fermant l’œil sur un lit de bogues pointues, bien avant le déclin du jour, pour une abyssale nuit cette fois-ci</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Ardeche/J4-J5/3af54f96-08b7-470a-91aa-c9f331e2d026.jpg" data-caption="&lt;p&gt;Mes pas se sentent suffisamment en forme pour grimper à la Gravène, quelle surprise que d’observer le métissage des scories et du parterre de châtaignes !&lt;/p&gt;
+">
+    <img src="/assets/images/Ardeche/J4-J5/3af54f96-08b7-470a-91aa-c9f331e2d026.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Mes pas se sentent suffisamment en forme pour grimper à la Gravène, quelle surprise que d’observer le métissage des scories et du parterre de châtaignes !</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Ardeche/J4-J5/3af54f96-08b7-470a-91aa-c9f331e2d027.jpg" data-caption="&lt;p&gt;Mon esprit, encore un peu fébrile, divague et en vient à me pomponner à l’aide les accessoires à portée de main pour me requinquer&lt;/p&gt;
+">
+    <img src="/assets/images/Ardeche/J4-J5/3af54f96-08b7-470a-91aa-c9f331e2d027.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Mon esprit, encore un peu fébrile, divague et en vient à me pomponner à l’aide les accessoires à portée de main pour me requinquer</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Ardeche/J4-J5/3af54f96-08b7-470a-91aa-c9f331e2d028.jpg" data-caption="&lt;p&gt;Depuis le rocher d’Autureyre, je contemple l’horizon froncer les sourcils et m’imprègne du pianotage des giboulées dans les feuilles mortes&lt;/p&gt;
+">
+    <img src="/assets/images/Ardeche/J4-J5/3af54f96-08b7-470a-91aa-c9f331e2d028.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Depuis le rocher d’Autureyre, je contemple l’horizon froncer les sourcils et m’imprègne du pianotage des giboulées dans les feuilles mortes</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Ardeche/J4-J5/3af54f96-08b7-470a-91aa-c9f331e2d029.jpg" data-caption="&lt;p&gt;Le &lt;em&gt;dies iræ&lt;/em&gt; céleste compte s’éterniser, je préfère arrêter la mule à Meyras, dans un appartement douillet&lt;/p&gt;
+">
+    <img src="/assets/images/Ardeche/J4-J5/3af54f96-08b7-470a-91aa-c9f331e2d029.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Le <em>dies iræ</em> céleste compte s’éterniser, je préfère arrêter la mule à Meyras, dans un appartement douillet</p>
+</figcaption>
+</figure>
+
+<div id="my-one-and-only-map" style="height: 400px;"></div>
+<p></p>
+<script>
+  if (typeof widgets == 'undefined') { widgets = { } }
+  widgets['my-one-and-only-map'] = { layers: { }, track: { }, map: { } }
+
+  for ([i, alias] of 'TF,OTM,OSM,Ortho'.split(',').entries()) {
+    if (alias == 'TF')    current_layer = widgets['my-one-and-only-map'].layers['Thunderforest'] =        L.tileLayer.provider('Thunderforest.Landscape', { apikey: 'aa6d138c951e413cae47373621fa6464' })
+    if (alias == 'OTM')   current_layer = widgets['my-one-and-only-map'].layers['OpenTopoMap'] =          L.tileLayer.provider('OpenTopoMap')
+    if (alias == 'OSM')   current_layer = widgets['my-one-and-only-map'].layers['OpenStreetMap'] =        L.tileLayer.provider('OpenStreetMap')
+    if (alias == 'Ortho') current_layer = widgets['my-one-and-only-map'].layers['Orthophoto'] =           L.tileLayer.provider('GeoportailFrance.orthos')
+    if (alias == 'OSMFR') current_layer = widgets['my-one-and-only-map'].layers['OpenStreetMap France'] = L.tileLayer.provider('OpenStreetMap.France')
+    if (i == 0) widgets['my-one-and-only-map'].map = L.map('my-one-and-only-map', { layers: [ current_layer ] })
+  }
+
+  if ('' == 'custom-start-and-end-points') {
+    marker_options = {
+      wptIcons: DEFAULT_MARKER_OPTIONS.wptIcons
+    }
+    marker_options.wptIcons['depart']  = DEFAULT_MARKER_OPTIONS.startIcon
+    marker_options.wptIcons['arrivee'] = DEFAULT_MARKER_OPTIONS.endIcon
+  } else {
+    marker_options = DEFAULT_MARKER_OPTIONS
+  }
+  widgets['my-one-and-only-map'].track = new L.GPX('/assets/tracks/Ardeche/J4-J5.gpx', { async: true, marker_options: marker_options })
+  if (true) {
+    initialize_map = function(e) { widgets['my-one-and-only-map'].map.fitBounds(e.target.getBounds()) }
+  } else {
+    initialize_map = function(e) { widgets['my-one-and-only-map'].map.setView(e.target.getBounds().getCenter(), 12) }
+  }
+  widgets['my-one-and-only-map'].track.on('loaded', initialize_map)
+
+  widgets['my-one-and-only-map'].map.addLayer(widgets['my-one-and-only-map'].track)
+  L.control.scale().addTo(widgets['my-one-and-only-map'].map)
+  L.control.layers(widgets['my-one-and-only-map'].layers).addTo(widgets['my-one-and-only-map'].map)
+  widgets['my-one-and-only-map'].map.addControl(new L.control.fullscreen())
+</script>
+
+<p>Détails d’étapes :</p>
+<ul>
+  <li>2 étapes</li>
+  <li>1 jour de repos</li>
+  <li>Rares éclaircies et giboulées <img class="emoji" title=":sun_behind_large_cloud:" alt=":sun_behind_large_cloud:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f325.png" height="20" width="20"> <img class="emoji" title=":sun_behind_rain_cloud:" alt=":sun_behind_rain_cloud:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f326.png" height="20" width="20">
+</li>
+  <li>33 km</li>
+  <li>+1100 m</li>
+  <li>-2150 m</li>
+</ul>
+
+        
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+    
+
+
+<p>
+<!-- TODO: avoid inline styles please!-->
+</p>
+<table style="display: table; table-layout: fixed;">
+  <tr>
+    <td style="border-bottom: none; width: 50%;"><a href="/Ardeche/J1-J2-J3/" style="width: 100%;" class="btn btn--primary ">‹ Page précédente</a></td>
+    <td style="border-bottom: none; width: 50%;"><a href="/Ardeche/J7-J8-J9/" style="width: 100%;" class="btn btn--primary ">Page suivante ›</a></td>
+  </tr>
+</table>
+
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-copyright">© 2025 Le Gros Mickey. Propulsé par <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

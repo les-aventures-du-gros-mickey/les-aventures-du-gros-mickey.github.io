@@ -1,0 +1,744 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="fr" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Le thym et le romarin - Les aventures du Gros Mickey</title>
+<meta name="description" content="">
+
+
+  <meta name="author" content="Le Gros Mickey">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Les aventures du Gros Mickey">
+<meta property="og:title" content="Le thym et le romarin">
+<meta property="og:url" content="/Alpes/J1-J2-J3-J4-J5-J6-J7/">
+
+
+  <meta property="og:description" content="">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="/Alpes/J1-J2-J3-J4-J5-J6-J7/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Le Gros Mickey",
+      "url": "/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <!-- https://github.com/fancyapps/fancybox -->
+    <script src="/assets/js/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/assets/js/jquery-fancybox/3.5.6/jquery.fancybox.min.css"/>
+    <script src="/assets/js/jquery-fancybox/3.5.6/jquery.fancybox.min.js"></script>
+    <script>
+      $.fancybox.defaults.animationEffect = "zoom";
+      $.fancybox.defaults.transitionEffect = "tube";
+      $.fancybox.defaults.buttons = [ "fullScreen", "close" ];
+    </script>
+
+    
+      <!-- https://github.com/Leaflet/Leaflet -->
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+      <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+      <!-- https://github.com/mpetazzoni/leaflet-gpx -->
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.4.0/gpx.min.js"></script> -->
+      <script src="/assets/js/leaflet-gpx/1.4.0/gpx-custom.min.js"></script>
+      <!-- https://github.com/elfalem/Leaflet.curve -->
+      <script src="https://cdn.jsdelivr.net/npm/leaflet-curve@1.0.0/leaflet.curve.min.js" integrity="sha384-NGXMSwSy7xysMCI1I+AjcNggRki+cUVXxqBnMX/nxCD5a/lDebdBH7Qqm63t4zpU" crossorigin="anonymous"></script>
+      <!-- https://github.com/leaflet-extras/leaflet-providers -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/1.9.1/leaflet-providers.min.js" integrity="sha384-VXljvKBDJTJymzdt6ZCMeIKzB66kkZJpSpgPZOb8w19sMwJj+e2D3EFeTnINldBL" crossorigin="anonymous"></script>
+      <!-- https://github.com/Leaflet/Leaflet.fullscreen -->
+      <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+      <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+      <!-- https://github.com/FortAwesome/Font-Awesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <!-- https://github.com/lvoogdt/Leaflet.awesome-markers -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" integrity="sha384-AHhmp36MxTYxqK8q9BF7ifcAjDEpcCT+OOmZrBb8vBP6At1I/htDyRK/M8wgzuqx" crossorigin="anonymous">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js" integrity="sha384-e3K/MgD3PfLJJFhUTg4y1zJciOSfdvRZpcgb0IBjxmbvyyyZuuQTKvs3x27hZpLr" crossorigin="anonymous"></script>
+      <!-- set default marker icons -->
+      <script>
+        L.AwesomeMarkers.Icon.prototype.options.prefix = 'fa';
+        const DEFAULT_MARKER_OPTIONS = {
+          wptIcons: {
+            '':         new L.AwesomeMarkers.icon({ icon: 'circle',         markerColor: 'blue'      }),
+            'tente':    new L.AwesomeMarkers.icon({ icon: 'campground',     markerColor: 'black'     }),
+            'logement': new L.AwesomeMarkers.icon({ icon: 'bed',            markerColor: 'black'     }),
+            'train':    new L.AwesomeMarkers.icon({ icon: 'train',          markerColor: 'darkgreen' }),
+            'bus':    new L.AwesomeMarkers.icon({ icon: 'bus',            markerColor: 'cadetblue' })
+          },
+          startIcon:    new L.AwesomeMarkers.icon({ icon: 'flag',           markerColor: 'red'       }),
+          endIcon:      new L.AwesomeMarkers.icon({ icon: 'flag-checkered', markerColor: 'green'     })
+        }
+      </script>
+    
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Les aventures du Gros Mickey
+          
+        </a>
+        <ul class="visible-links">
+<li class="masthead__menu-item">
+              <a href="/treks/">Treks</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/voyages/">Voyages</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/divers/">Divers</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/citations/">Citations</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/a-propos/">À propos</a>
+            </li>
+</ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox">
+  <label for="ac-toc">Menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <span class="nav__sub-title">Traversée saugrenue des Alpes</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/Alpes/J1-J2-J3-J4-J5-J6-J7/" class="active">Le thym et le romarin</a></li>
+          
+            <li><a href="/Alpes/J8-J9-J10-J11-J12-J13-14-15-J16/">Les eaux vives</a></li>
+          
+            <li><a href="/Alpes/J17-J18-J19-J20-J21-J22-J23-J24/">Les paillettes immaculées</a></li>
+          
+            <li><a href="/Alpes/J25-J26-J27-J28-J29-J30-J31-J32/">Les géants minéraux</a></li>
+          
+            <li><a href="/Alpes/faq/">FAQ</a></li>
+          
+            <li><a href="/Alpes/Jade-et-Saphir/">Les frasques de Jade et Saphir</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Le thym et le romarin">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="/Alpes/J1-J2-J3-J4-J5-J6-J7/" class="u-url" itemprop="url">Le thym et le romarin
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1433.jpg" data-caption="&lt;p&gt;Fraîchement catapulté dans la France méridionale, scintillent devant mes yeux bling-bling balnéaire et azur méditerranéen&lt;/p&gt;
+">
+    <img src="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1433.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Fraîchement catapulté dans la France méridionale, scintillent devant mes yeux bling-bling balnéaire et azur méditerranéen</p>
+</figcaption>
+</figure>
+
+<p>Tranchants avec la mode locale, mes oripeaux de randonneur clopinent sur la plage de galets en quête d’un coin pour petit-déjeuner. Je découvre alors stupéfait que la clandestinité s’est faufilée dans mon paquetage</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1434.jpg" data-caption="&lt;p&gt;Planqué·e·s dans mes affaires et affamé·e·s par leur voyage, Jade et Saphir bondissent engloutir mes vivres&lt;/p&gt;
+">
+    <img src="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1434.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Planqué·e·s dans mes affaires et affamé·e·s par leur voyage, Jade et Saphir bondissent engloutir mes vivres</p>
+</figcaption>
+</figure>
+
+<p>Allégé par mes potos morfales, je quitte l’ambiance littorale en leur compagnie pour une ascension urbaine puis pour un flanc à l’ombre d’une forêt éparse</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1435.jpg" data-caption="&lt;p&gt;Un faucon crécerelle pratiquant le vol du Saint-Esprit me guide vers les côteaux viticoles perchés&lt;/p&gt;
+">
+    <img src="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1435.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Un faucon crécerelle pratiquant le vol du Saint-Esprit me guide vers les côteaux viticoles perchés</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1436.jpg" data-caption="&lt;p&gt;Les flèches de mon parcours m’orientent en toute logique vers une terrasse d’archerie pour la nuitée&lt;/p&gt;
+">
+    <img src="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1436.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Les flèches de mon parcours m’orientent en toute logique vers une terrasse d’archerie pour la nuitée</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1437.jpg" data-caption="&lt;p&gt;Au petit matin, les méandres du Var agonisent en traversant l’hubris anthropique qui résonne en contrebas&lt;/p&gt;
+">
+    <img src="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1437.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Au petit matin, les méandres du Var agonisent en traversant l’hubris anthropique qui résonne en contrebas</p>
+</figcaption>
+</figure>
+
+<p>Féral, mon esprit s’extirpe de tout ce tintamarre à travers les senteurs de thym sauvage</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1438.jpg" data-caption="&lt;p&gt;D’ailleurs, mes 2 compères ne peuvent s’empêcher de butiner les fleurs de farigoulette&lt;/p&gt;
+">
+    <img src="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1438.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>D’ailleurs, mes 2 compères ne peuvent s’empêcher de butiner les fleurs de farigoulette</p>
+</figcaption>
+</figure>
+
+<p>Mes yeux s’égarent dans la verte ligne d’horizon, dissimulant les merveilles à venir, <em>j’aimerais l’atteindre, passer derrière, y célébrer ma déraison</em></p>
+
+<p>Une soudaine giboulée de glace céleste met fin à mes songes et m’invite à me délasser, pendant qu’elle pianote ses gammes</p>
+
+<p>Le lendemain, le vendeur de l’épicerie me livre mes fruits avec le constat météo de la nuit dernière : jusqu’à 5 cm de grêle et de neige dans la vallée voisine de mon bivouac</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1439.jpg" data-caption="&lt;p&gt;Effectivement, la blancheur resplendit, même en secteur forestier&lt;/p&gt;
+">
+    <img src="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1439.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Effectivement, la blancheur resplendit, même en secteur forestier</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1440.jpg" data-caption="&lt;p&gt;N’en déplaise à Saphir et Jade, qui s’offrent une session de ventriglisse&lt;/p&gt;
+">
+    <img src="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1440.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>N’en déplaise à Saphir et Jade, qui s’offrent une session de ventriglisse</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1441.jpg" data-caption="&lt;p&gt;Je mets un terme à une journée de montées et descentes sur une plage de l’Estéron, heureux comme un prince, &lt;em&gt;le bivouac est un luxe qui rend difficilement supportables, plus tard, les nuits dans les palaces&lt;/em&gt;&lt;/p&gt;
+">
+    <img src="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1441.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Je mets un terme à une journée de montées et descentes sur une plage de l’Estéron, heureux comme un prince, <em>le bivouac est un luxe qui rend difficilement supportables, plus tard, les nuits dans les palaces</em></p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1442.jpg" data-caption="&lt;p&gt;Mes pas matinaux contournent ceux d’un geôlier canin qui veille aux bêlements d’esclaves laitières&lt;/p&gt;
+">
+    <img src="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1442.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Mes pas matinaux contournent ceux d’un geôlier canin qui veille aux bêlements d’esclaves laitières</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1443.jpg" data-caption="&lt;p&gt;Les 2 chéloniens de leur côté s’enivrent nasalement du romarin alentour&lt;/p&gt;
+">
+    <img src="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1443.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Les 2 chéloniens de leur côté s’enivrent nasalement du romarin alentour</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1444.jpg" data-caption="&lt;p&gt;La porte royale d’Entrevaux accueille mes épaules de haut dignitaire&lt;/p&gt;
+">
+    <img src="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1444.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>La porte royale d’Entrevaux accueille mes épaules de haut dignitaire</p>
+</figcaption>
+</figure>
+
+<p>Provisions à sec et unique épicerie de la cité fortifiée close, j’entreprends un détour afin de remplir ma besace pour la suite de mon périple</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1445.jpg" data-caption="
+&lt;p&gt;Afin d’éviter de revenir sur mes pas après mes emplettes, je tente un sentier magique : il disparaît et apparaît à plusieurs reprises&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I want to live in fire&lt;br /&gt;
+With all the taste I desire&lt;br /&gt;
+It’s all good if you let me dive&lt;br /&gt;
+With some sharks on the ground&lt;br /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;You lose your routine&lt;br /&gt;
+You lose your routine&lt;br /&gt;
+You lose your routine&lt;br /&gt;
+‘Cause I found my path&lt;br /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Apocalyptica avec Sandra Nasic &lt;cite&gt;Path, Vol. 2&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+">
+    <img src="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1445.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p>Afin d’éviter de revenir sur mes pas après mes emplettes, je tente un sentier magique : il disparaît et apparaît à plusieurs reprises</p>
+
+<blockquote>
+  <p>I want to live in fire<br>
+With all the taste I desire<br>
+It’s all good if you let me dive<br>
+With some sharks on the ground<br></p>
+</blockquote>
+
+<blockquote>
+  <p>You lose your routine<br>
+You lose your routine<br>
+You lose your routine<br>
+‘Cause I found my path<br></p>
+</blockquote>
+
+<blockquote>
+  <p>Apocalyptica avec Sandra Nasic <cite>Path, Vol. 2</cite></p>
+</blockquote>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1446.jpg" data-caption="&lt;p&gt;Les 2 tortues jouent aux druides afin d’attirer les auspices favorables pour la suite du voyage&lt;/p&gt;
+">
+    <img src="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1446.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Les 2 tortues jouent aux druides afin d’attirer les auspices favorables pour la suite du voyage</p>
+</figcaption>
+</figure>
+
+<p>La montée caniculaire se poursuit jusqu’à la chapelle de Saint-Jean-du-Désert, lieu de pèlerinage ancien et isolé</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1447.jpg" data-caption="&lt;p&gt;Le corniche juchée au-dessus du ravin Saint-Jean m’expédie tout droit vers Annot&lt;/p&gt;
+">
+    <img src="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1447.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Le corniche juchée au-dessus du ravin Saint-Jean m’expédie tout droit vers Annot</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1448.jpg" data-caption='&lt;p&gt;Charmé, j’admire les &lt;a href="https://fr.wikipedia.org/wiki/Graphosome_ray%C3%A9"&gt;punaises arlequin&lt;/a&gt; dévorer leur souper sur mon chemin&lt;/p&gt;
+'>
+    <img src="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1448.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Charmé, j’admire les <a href="https://fr.wikipedia.org/wiki/Graphosome_ray%C3%A9">punaises arlequin</a> dévorer leur souper sur mon chemin</p>
+</figcaption>
+</figure>
+
+<p>Dans la bourgade, je croise Romain, qui revient d’une session de course en montagne. Très curieux, il mitraille ma caboche éreintée de questions à propos de mes treks</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1449.jpg" data-caption="&lt;p&gt;Dans la forêt du coin, poussent des champignons minéraux singuliers, taillés par une incessante érosion&lt;/p&gt;
+">
+    <img src="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1449.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Dans la forêt du coin, poussent des champignons minéraux singuliers, taillés par une incessante érosion</p>
+</figcaption>
+</figure>
+
+<p>Site prisé par les grimpeur·euse·s, j’ai manqué de peu une fête dédiée à la pratique du bloc qui s’y est déroulée</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1450.jpg" data-caption="&lt;p&gt;Ni une ni deux, les 2 garnements assaillent la roche pour perfectionner leurs rési et conti, avec &lt;em&gt;crash pad&lt;/em&gt; naturel de fougère pour la sécurité&lt;/p&gt;
+">
+    <img src="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1450.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Ni une ni deux, les 2 garnements assaillent la roche pour perfectionner leurs rési et conti, avec <em>crash pad</em> naturel de fougère pour la sécurité</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1451.jpg" data-caption="&lt;p&gt;Perché sur sa terrasse alluviale émaillée de genêts, Méailles domine la vallée de la Vaïre&lt;/p&gt;
+">
+    <img src="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1451.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Perché sur sa terrasse alluviale émaillée de genêts, Méailles domine la vallée de la Vaïre</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1452.jpg" data-caption='&lt;p&gt;Les &lt;a href="https://fr.wikipedia.org/wiki/Lacerta_bilineata"&gt;sauriens-schtroumpfs&lt;/a&gt; se dorent le gosier de bleu solaire&lt;/p&gt;
+'>
+    <img src="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1452.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Les <a href="https://fr.wikipedia.org/wiki/Lacerta_bilineata">sauriens-schtroumpfs</a> se dorent le gosier de bleu solaire</p>
+</figcaption>
+</figure>
+
+<p>Entravé par une propriété privée, mon rêve de m’endormir dorloté par la Vaïre s’évapore, Pierre-Joseph Proudhon lui se retourne dans sa tombe. Pour esquiver un demi-tour, j’accepte que les buis me lacèrent les bras. Je tombe sur un panneau sorti de nulle part, qui indique un sentier discret, absent de mes cartes</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1453.jpg" data-caption="&lt;p&gt;Dubitatif, je tente quand même le coup et finis par rallier la déconcertante halte de Peyresq, camouflée en fond de vallée&lt;/p&gt;
+">
+    <img src="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1453.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Dubitatif, je tente quand même le coup et finis par rallier la déconcertante halte de Peyresq, camouflée en fond de vallée</p>
+</figcaption>
+</figure>
+
+<p>Un pannonceau indique le village de Peyresq à 3 heures de marche, en montée, je me gondole à l’idée des quiproquos qu’il y a pu avoir avec cette halte</p>
+
+<p>Je dresse mon bivouac sur une zone moussue plus loin, à la confluence du Ray et de la Vaïre, abdomen empli d’une immense joie par la berceuse de clapotis</p>
+
+<p>En début de journée, mon enjambée croise celle de Julien, qui vient de Seyne, carapace chargée lui aussi. Il profite de quelques jours pour aller crapahuter, il ne sait pas encore trop jusqu’où. L’itinéraire qu’il a emprunté correspond peu ou prou à mes étapes futures et s’annonce a priori sans neige</p>
+
+<p>Je poursuis dans un univers féérique printanier où les rencontres fantastiques prolifèrent</p>
+
+<blockquote>
+  <p>Ce matin j’imagine un dessin sans étoiles<br>
+De toutes les couleurs, un dessin sans contours<br>
+Des jaunes, des verts, des blancs, je fais ce qui me plaît<br>
+Car c’est comme ça que j’imagine un monde parfait<br></p>
+</blockquote>
+
+<blockquote>
+  <p>Un oiseau, un enfant, une chèvre<br>
+Le bleu du ciel, un beau sourire du bout des lèvres<br>
+Un crocodile, une vache, du soleil<br>
+Et ce soir je m’endors au pays des merveilles <br></p>
+</blockquote>
+
+<blockquote>
+  <p>Ilona Mitrecey <cite>Un monde parfait</cite></p>
+</blockquote>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1454.jpg" data-caption='&lt;p&gt;Jade et Saphir imitent les &lt;a href="https://fr.wikipedia.org/wiki/Processionnaire_du_pin"&gt;chenilles processionnaires&lt;/a&gt;&lt;/p&gt;
+'>
+    <img src="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1454.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Jade et Saphir imitent les <a href="https://fr.wikipedia.org/wiki/Processionnaire_du_pin">chenilles processionnaires</a></p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1455.jpg" data-caption='&lt;p&gt;Une &lt;a href="https://fr.wikipedia.org/wiki/Belle-Dame_(papillon)"&gt;vanesse des chardons&lt;/a&gt; embrase mon cœur&lt;/p&gt;
+'>
+    <img src="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1455.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Une <a href="https://fr.wikipedia.org/wiki/Belle-Dame_(papillon)">vanesse des chardons</a> embrase mon cœur</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1456.jpg" data-caption='&lt;p&gt;Je brave les caresses affectueuses d’une &lt;a href="https://fr.wikipedia.org/wiki/Pseudopanthera_macularia"&gt;panthère&lt;/a&gt;&lt;/p&gt;
+'>
+    <img src="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1456.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Je brave les caresses affectueuses d’une <a href="https://fr.wikipedia.org/wiki/Pseudopanthera_macularia">panthère</a></p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1457.jpg" data-caption='&lt;p&gt;La minuscule vivacité des &lt;a href="https://fr.wikipedia.org/wiki/Troglodyte_mignon"&gt;troglodytes mignons&lt;/a&gt; m’enjaille jusqu’à mon lieu de bivouac&lt;/p&gt;
+'>
+    <img src="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1457.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>La minuscule vivacité des <a href="https://fr.wikipedia.org/wiki/Troglodyte_mignon">troglodytes mignons</a> m’enjaille jusqu’à mon lieu de bivouac</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1458.jpg" data-caption="&lt;p&gt;Une fois à proximité du lit du Verdon, ne me reste qu’à clore les paupières pour continuer de planer dans ce macrocosme angélique&lt;/p&gt;
+">
+    <img src="/assets/images/Alpes/J1-J2-J3-J4-J5-J6-J7/a1230551-f356-47f9-8288-ace1089e1458.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Une fois à proximité du lit du Verdon, ne me reste qu’à clore les paupières pour continuer de planer dans ce macrocosme angélique</p>
+</figcaption>
+</figure>
+
+<div id="my-one-and-only-map" style="height: 400px;"></div>
+<p></p>
+<script>
+  if (typeof widgets == 'undefined') { widgets = { } }
+  widgets['my-one-and-only-map'] = { layers: { }, track: { }, map: { } }
+
+  for ([i, alias] of 'TF,OTM,OSM,Ortho'.split(',').entries()) {
+    if (alias == 'TF')    current_layer = widgets['my-one-and-only-map'].layers['Thunderforest'] =        L.tileLayer.provider('Thunderforest.Landscape', { apikey: 'aa6d138c951e413cae47373621fa6464' })
+    if (alias == 'OTM')   current_layer = widgets['my-one-and-only-map'].layers['OpenTopoMap'] =          L.tileLayer.provider('OpenTopoMap')
+    if (alias == 'OSM')   current_layer = widgets['my-one-and-only-map'].layers['OpenStreetMap'] =        L.tileLayer.provider('OpenStreetMap')
+    if (alias == 'Ortho') current_layer = widgets['my-one-and-only-map'].layers['Orthophoto'] =           L.tileLayer.provider('GeoportailFrance.orthos')
+    if (alias == 'OSMFR') current_layer = widgets['my-one-and-only-map'].layers['OpenStreetMap France'] = L.tileLayer.provider('OpenStreetMap.France')
+    if (i == 0) widgets['my-one-and-only-map'].map = L.map('my-one-and-only-map', { layers: [ current_layer ] })
+  }
+
+  if ('' == 'custom-start-and-end-points') {
+    marker_options = {
+      wptIcons: DEFAULT_MARKER_OPTIONS.wptIcons
+    }
+    marker_options.wptIcons['depart']  = DEFAULT_MARKER_OPTIONS.startIcon
+    marker_options.wptIcons['arrivee'] = DEFAULT_MARKER_OPTIONS.endIcon
+  } else {
+    marker_options = DEFAULT_MARKER_OPTIONS
+  }
+  widgets['my-one-and-only-map'].track = new L.GPX('/assets/tracks/Alpes/J1-J2-J3-J4-J5-J6-J7.gpx', { async: true, marker_options: marker_options })
+  if (true) {
+    initialize_map = function(e) { widgets['my-one-and-only-map'].map.fitBounds(e.target.getBounds()) }
+  } else {
+    initialize_map = function(e) { widgets['my-one-and-only-map'].map.setView(e.target.getBounds().getCenter(), 12) }
+  }
+  widgets['my-one-and-only-map'].track.on('loaded', initialize_map)
+
+  widgets['my-one-and-only-map'].map.addLayer(widgets['my-one-and-only-map'].track)
+  L.control.scale().addTo(widgets['my-one-and-only-map'].map)
+  L.control.layers(widgets['my-one-and-only-map'].layers).addTo(widgets['my-one-and-only-map'].map)
+  widgets['my-one-and-only-map'].map.addControl(new L.control.fullscreen())
+</script>
+
+<p>Détails d’étapes :</p>
+<ul>
+  <li>7 étapes</li>
+  <li>
+<img class="emoji" title=":sunny:" alt=":sunny:" src="https://github.githubassets.com/images/icons/emoji/unicode/2600.png" height="20" width="20"> <img class="emoji" title=":sun_behind_small_cloud:" alt=":sun_behind_small_cloud:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f324.png" height="20" width="20"> <img class="emoji" title=":sun_behind_small_cloud:" alt=":sun_behind_small_cloud:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f324.png" height="20" width="20"> <img class="emoji" title=":sunny:" alt=":sunny:" src="https://github.githubassets.com/images/icons/emoji/unicode/2600.png" height="20" width="20"> <img class="emoji" title=":sunny:" alt=":sunny:" src="https://github.githubassets.com/images/icons/emoji/unicode/2600.png" height="20" width="20"> <img class="emoji" title=":sunny:" alt=":sunny:" src="https://github.githubassets.com/images/icons/emoji/unicode/2600.png" height="20" width="20"> <img class="emoji" title=":sunny:" alt=":sunny:" src="https://github.githubassets.com/images/icons/emoji/unicode/2600.png" height="20" width="20">
+</li>
+  <li>138 km</li>
+  <li>+7700 m</li>
+  <li>-6500 m</li>
+</ul>
+
+        
+
+
+
+
+
+  
+  
+  
+
+  
+    
+    
+
+
+<p>
+<!-- TODO: avoid inline styles please!-->
+</p>
+<table style="display: table; table-layout: fixed;">
+  <tr>
+    <td style="border-bottom: none; width: 50%;"><a href="" style="width: 100%;" class="btn btn--primary btn--disabled ">‹ Page précédente</a></td>
+    <td style="border-bottom: none; width: 50%;"><a href="/Alpes/J8-J9-J10-J11-J12-J13-14-15-J16/" style="width: 100%;" class="btn btn--primary ">Page suivante ›</a></td>
+  </tr>
+</table>
+
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-copyright">© 2025 Le Gros Mickey. Propulsé par <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

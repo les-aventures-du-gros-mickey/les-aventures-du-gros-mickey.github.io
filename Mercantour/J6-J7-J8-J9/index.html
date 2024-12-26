@@ -1,0 +1,782 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="fr" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>De Saint-Sauveur-sur-Tinée à Sospel - Les aventures du Gros Mickey</title>
+<meta name="description" content="">
+
+
+  <meta name="author" content="Le Gros Mickey">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Les aventures du Gros Mickey">
+<meta property="og:title" content="De Saint-Sauveur-sur-Tinée à Sospel">
+<meta property="og:url" content="/Mercantour/J6-J7-J8-J9/">
+
+
+  <meta property="og:description" content="">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="/Mercantour/J6-J7-J8-J9/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Le Gros Mickey",
+      "url": "/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <!-- https://github.com/fancyapps/fancybox -->
+    <script src="/assets/js/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/assets/js/jquery-fancybox/3.5.6/jquery.fancybox.min.css"/>
+    <script src="/assets/js/jquery-fancybox/3.5.6/jquery.fancybox.min.js"></script>
+    <script>
+      $.fancybox.defaults.animationEffect = "zoom";
+      $.fancybox.defaults.transitionEffect = "tube";
+      $.fancybox.defaults.buttons = [ "fullScreen", "close" ];
+    </script>
+
+    
+      <!-- https://github.com/Leaflet/Leaflet -->
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+      <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+      <!-- https://github.com/mpetazzoni/leaflet-gpx -->
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.4.0/gpx.min.js"></script> -->
+      <script src="/assets/js/leaflet-gpx/1.4.0/gpx-custom.min.js"></script>
+      <!-- https://github.com/elfalem/Leaflet.curve -->
+      <script src="https://cdn.jsdelivr.net/npm/leaflet-curve@1.0.0/leaflet.curve.min.js" integrity="sha384-NGXMSwSy7xysMCI1I+AjcNggRki+cUVXxqBnMX/nxCD5a/lDebdBH7Qqm63t4zpU" crossorigin="anonymous"></script>
+      <!-- https://github.com/leaflet-extras/leaflet-providers -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/1.9.1/leaflet-providers.min.js" integrity="sha384-VXljvKBDJTJymzdt6ZCMeIKzB66kkZJpSpgPZOb8w19sMwJj+e2D3EFeTnINldBL" crossorigin="anonymous"></script>
+      <!-- https://github.com/Leaflet/Leaflet.fullscreen -->
+      <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+      <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+      <!-- https://github.com/FortAwesome/Font-Awesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <!-- https://github.com/lvoogdt/Leaflet.awesome-markers -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" integrity="sha384-AHhmp36MxTYxqK8q9BF7ifcAjDEpcCT+OOmZrBb8vBP6At1I/htDyRK/M8wgzuqx" crossorigin="anonymous">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js" integrity="sha384-e3K/MgD3PfLJJFhUTg4y1zJciOSfdvRZpcgb0IBjxmbvyyyZuuQTKvs3x27hZpLr" crossorigin="anonymous"></script>
+      <!-- set default marker icons -->
+      <script>
+        L.AwesomeMarkers.Icon.prototype.options.prefix = 'fa';
+        const DEFAULT_MARKER_OPTIONS = {
+          wptIcons: {
+            '':         new L.AwesomeMarkers.icon({ icon: 'circle',         markerColor: 'blue'      }),
+            'tente':    new L.AwesomeMarkers.icon({ icon: 'campground',     markerColor: 'black'     }),
+            'logement': new L.AwesomeMarkers.icon({ icon: 'bed',            markerColor: 'black'     }),
+            'train':    new L.AwesomeMarkers.icon({ icon: 'train',          markerColor: 'darkgreen' }),
+            'bus':    new L.AwesomeMarkers.icon({ icon: 'bus',            markerColor: 'cadetblue' })
+          },
+          startIcon:    new L.AwesomeMarkers.icon({ icon: 'flag',           markerColor: 'red'       }),
+          endIcon:      new L.AwesomeMarkers.icon({ icon: 'flag-checkered', markerColor: 'green'     })
+        }
+      </script>
+    
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Les aventures du Gros Mickey
+          
+        </a>
+        <ul class="visible-links">
+<li class="masthead__menu-item">
+              <a href="/treks/">Treks</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/voyages/">Voyages</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/divers/">Divers</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/citations/">Citations</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/a-propos/">À propos</a>
+            </li>
+</ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox">
+  <label for="ac-toc">Menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <span class="nav__sub-title">Tours et détours dans le Mercantour</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/Mercantour/J1-J2-J3-J4/">De Uvernet à Saint-Sauveur-sur-Tinée</a></li>
+          
+            <li><a href="/Mercantour/J6-J7-J8-J9/" class="active">De Saint-Sauveur-sur-Tinée à Sospel</a></li>
+          
+            <li><a href="/Mercantour/epilogue/">Épilogue</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="De Saint-Sauveur-sur-Tinée à Sospel">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="/Mercantour/J6-J7-J8-J9/" class="u-url" itemprop="url">De Saint-Sauveur-sur-Tinée à Sospel
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <p>Pendant ma grasse matinée d’hier, ou plutôt ma grasse journée, Louise et Paul, ont pris la relève pour la chambrée éphémère</p>
+
+<p>Comme mes colocs de la veille, les 2 adelphes arpentent le GR5. Je les abandonne ce matin pour reprendre ma route à la fraîche</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b847.jpg" data-caption="&lt;p&gt;Je salue du regard la vallée de la Tinée, blottisant sa rougeoyante timidité entre les épaules&lt;/p&gt;
+">
+    <img src="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b847.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Je salue du regard la vallée de la Tinée, blottisant sa rougeoyante timidité entre les épaules</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b848.jpg" data-caption='&lt;p&gt;Les &lt;a href="https://fr.wikipedia.org/wiki/Gen%C3%A9vrier"&gt;genévriers&lt;/a&gt; se complaisent dans la zone sèche au-dessus du Rimplas&lt;/p&gt;
+'>
+    <img src="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b848.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Les <a href="https://fr.wikipedia.org/wiki/Gen%C3%A9vrier">genévriers</a> se complaisent dans la zone sèche au-dessus du Rimplas</p>
+</figcaption>
+</figure>
+
+<p>De retour sur les hautes cimes après une longue ascension ombragée bienfaitrice, je déjeune avec le somnolent Grand Mounier au loin</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b849.jpg" data-caption="&lt;p&gt;Mes jumelles braquées sur la Cime du Diable corroborent ce que Louise et Paul m’ont colporté : grêle et neige ont sévi pendant ma journée de délassement&lt;/p&gt;
+">
+    <img src="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b849.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Mes jumelles braquées sur la Cime du Diable corroborent ce que Louise et Paul m’ont colporté : grêle et neige ont sévi pendant ma journée de délassement</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b850.jpg" data-caption='&lt;p&gt;Les sommets stériles patienteront, aujourd’hui je batifole au milieu des éclatantes &lt;a href="https://fr.wikipedia.org/wiki/Bruy%C3%A8re"&gt;bruyères&lt;/a&gt;&lt;/p&gt;
+'>
+    <img src="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b850.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Les sommets stériles patienteront, aujourd’hui je batifole au milieu des éclatantes <a href="https://fr.wikipedia.org/wiki/Bruy%C3%A8re">bruyères</a></p>
+</figcaption>
+</figure>
+
+<p>Je rends visite aux lacs des Millefonts, aux qualificatifs plutôt trompeurs, et m’arrête au dernier pour bivouaquer</p>
+
+<p>Le terrain est vraiment pierreux, je parviens tout de même à m’installer mais pas vraiment à l’abri du vent glacial</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b851.jpg" data-caption="&lt;p&gt;Après la douche frigorique, je m’éclipse derrière le voilage de Simone qui, diable au corps, giguera toute la nuit&lt;/p&gt;
+">
+    <img src="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b851.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Après la douche frigorique, je m’éclipse derrière le voilage de Simone qui, diable au corps, giguera toute la nuit</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b852.jpg" data-caption="
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;ruby&gt;&lt;rb&gt;Slunce se tmí&lt;/rb&gt;&lt;rt&gt;Le soleil s’assombrit&lt;/rt&gt;&lt;/ruby&gt;&lt;br /&gt;
+&lt;ruby&gt;&lt;rb&gt;A zem v moři tone&lt;/rb&gt;&lt;rt&gt;Et la terre se noit dans la mer&lt;/rt&gt;&lt;/ruby&gt;&lt;br /&gt;
+&lt;ruby&gt;&lt;rb&gt;V lítých bouřích&lt;/rb&gt;&lt;rt&gt;Dans de violents orages&lt;/rt&gt;&lt;/ruby&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;ruby&gt;&lt;rb&gt;Vědma ti zpívá, konec se blíží&lt;/rb&gt;&lt;rt&gt;La prophétesse psalmodie, la fin est proche&lt;/rt&gt;&lt;/ruby&gt;&lt;br /&gt;
+&lt;ruby&gt;&lt;rb&gt;Soumrak bohů, Ragnarok&lt;/rb&gt;&lt;rt&gt;Crépuscule des Dieux, Ragnarök&lt;/rt&gt;&lt;/ruby&gt;&lt;br /&gt;
+&lt;ruby&gt;&lt;rb&gt;Své ruce vzpíná, k obloze vzhlíží&lt;/rb&gt;&lt;rt&gt;Elle lève les mains, regarde le ciel&lt;/rt&gt;&lt;/ruby&gt;&lt;br /&gt;
+&lt;ruby&gt;&lt;rb&gt;Soumrak bohů&lt;/rb&gt;&lt;rt&gt;Crépuscule des Dieux&lt;/rt&gt;&lt;/ruby&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Deloraine &lt;cite&gt;Ragnarok&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+">
+    <img src="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b852.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<blockquote>
+  <p><ruby><rb>Slunce se tmí</rb><rt>Le soleil s’assombrit</rt></ruby><br>
+<ruby><rb>A zem v moři tone</rb><rt>Et la terre se noit dans la mer</rt></ruby><br>
+<ruby><rb>V lítých bouřích</rb><rt>Dans de violents orages</rt></ruby><br></p>
+</blockquote>
+
+<blockquote>
+  <p><ruby><rb>Vědma ti zpívá, konec se blíží</rb><rt>La prophétesse psalmodie, la fin est proche</rt></ruby><br>
+<ruby><rb>Soumrak bohů, Ragnarok</rb><rt>Crépuscule des Dieux, Ragnarök</rt></ruby><br>
+<ruby><rb>Své ruce vzpíná, k obloze vzhlíží</rb><rt>Elle lève les mains, regarde le ciel</rt></ruby><br>
+<ruby><rb>Soumrak bohů</rb><rt>Crépuscule des Dieux</rt></ruby><br></p>
+</blockquote>
+
+<blockquote>
+  <p>Deloraine <cite>Ragnarok</cite></p>
+</blockquote>
+</figcaption>
+</figure>
+
+<p>Au petit matin, je constate que mon campement a tenu bon toute la nuit face aux tumultueuses bourrasques de vent</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b853.jpg" data-caption="&lt;p&gt;Comme une envie de tâter de la pierre, je me fais un détour par la cime de Belletz pour une session d’escalade en solo intégral dans les méandres d’un chaos rocheux&lt;/p&gt;
+">
+    <img src="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b853.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Comme une envie de tâter de la pierre, je me fais un détour par la cime de Belletz pour une session d’escalade en solo intégral dans les méandres d’un chaos rocheux</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b854.jpg" data-caption="&lt;p&gt;Les myrtilliers rougissent à l’idée de se dévêtir à l’automne affleurant&lt;/p&gt;
+">
+    <img src="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b854.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Les myrtilliers rougissent à l’idée de se dévêtir à l’automne affleurant</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b855.jpg" data-caption="&lt;p&gt;Je continue en m’empiffrant de douceurs acidulées vers les lacs des Adus, dans une agréable partie ombragée, que j’apprécie férocement avec le soleil qui tape&lt;/p&gt;
+">
+    <img src="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b855.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Je continue en m’empiffrant de douceurs acidulées vers les lacs des Adus, dans une agréable partie ombragée, que j’apprécie férocement avec le soleil qui tape</p>
+</figcaption>
+</figure>
+
+<p>Je remonte ensuite le Boréon jusqu’au lac de Trécolpas, où l’affluence est digne de l’A7 un week-end estival de chassé-croisé</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b856.jpg" data-caption="&lt;p&gt;Je m’extirpe des lieux dans un silence minéral plus que reposant&lt;/p&gt;
+">
+    <img src="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b856.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Je m’extirpe des lieux dans un silence minéral plus que reposant</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b857.jpg" data-caption="&lt;p&gt;Je pose mon campement au lac de Fenestre, juste avant que l’obscurité ne le grignote&lt;/p&gt;
+">
+    <img src="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b857.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Je pose mon campement au lac de Fenestre, juste avant que l’obscurité ne le grignote</p>
+</figcaption>
+</figure>
+
+<p>Je rencontre Mathilde, Gabrielle et Maÿlis qui attendaient sagement le coucher de soleil pour planter leurs tentes dans le respect des règles du parc. Elles ont attaqué la grande traversée des Alpes, il y a 3 ans et comptent bien la terminer d’ici peu</p>
+
+<p>Une fois la nuit tombée, la quasi pleine lune fait de l’ombre aux étoiles et scintille dans les vaguelettes, pendant que le déversoir chante et danse</p>
+
+<p>Lorsque le jour libère la vallée des ténèbres, je reprends mon escapade</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b858.jpg" data-caption="
+&lt;p&gt;Je ne me rends pas compte que j’emprunte le sentier cul-de-sac qui mène au lac d’Isoletta, obnubilé par les craquantes dentelles blanches du giron du Grand Cayre de la Madone&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;J’ai toujours préféré aux voisins les voisines&lt;br /&gt;
+Qui sèchent leurs dentelles au vent sur les balcons […]&lt;br /&gt;
+De ma fenêtre en face&lt;br /&gt;
+J’caresse le plexiglas&lt;br /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Renan Luce &lt;cite&gt;Les voisines&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+">
+    <img src="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b858.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p>Je ne me rends pas compte que j’emprunte le sentier cul-de-sac qui mène au lac d’Isoletta, obnubilé par les craquantes dentelles blanches du giron du Grand Cayre de la Madone</p>
+
+<blockquote>
+  <p>J’ai toujours préféré aux voisins les voisines<br>
+Qui sèchent leurs dentelles au vent sur les balcons […]<br>
+De ma fenêtre en face<br>
+J’caresse le plexiglas<br></p>
+</blockquote>
+
+<blockquote>
+  <p>Renan Luce <cite>Les voisines</cite></p>
+</blockquote>
+</figcaption>
+</figure>
+
+<p>Je corrige le tir en dévalant dans le creux de la combe et en remontant sur le flanc en face. Quelques jours auront suffi pour que disparaisse la blancheur nivale du pas du Mont Colomb, je le franchis sans aucun problème</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b859.jpg" data-caption="&lt;p&gt;J’y croise quelques randonneurs, regards emmitouflés sous les bonnets, contrastant avec la nudité de ma gorge et de mes bras&lt;/p&gt;
+">
+    <img src="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b859.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>J’y croise quelques randonneurs, regards emmitouflés sous les bonnets, contrastant avec la nudité de ma gorge et de mes bras</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b860.jpg" data-caption="&lt;p&gt;Plus loin, je m’émerveille devant 2 bouquetins qui folichonnent sur le toboggan du lac de la Fous&lt;/p&gt;
+">
+    <img src="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b860.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Plus loin, je m’émerveille devant 2 bouquetins qui folichonnent sur le toboggan du lac de la Fous</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b861.jpg" data-caption="&lt;p&gt;De jeunes chamois pimpants lambinent et continuent de me faire faire des détours jusqu’à la baisse du Basto&lt;/p&gt;
+">
+    <img src="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b861.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>De jeunes chamois pimpants lambinent et continuent de me faire faire des détours jusqu’à la baisse du Basto</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b862.jpg" data-caption="
+&lt;blockquote&gt;
+  &lt;p&gt;But in our minds&lt;br /&gt;
+And in our dreams&lt;br /&gt;
+I know that we can feel&lt;br /&gt;
+Emotionally&lt;br /&gt;
+Free&lt;br /&gt;
+Tasting it feels so good&lt;br /&gt;
+Free&lt;br /&gt;
+Wanna have it and eat it too&lt;br /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Diablo Swing Orchestra &lt;cite&gt;Lady Clandestine Chainbreaker&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+">
+    <img src="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b862.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<blockquote>
+  <p>But in our minds<br>
+And in our dreams<br>
+I know that we can feel<br>
+Emotionally<br>
+Free<br>
+Tasting it feels so good<br>
+Free<br>
+Wanna have it and eat it too<br></p>
+</blockquote>
+
+<blockquote>
+  <p>Diablo Swing Orchestra <cite>Lady Clandestine Chainbreaker</cite></p>
+</blockquote>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b863.jpg" data-caption="
+&lt;p&gt;Derrière le col, mon regard se pose sur les flegmatiques cornes d’un bouquetin, qui rumine paisiblement les rayons du soleil&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Hakuna Matata&lt;br /&gt;
+Mais quelle phrase magnifique !&lt;br /&gt;
+Hakuna Matata&lt;br /&gt;
+Quel chant fantastique !&lt;br /&gt;
+Ces mots signifient&lt;br /&gt;
+Que tu vivras ta vie&lt;br /&gt;
+Sans aucun souci&lt;br /&gt;
+Philosophie&lt;br /&gt;
+Hakuna Matata&lt;br /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Timon et Pumbaa &lt;cite&gt;Le Roi Lion&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+">
+    <img src="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b863.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p>Derrière le col, mon regard se pose sur les flegmatiques cornes d’un bouquetin, qui rumine paisiblement les rayons du soleil</p>
+
+<blockquote>
+  <p>Hakuna Matata<br>
+Mais quelle phrase magnifique !<br>
+Hakuna Matata<br>
+Quel chant fantastique !<br>
+Ces mots signifient<br>
+Que tu vivras ta vie<br>
+Sans aucun souci<br>
+Philosophie<br>
+Hakuna Matata<br></p>
+</blockquote>
+
+<blockquote>
+  <p>Timon et Pumbaa <cite>Le Roi Lion</cite></p>
+</blockquote>
+</figcaption>
+</figure>
+
+<p>Vient ensuite la vallée des Merveilles qui me fait ronchonner par rapport à toutes les interdictions qui s’y rattachent : pas de bâtons, pas de bivouac et pas de sortie de sentier</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b864.jpg" data-caption="&lt;p&gt;Quelques discrets graffitis préhistoriques parviennent à évaporer mes gromellements de fin de journée&lt;/p&gt;
+">
+    <img src="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b864.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Quelques discrets graffitis préhistoriques parviennent à évaporer mes gromellements de fin de journée</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b865.jpg" data-caption="&lt;p&gt;L’imposant Mont Bégo, lieu sacré mais également interdit d’accès, surplombe la vallée aux milliers de gravures rupestres&lt;/p&gt;
+">
+    <img src="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b865.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>L’imposant Mont Bégo, lieu sacré mais également interdit d’accès, surplombe la vallée aux milliers de gravures rupestres</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b866.jpg" data-caption="&lt;p&gt;Bien éreinté, je m’écroule dans la zone de bivouac autorisé proche du refuge des Merveilles&lt;/p&gt;
+">
+    <img src="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b866.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Bien éreinté, je m’écroule dans la zone de bivouac autorisé proche du refuge des Merveilles</p>
+</figcaption>
+</figure>
+
+<p>Au milieu de la nuit, j’admire quelques instants la lune plus puissante que jamais, fendant les nuages de pluie</p>
+
+<p>De bonne heure le matin, je quitte la vallée des interdits et j’en profite pour récupérer mes 2 pattes avant manquantes</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b867.jpg" data-caption="&lt;p&gt;La zone rocailleuse se teinte de rouge brique à nouveau, elle a probablement inspiré le patronyme de la Cime du Diable&lt;/p&gt;
+">
+    <img src="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b867.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>La zone rocailleuse se teinte de rouge brique à nouveau, elle a probablement inspiré le patronyme de la Cime du Diable</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b868.jpg" data-caption="&lt;p&gt;Les mélèzes se faufilent en douceur dans l’automne&lt;/p&gt;
+">
+    <img src="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b868.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Les mélèzes se faufilent en douceur dans l’automne</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b869.jpg" data-caption="&lt;p&gt;À partir de maintenant, les collines se ressemblent toutes, je marche à flanc sur de longues portions et traverse plusieurs anciennes zones militaires&lt;/p&gt;
+">
+    <img src="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b869.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>À partir de maintenant, les collines se ressemblent toutes, je marche à flanc sur de longues portions et traverse plusieurs anciennes zones militaires</p>
+</figcaption>
+</figure>
+
+<p>La pluie vient mettre son grain de sel et dure quelque peu dans la descente qui s’éternise</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b870.jpg" data-caption="&lt;p&gt;J’arrive au milieu des oliveraies humides à Sospel, avec un dernier &lt;em&gt;détour&lt;/em&gt; : la courbe en U que dessinent mes lèvres, joignant mes 2 fossettes rayonnantes&lt;/p&gt;
+">
+    <img src="/assets/images/Mercantour/J6-J7-J8-J9/792fbc74-f4c3-4a0a-a158-55c9bdf5b870.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>J’arrive au milieu des oliveraies humides à Sospel, avec un dernier <em>détour</em> : la courbe en U que dessinent mes lèvres, joignant mes 2 fossettes rayonnantes</p>
+</figcaption>
+</figure>
+
+<div id="my-one-and-only-map" style="height: 400px;"></div>
+<p></p>
+<script>
+  if (typeof widgets == 'undefined') { widgets = { } }
+  widgets['my-one-and-only-map'] = { layers: { }, track: { }, map: { } }
+
+  for ([i, alias] of 'TF,OTM,OSM,Ortho'.split(',').entries()) {
+    if (alias == 'TF')    current_layer = widgets['my-one-and-only-map'].layers['Thunderforest'] =        L.tileLayer.provider('Thunderforest.Landscape', { apikey: 'aa6d138c951e413cae47373621fa6464' })
+    if (alias == 'OTM')   current_layer = widgets['my-one-and-only-map'].layers['OpenTopoMap'] =          L.tileLayer.provider('OpenTopoMap')
+    if (alias == 'OSM')   current_layer = widgets['my-one-and-only-map'].layers['OpenStreetMap'] =        L.tileLayer.provider('OpenStreetMap')
+    if (alias == 'Ortho') current_layer = widgets['my-one-and-only-map'].layers['Orthophoto'] =           L.tileLayer.provider('GeoportailFrance.orthos')
+    if (alias == 'OSMFR') current_layer = widgets['my-one-and-only-map'].layers['OpenStreetMap France'] = L.tileLayer.provider('OpenStreetMap.France')
+    if (i == 0) widgets['my-one-and-only-map'].map = L.map('my-one-and-only-map', { layers: [ current_layer ] })
+  }
+
+  if ('' == 'custom-start-and-end-points') {
+    marker_options = {
+      wptIcons: DEFAULT_MARKER_OPTIONS.wptIcons
+    }
+    marker_options.wptIcons['depart']  = DEFAULT_MARKER_OPTIONS.startIcon
+    marker_options.wptIcons['arrivee'] = DEFAULT_MARKER_OPTIONS.endIcon
+  } else {
+    marker_options = DEFAULT_MARKER_OPTIONS
+  }
+  widgets['my-one-and-only-map'].track = new L.GPX('/assets/tracks/Mercantour/J6-J7-J8-J9.gpx', { async: true, marker_options: marker_options })
+  if (true) {
+    initialize_map = function(e) { widgets['my-one-and-only-map'].map.fitBounds(e.target.getBounds()) }
+  } else {
+    initialize_map = function(e) { widgets['my-one-and-only-map'].map.setView(e.target.getBounds().getCenter(), 12) }
+  }
+  widgets['my-one-and-only-map'].track.on('loaded', initialize_map)
+
+  widgets['my-one-and-only-map'].map.addLayer(widgets['my-one-and-only-map'].track)
+  L.control.scale().addTo(widgets['my-one-and-only-map'].map)
+  L.control.layers(widgets['my-one-and-only-map'].layers).addTo(widgets['my-one-and-only-map'].map)
+  widgets['my-one-and-only-map'].map.addControl(new L.control.fullscreen())
+</script>
+
+<p>Détails d’étapes :</p>
+<ul>
+  <li>4 étapes</li>
+  <li>Ciel bleu et averse de fin de trek <img class="emoji" title=":sunny:" alt=":sunny:" src="https://github.githubassets.com/images/icons/emoji/unicode/2600.png" height="20" width="20"> <img class="emoji" title=":sunny:" alt=":sunny:" src="https://github.githubassets.com/images/icons/emoji/unicode/2600.png" height="20" width="20"> <img class="emoji" title=":sun_behind_small_cloud:" alt=":sun_behind_small_cloud:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f324.png" height="20" width="20"> <img class="emoji" title=":cloud_with_rain:" alt=":cloud_with_rain:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f327.png" height="20" width="20">
+</li>
+  <li>74 km</li>
+  <li>+4950 m</li>
+  <li>-5150 m</li>
+</ul>
+
+        
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+    
+
+
+<p>
+<!-- TODO: avoid inline styles please!-->
+</p>
+<table style="display: table; table-layout: fixed;">
+  <tr>
+    <td style="border-bottom: none; width: 50%;"><a href="/Mercantour/J1-J2-J3-J4/" style="width: 100%;" class="btn btn--primary ">‹ Page précédente</a></td>
+    <td style="border-bottom: none; width: 50%;"><a href="/Mercantour/epilogue/" style="width: 100%;" class="btn btn--primary ">Page suivante ›</a></td>
+  </tr>
+</table>
+
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-copyright">© 2025 Le Gros Mickey. Propulsé par <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

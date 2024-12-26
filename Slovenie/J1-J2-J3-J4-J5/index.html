@@ -1,0 +1,617 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="fr" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>De Lyon à Maribor - Les aventures du Gros Mickey</title>
+<meta name="description" content="">
+
+
+  <meta name="author" content="Le Gros Mickey">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Les aventures du Gros Mickey">
+<meta property="og:title" content="De Lyon à Maribor">
+<meta property="og:url" content="/Slovenie/J1-J2-J3-J4-J5/">
+
+
+  <meta property="og:description" content="">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="/Slovenie/J1-J2-J3-J4-J5/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Le Gros Mickey",
+      "url": "/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <!-- https://github.com/fancyapps/fancybox -->
+    <script src="/assets/js/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/assets/js/jquery-fancybox/3.5.6/jquery.fancybox.min.css"/>
+    <script src="/assets/js/jquery-fancybox/3.5.6/jquery.fancybox.min.js"></script>
+    <script>
+      $.fancybox.defaults.animationEffect = "zoom";
+      $.fancybox.defaults.transitionEffect = "tube";
+      $.fancybox.defaults.buttons = [ "fullScreen", "close" ];
+    </script>
+
+    
+      <!-- https://github.com/Leaflet/Leaflet -->
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+      <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+      <!-- https://github.com/mpetazzoni/leaflet-gpx -->
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.4.0/gpx.min.js"></script> -->
+      <script src="/assets/js/leaflet-gpx/1.4.0/gpx-custom.min.js"></script>
+      <!-- https://github.com/elfalem/Leaflet.curve -->
+      <script src="https://cdn.jsdelivr.net/npm/leaflet-curve@1.0.0/leaflet.curve.min.js" integrity="sha384-NGXMSwSy7xysMCI1I+AjcNggRki+cUVXxqBnMX/nxCD5a/lDebdBH7Qqm63t4zpU" crossorigin="anonymous"></script>
+      <!-- https://github.com/leaflet-extras/leaflet-providers -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/1.9.1/leaflet-providers.min.js" integrity="sha384-VXljvKBDJTJymzdt6ZCMeIKzB66kkZJpSpgPZOb8w19sMwJj+e2D3EFeTnINldBL" crossorigin="anonymous"></script>
+      <!-- https://github.com/Leaflet/Leaflet.fullscreen -->
+      <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+      <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+      <!-- https://github.com/FortAwesome/Font-Awesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <!-- https://github.com/lvoogdt/Leaflet.awesome-markers -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" integrity="sha384-AHhmp36MxTYxqK8q9BF7ifcAjDEpcCT+OOmZrBb8vBP6At1I/htDyRK/M8wgzuqx" crossorigin="anonymous">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js" integrity="sha384-e3K/MgD3PfLJJFhUTg4y1zJciOSfdvRZpcgb0IBjxmbvyyyZuuQTKvs3x27hZpLr" crossorigin="anonymous"></script>
+      <!-- set default marker icons -->
+      <script>
+        L.AwesomeMarkers.Icon.prototype.options.prefix = 'fa';
+        const DEFAULT_MARKER_OPTIONS = {
+          wptIcons: {
+            '':         new L.AwesomeMarkers.icon({ icon: 'circle',         markerColor: 'blue'      }),
+            'tente':    new L.AwesomeMarkers.icon({ icon: 'campground',     markerColor: 'black'     }),
+            'logement': new L.AwesomeMarkers.icon({ icon: 'bed',            markerColor: 'black'     }),
+            'train':    new L.AwesomeMarkers.icon({ icon: 'train',          markerColor: 'darkgreen' }),
+            'bus':    new L.AwesomeMarkers.icon({ icon: 'bus',            markerColor: 'cadetblue' })
+          },
+          startIcon:    new L.AwesomeMarkers.icon({ icon: 'flag',           markerColor: 'red'       }),
+          endIcon:      new L.AwesomeMarkers.icon({ icon: 'flag-checkered', markerColor: 'green'     })
+        }
+      </script>
+    
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Les aventures du Gros Mickey
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/treks/">Treks</a>
+            </li><li class="masthead__menu-item">
+              <a href="/voyages/">Voyages</a>
+            </li><li class="masthead__menu-item">
+              <a href="/divers/">Divers</a>
+            </li><li class="masthead__menu-item">
+              <a href="/citations/">Citations</a>
+            </li><li class="masthead__menu-item">
+              <a href="/a-propos/">À propos</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <span class="nav__sub-title">À la recherche de Zlatorog en Slovénie</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/Slovenie/preambule/">Préambule</a></li>
+          
+            <li><a href="/Slovenie/J1-J2-J3-J4-J5/" class="active">De Lyon à Maribor</a></li>
+          
+            <li><a href="/Slovenie/J6-J7-J8-J9/">De Maribor à Uršlja gora</a></li>
+          
+            <li><a href="/Slovenie/J10-J11-J12/">De Uršlja gora à Robanova planina</a></li>
+          
+            <li><a href="/Slovenie/J13-J14-J15-J16/">De Robanova planina à Zgornje Jezersko</a></li>
+          
+            <li><a href="/Slovenie/J17/">Zgornje Jezersko</a></li>
+          
+            <li><a href="/Slovenie/J18-J19-J20-J21-J22-J23/">De Zgornje Jezersko à Dovje</a></li>
+          
+            <li><a href="/Slovenie/J24/">Dovje</a></li>
+          
+            <li><a href="/Slovenie/J25-J26-J27-J28-J29/">De Dovje à Trenta</a></li>
+          
+            <li><a href="/Slovenie/J30-J31-J32/">De Trenta à Planina Razor</a></li>
+          
+            <li><a href="/Slovenie/J33-J34-J35-J36/">De Planina Razor à Idrija</a></li>
+          
+            <li><a href="/Slovenie/J37/">Idrija</a></li>
+          
+            <li><a href="/Slovenie/J38-J39-J40-J41-J42-J43/">De Idrija à Ankaran</a></li>
+          
+            <li><a href="/Slovenie/J43-J44-J45/">De Ankaran à Lyon</a></li>
+          
+            <li><a href="/Slovenie/FAQ/">FAQ</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="De Lyon à Maribor">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="/Slovenie/J1-J2-J3-J4-J5/" class="u-url" itemprop="url">De Lyon à Maribor
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <p>Sur le chemin de mon enquête, je passe par Zurich</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Slovenie/J1-J2-J3-J4-J5/97b5958c-4205-422d-9f4e-289244a53052.jpg" data-caption="&lt;p&gt;Entre la pluie, les odeurs de fromage fondu, les édifices très à cheval sur les horaires, complètement perdu, j’ai quelques doutes sur le fait de trouver des informations concernant Zlatorog par ici&lt;/p&gt;
+">
+    <img src="/assets/images/Slovenie/J1-J2-J3-J4-J5/97b5958c-4205-422d-9f4e-289244a53052.jpg" />
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Entre la pluie, les odeurs de fromage fondu, les édifices très à cheval sur les horaires, complètement perdu, j’ai quelques doutes sur le fait de trouver des informations concernant Zlatorog par ici</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Slovenie/J1-J2-J3-J4-J5/97b5958c-4205-422d-9f4e-289244a53053.jpg" data-caption="
+&lt;p&gt;&lt;span style=&quot;background-color: lightsalmon; border-radius: 8px; padding: 0 8px;&quot;&gt;Willermus la nette rousse :&lt;/span&gt; Zlatorog ? On a des montagnes dans le coin, mais je n’ai jamais entendu parler de ta chimère à la blonde chevelure
+&lt;br /&gt;&lt;/p&gt;
+">
+    <img src="/assets/images/Slovenie/J1-J2-J3-J4-J5/97b5958c-4205-422d-9f4e-289244a53053.jpg" />
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p><span style="background-color: lightsalmon; border-radius: 8px; padding: 0 8px;">Willermus la nette rousse :</span> Zlatorog ? On a des montagnes dans le coin, mais je n’ai jamais entendu parler de ta chimère à la blonde chevelure
+<br /></p>
+</figcaption>
+</figure>
+
+<p>Je n’insiste pas et décide d’aller directement en Slovénie</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Slovenie/J1-J2-J3-J4-J5/97b5958c-4205-422d-9f4e-289244a53054.jpg" data-caption="&lt;p&gt;À la gare, je remarque qu’une &lt;a href=&quot;https://fr.wikipedia.org/wiki/Nana_(Niki_de_Saint_Phalle)&quot;&gt;ange gardienne&lt;/a&gt; veille sur chacun de mes pas, me voilà rassuré pour la suite de mon investigation !&lt;/p&gt;
+">
+    <img src="/assets/images/Slovenie/J1-J2-J3-J4-J5/97b5958c-4205-422d-9f4e-289244a53054.jpg" />
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>À la gare, je remarque qu’une <a href="https://fr.wikipedia.org/wiki/Nana_(Niki_de_Saint_Phalle)">ange gardienne</a> veille sur chacun de mes pas, me voilà rassuré pour la suite de mon investigation !</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Slovenie/J1-J2-J3-J4-J5/97b5958c-4205-422d-9f4e-289244a53055.jpg" data-caption="&lt;p&gt;Je m’installe ravi dans mon douillet cocon sur rails pour la nuit&lt;/p&gt;
+">
+    <img src="/assets/images/Slovenie/J1-J2-J3-J4-J5/97b5958c-4205-422d-9f4e-289244a53055.jpg" />
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Je m’installe ravi dans mon douillet cocon sur rails pour la nuit</p>
+</figcaption>
+</figure>
+
+<p>Je suis rejoint par 2 malaisiennes en vadrouille en Europe depuis 3 mois, puis une bosniène.
+Cette dernière rentre au pays, elle était à Zurich pour rendre visite à sa famille</p>
+
+<p>Plus jeune, elle a fui la guerre de Bosnie, en s’installant en Suisse, mais est retournée au pays au bout de 9 ans, contrairement à sa famille, restée en Helvétie</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Slovenie/J1-J2-J3-J4-J5/97b5958c-4205-422d-9f4e-289244a53056.jpg" data-caption="&lt;p&gt;Au petit matin, le train se réveille avec les rayons du soleil et le verdoyant décor montagneux de la Slovénie, mes yeux brillent de mille feux !&lt;/p&gt;
+">
+    <img src="/assets/images/Slovenie/J1-J2-J3-J4-J5/97b5958c-4205-422d-9f4e-289244a53056.jpg" />
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Au petit matin, le train se réveille avec les rayons du soleil et le verdoyant décor montagneux de la Slovénie, mes yeux brillent de mille feux !</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Slovenie/J1-J2-J3-J4-J5/97b5958c-4205-422d-9f4e-289244a53057.jpg" data-caption="&lt;p&gt;Me voici donc dans la capitale slovène, traversée par la &lt;em&gt;Ljubljanica&lt;/em&gt;&lt;/p&gt;
+">
+    <img src="/assets/images/Slovenie/J1-J2-J3-J4-J5/97b5958c-4205-422d-9f4e-289244a53057.jpg" />
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Me voici donc dans la capitale slovène, traversée par la <em>Ljubljanica</em></p>
+</figcaption>
+</figure>
+
+<p>J’apprends assez rapidement la lecture du slovène. Contrairement à bien des langues, les lettres se prononcent toujours de la même façon ! Il n’y au final que quelques sonorités à retenir :</p>
+<ul>
+  <li>c : <strong>ts</strong>ointsoin</li>
+  <li>č : <strong>tch</strong>intchin</li>
+  <li>e : <strong>é</strong>gayer</li>
+  <li>g : <strong>g</strong>ambader</li>
+  <li>h : <ruby><rb><em><strong>j</strong>ugar</em></rb><rt>jouer</rt></ruby> (castillan)</li>
+  <li>j : roup<strong>ill</strong>on</li>
+  <li>r : <ruby><rb><em><strong>r</strong>eír</em></rb><rt>rigoler</rt></ruby> (castillan)</li>
+  <li>š : <strong>ch</strong>enapan</li>
+  <li>u : <strong>ou</strong>rs</li>
+  <li>ž : <strong>j</strong>ovial</li>
+</ul>
+
+<p>Je me dirige ensuite vers le <em>Metelkova</em>, quartier alternatif où co-habitent arts éclectiques et communautés en auto-gestion</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Slovenie/J1-J2-J3-J4-J5/97b5958c-4205-422d-9f4e-289244a53058.jpg" data-caption="&lt;p&gt;J’y croise quelques délirantes bestioles, malheureusement muettes, ne m’aidant pas beaucoup mais attisant ma curiosité&lt;/p&gt;
+">
+    <img src="/assets/images/Slovenie/J1-J2-J3-J4-J5/97b5958c-4205-422d-9f4e-289244a53058.jpg" />
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>J’y croise quelques délirantes bestioles, malheureusement muettes, ne m’aidant pas beaucoup mais attisant ma curiosité</p>
+</figcaption>
+</figure>
+
+<p>Je regagne le centre-ville cozy de <em>Ljubljana</em> où d’immenses créatures semblent régner sur les lieux</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Slovenie/J1-J2-J3-J4-J5/97b5958c-4205-422d-9f4e-289244a53059.jpg" data-caption="
+&lt;p&gt;&lt;span style=&quot;background-color: mediumseagreen; border-radius: 8px; padding: 0 8px;&quot;&gt;Anton le dragon :&lt;/span&gt; Ici c’est la terre des dragons, Zlatorog n’a rien à y faire !
+&lt;br /&gt;&lt;/p&gt;
+">
+    <img src="/assets/images/Slovenie/J1-J2-J3-J4-J5/97b5958c-4205-422d-9f4e-289244a53059.jpg" />
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p><span style="background-color: mediumseagreen; border-radius: 8px; padding: 0 8px;">Anton le dragon :</span> Ici c’est la terre des dragons, Zlatorog n’a rien à y faire !
+<br /></p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Slovenie/J1-J2-J3-J4-J5/97b5958c-4205-422d-9f4e-289244a53060.jpg" data-caption="
+&lt;p&gt;&lt;span style=&quot;background-color: darkorange; border-radius: 8px; padding: 0 8px;&quot;&gt;Edvard le renard :&lt;/span&gt; Pssssst, n’aie pas peur d’Anton, il bombe le torse, mais sache que Jason et les Argonautes lui ont flanqué une bonne dérouillée ! En tout cas, mes amis à poils roux et moi-même vivons en paix ici
+&lt;br /&gt;
+&lt;span style=&quot;background-color: lawngreen; border-radius: 8px; padding: 0 8px;&quot;&gt;Miha :&lt;/span&gt; Tu as entendu parler de Zlatorog ?
+&lt;br /&gt;
+&lt;span style=&quot;background-color: darkorange; border-radius: 8px; padding: 0 8px;&quot;&gt;Edvard le renard :&lt;/span&gt; Corne d’Or ? Tu ne le trouveras pas ici, peut-être qu’en te perchant au château tu pourras apercevoir son fief, la montagne
+&lt;br /&gt;&lt;/p&gt;
+">
+    <img src="/assets/images/Slovenie/J1-J2-J3-J4-J5/97b5958c-4205-422d-9f4e-289244a53060.jpg" />
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p><span style="background-color: darkorange; border-radius: 8px; padding: 0 8px;">Edvard le renard :</span> Pssssst, n’aie pas peur d’Anton, il bombe le torse, mais sache que Jason et les Argonautes lui ont flanqué une bonne dérouillée ! En tout cas, mes amis à poils roux et moi-même vivons en paix ici
+<br />
+<span style="background-color: lawngreen; border-radius: 8px; padding: 0 8px;">Miha :</span> Tu as entendu parler de Zlatorog ?
+<br />
+<span style="background-color: darkorange; border-radius: 8px; padding: 0 8px;">Edvard le renard :</span> Corne d’Or ? Tu ne le trouveras pas ici, peut-être qu’en te perchant au château tu pourras apercevoir son fief, la montagne
+<br /></p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Slovenie/J1-J2-J3-J4-J5/97b5958c-4205-422d-9f4e-289244a53061.jpg" data-caption="
+&lt;p&gt;Effectivement, les &lt;ruby&gt;&lt;rb&gt;&lt;em&gt;Kamniško-Savinjske Alpe&lt;/em&gt;&lt;/rb&gt;&lt;rt&gt;Alpes Kamniques et de Savinja&lt;/rt&gt;&lt;/ruby&gt; se dessinent dans le proche horizon&lt;/p&gt;
+">
+    <img src="/assets/images/Slovenie/J1-J2-J3-J4-J5/97b5958c-4205-422d-9f4e-289244a53061.jpg" />
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p>Effectivement, les <ruby><rb><em>Kamniško-Savinjske Alpe</em></rb><rt>Alpes Kamniques et de Savinja</rt></ruby> se dessinent dans le proche horizon</p>
+</figcaption>
+</figure>
+
+<p>Je poursuis ma route jusqu’à <em>Maribor</em>, pour me rapprocher de ces imposantes merveilles de la nature</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Slovenie/J1-J2-J3-J4-J5/97b5958c-4205-422d-9f4e-289244a53062.jpg" data-caption="&lt;p&gt;La flamboyante église franciscaine tranche avec le ciel gris&lt;/p&gt;
+">
+    <img src="/assets/images/Slovenie/J1-J2-J3-J4-J5/97b5958c-4205-422d-9f4e-289244a53062.jpg" />
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>La flamboyante église franciscaine tranche avec le ciel gris</p>
+</figcaption>
+</figure>
+
+<p>Je file vers <ruby><rb><em>Pekarna</em></rb><rt>Boulangerie</rt></ruby>, quartier alternatif semblable au <em>Metelkova</em> de <em>Ljubljana</em>, qui fût une ancienne boulangerie militaire</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Slovenie/J1-J2-J3-J4-J5/97b5958c-4205-422d-9f4e-289244a53063.jpg" data-caption="&lt;p&gt;Les bébêtes extravagantes sont également atteintes de mutisme par ici&lt;/p&gt;
+">
+    <img src="/assets/images/Slovenie/J1-J2-J3-J4-J5/97b5958c-4205-422d-9f4e-289244a53063.jpg" />
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Les bébêtes extravagantes sont également atteintes de mutisme par ici</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Slovenie/J1-J2-J3-J4-J5/97b5958c-4205-422d-9f4e-289244a53064.jpg" data-caption="
+&lt;p&gt;Je prends de la hauteur à la &lt;ruby&gt;&lt;rb&gt;&lt;em&gt;Piramida&lt;/em&gt;&lt;/rb&gt;&lt;rt&gt;Pyramide&lt;/rt&gt;&lt;/ruby&gt;, où le modeste monument de métal me donne un indice pour demain, afin de débuter mon excursion en montagne&lt;/p&gt;
+">
+    <img src="/assets/images/Slovenie/J1-J2-J3-J4-J5/97b5958c-4205-422d-9f4e-289244a53064.jpg" />
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p>Je prends de la hauteur à la <ruby><rb><em>Piramida</em></rb><rt>Pyramide</rt></ruby>, où le modeste monument de métal me donne un indice pour demain, afin de débuter mon excursion en montagne</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Slovenie/J1-J2-J3-J4-J5/97b5958c-4205-422d-9f4e-289244a53065.jpg" data-caption="&lt;p&gt;Je retourne à &lt;em&gt;Pekarna&lt;/em&gt; pour la soirée et me laisse happer gaiement par les riffs de guitare de Chez Gustaf, où d’anciens tambours de machine à laver sont recyclés en abat-jours, et où se déroule une &lt;em&gt;jamming session&lt;/em&gt;&lt;/p&gt;
+">
+    <img src="/assets/images/Slovenie/J1-J2-J3-J4-J5/97b5958c-4205-422d-9f4e-289244a53065.jpg" />
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Je retourne à <em>Pekarna</em> pour la soirée et me laisse happer gaiement par les riffs de guitare de Chez Gustaf, où d’anciens tambours de machine à laver sont recyclés en abat-jours, et où se déroule une <em>jamming session</em></p>
+</figcaption>
+</figure>
+
+<div id="my-one-and-only-map" style="height: 400px;"></div>
+<p></p>
+<script>
+  if (typeof widgets == 'undefined') { widgets = { } }
+  widgets['my-one-and-only-map'] = { layers: { }, track: { }, map: { } }
+
+  for ([i, alias] of 'TF,OTM,OSM'.split(',').entries()) {
+    if (alias == 'TF')    current_layer = widgets['my-one-and-only-map'].layers['Thunderforest'] =        L.tileLayer.provider('Thunderforest.Landscape', { apikey: 'aa6d138c951e413cae47373621fa6464' })
+    if (alias == 'OTM')   current_layer = widgets['my-one-and-only-map'].layers['OpenTopoMap'] =          L.tileLayer.provider('OpenTopoMap')
+    if (alias == 'OSM')   current_layer = widgets['my-one-and-only-map'].layers['OpenStreetMap'] =        L.tileLayer.provider('OpenStreetMap')
+    if (alias == 'Ortho') current_layer = widgets['my-one-and-only-map'].layers['Orthophoto'] =           L.tileLayer.provider('GeoportailFrance.orthos')
+    if (alias == 'OSMFR') current_layer = widgets['my-one-and-only-map'].layers['OpenStreetMap France'] = L.tileLayer.provider('OpenStreetMap.France')
+    if (i == 0) widgets['my-one-and-only-map'].map = L.map('my-one-and-only-map', { layers: [ current_layer ] })
+  }
+
+  if ('custom-start-and-end-points' == 'custom-start-and-end-points') {
+    marker_options = {
+      wptIcons: DEFAULT_MARKER_OPTIONS.wptIcons
+    }
+    marker_options.wptIcons['depart']  = DEFAULT_MARKER_OPTIONS.startIcon
+    marker_options.wptIcons['arrivee'] = DEFAULT_MARKER_OPTIONS.endIcon
+  } else {
+    marker_options = DEFAULT_MARKER_OPTIONS
+  }
+  widgets['my-one-and-only-map'].track = new L.GPX('/assets/tracks/Slovenie/J1-J2-J3-J4-J5.gpx', { async: true, marker_options: marker_options })
+  if (true) {
+    initialize_map = function(e) { widgets['my-one-and-only-map'].map.fitBounds(e.target.getBounds()) }
+  } else {
+    initialize_map = function(e) { widgets['my-one-and-only-map'].map.setView(e.target.getBounds().getCenter(), 12) }
+  }
+  widgets['my-one-and-only-map'].track.on('loaded', initialize_map)
+
+  widgets['my-one-and-only-map'].map.addLayer(widgets['my-one-and-only-map'].track)
+  L.control.scale().addTo(widgets['my-one-and-only-map'].map)
+  L.control.layers(widgets['my-one-and-only-map'].layers).addTo(widgets['my-one-and-only-map'].map)
+  widgets['my-one-and-only-map'].map.addControl(new L.control.fullscreen())
+</script>
+
+<script>
+var trainA = new L.Polyline(
+  [ [45.748921623453498,  4.826051993295550],
+    [47.742615379393101,  7.343065682798624],
+    [47.547856494784355,  7.587748104706407],
+    [47.376855695620179,  8.539784364402294] ],
+  { color: 'blue', dashArray: '1,6'});
+var trainB = new L.Polyline(
+  [ [47.376855695620179,  8.539784364402294],
+    [46.058729253709316, 14.512953199446201] ],
+  { color: 'black', dashArray: '1,6'});
+var trainC = new L.Polyline(
+  [ [46.058729253709316, 14.512953199446201],
+    [46.562047535553575, 15.658208504319191] ],
+  { color: 'blue', dashArray: '1,6'});
+widgets['my-one-and-only-map'].track.addLayer(trainA)
+widgets['my-one-and-only-map'].track.addLayer(trainB)
+widgets['my-one-and-only-map'].track.addLayer(trainC)
+</script>
+
+
+        
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+    
+
+
+<p>
+<!-- TODO: avoid inline styles please!-->
+<table style="display: table; table-layout: fixed;">
+  <tr>
+    <td style="border-bottom: none; width: 50%;"><a href="/Slovenie/preambule/" style="width: 100%;" class="btn btn--primary ">&lsaquo; Page précédente</a></td>
+    <td style="border-bottom: none; width: 50%;"><a href="/Slovenie/J6-J7-J8-J9/" style="width: 100%;" class="btn btn--primary ">Page suivante &rsaquo;</a></td>
+  </tr>
+</table>
+</p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-copyright">&copy; 2025 Le Gros Mickey. Propulsé par <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

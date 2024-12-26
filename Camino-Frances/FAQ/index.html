@@ -1,0 +1,581 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="fr" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>FAQ - Les aventures du Gros Mickey</title>
+<meta name="description" content="">
+
+
+  <meta name="author" content="Le Gros Mickey">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Les aventures du Gros Mickey">
+<meta property="og:title" content="FAQ">
+<meta property="og:url" content="/Camino-Frances/FAQ/">
+
+
+  <meta property="og:description" content="">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="/Camino-Frances/FAQ/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Le Gros Mickey",
+      "url": "/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <!-- https://github.com/fancyapps/fancybox -->
+    <script src="/assets/js/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/assets/js/jquery-fancybox/3.5.6/jquery.fancybox.min.css"/>
+    <script src="/assets/js/jquery-fancybox/3.5.6/jquery.fancybox.min.js"></script>
+    <script>
+      $.fancybox.defaults.animationEffect = "zoom";
+      $.fancybox.defaults.transitionEffect = "tube";
+      $.fancybox.defaults.buttons = [ "fullScreen", "close" ];
+    </script>
+
+    
+      <!-- https://github.com/Leaflet/Leaflet -->
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+      <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+      <!-- https://github.com/mpetazzoni/leaflet-gpx -->
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.4.0/gpx.min.js"></script> -->
+      <script src="/assets/js/leaflet-gpx/1.4.0/gpx-custom.min.js"></script>
+      <!-- https://github.com/elfalem/Leaflet.curve -->
+      <script src="https://cdn.jsdelivr.net/npm/leaflet-curve@1.0.0/leaflet.curve.min.js" integrity="sha384-NGXMSwSy7xysMCI1I+AjcNggRki+cUVXxqBnMX/nxCD5a/lDebdBH7Qqm63t4zpU" crossorigin="anonymous"></script>
+      <!-- https://github.com/leaflet-extras/leaflet-providers -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/1.9.1/leaflet-providers.min.js" integrity="sha384-VXljvKBDJTJymzdt6ZCMeIKzB66kkZJpSpgPZOb8w19sMwJj+e2D3EFeTnINldBL" crossorigin="anonymous"></script>
+      <!-- https://github.com/Leaflet/Leaflet.fullscreen -->
+      <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+      <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+      <!-- https://github.com/FortAwesome/Font-Awesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <!-- https://github.com/lvoogdt/Leaflet.awesome-markers -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" integrity="sha384-AHhmp36MxTYxqK8q9BF7ifcAjDEpcCT+OOmZrBb8vBP6At1I/htDyRK/M8wgzuqx" crossorigin="anonymous">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js" integrity="sha384-e3K/MgD3PfLJJFhUTg4y1zJciOSfdvRZpcgb0IBjxmbvyyyZuuQTKvs3x27hZpLr" crossorigin="anonymous"></script>
+      <!-- set default marker icons -->
+      <script>
+        L.AwesomeMarkers.Icon.prototype.options.prefix = 'fa';
+        const DEFAULT_MARKER_OPTIONS = {
+          wptIcons: {
+            '':         new L.AwesomeMarkers.icon({ icon: 'circle',         markerColor: 'blue'      }),
+            'tente':    new L.AwesomeMarkers.icon({ icon: 'campground',     markerColor: 'black'     }),
+            'logement': new L.AwesomeMarkers.icon({ icon: 'bed',            markerColor: 'black'     }),
+            'train':    new L.AwesomeMarkers.icon({ icon: 'train',          markerColor: 'darkgreen' }),
+            'bus':    new L.AwesomeMarkers.icon({ icon: 'bus',            markerColor: 'cadetblue' })
+          },
+          startIcon:    new L.AwesomeMarkers.icon({ icon: 'flag',           markerColor: 'red'       }),
+          endIcon:      new L.AwesomeMarkers.icon({ icon: 'flag-checkered', markerColor: 'green'     })
+        }
+      </script>
+    
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Les aventures du Gros Mickey
+          
+        </a>
+        <ul class="visible-links">
+<li class="masthead__menu-item">
+              <a href="/treks/">Treks</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/voyages/">Voyages</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/divers/">Divers</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/citations/">Citations</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/a-propos/">À propos</a>
+            </li>
+</ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox">
+  <label for="ac-toc">Menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <span class="nav__sub-title">Les 3 épreuves du Camino Francés</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/Camino-Frances/preambule/">Préambule</a></li>
+          
+            <li><a href="/Camino-Frances/J1-J2-J3-J4-J5-J6/">L'épreuve du corps</a></li>
+          
+            <li><a href="/Camino-Frances/J7-J8-J9-J10-J11-J12-J13-J14-J15-J16/">L'épreuve de l'esprit</a></li>
+          
+            <li><a href="/Camino-Frances/J17-J18-J19-J20-J21-J22-J23-J24-J25-J26-J27-J28/">L'épreuve de l'âme</a></li>
+          
+            <li><a href="/Camino-Frances/FAQ/" class="active">FAQ</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="FAQ">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="/Camino-Frances/FAQ/" class="u-url" itemprop="url">FAQ
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <h2 id="il-est-devenu-quoi-le-monstre-de-lesprit-">Il est devenu quoi le monstre de l’esprit ?</h2>
+
+<blockquote>
+  <p><ruby><rb>Cosa ne rimane della mia anima nera?</rb><rt>Que reste-t-il de mon âme noire ?</rt></ruby><br></p>
+</blockquote>
+
+<blockquote>
+  <p>Lacuna Coil <cite>Anima Nera</cite></p>
+</blockquote>
+
+<p>J’ai longuement pris le temps de discuter avec mes parts d’ombres, elles vivent toujours en moi. En les acceptant, en reconnaissant leur existence, en les apprivoisant, en les faisant rencontrer les parts d’ombre des autres pèlerins, j’ai appris à en faire des alliées et à faire briller de mille feux mes parts de lumière, plus resplendissantes que jamais !</p>
+
+<h2 id="tas-tiré-quels-enseignements-de-ton-camino-">T’as tiré quels enseignements de ton <em>camino</em> ?</h2>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Camino-Frances/faq/e2d4b4c0-00fb-414e-bd34-90b09d298359.jpg" data-caption="&lt;p&gt;&lt;em&gt;La vida es una mierda maravillosa&lt;/em&gt;&lt;/p&gt;
+">
+    <img src="/assets/images/Camino-Frances/faq/e2d4b4c0-00fb-414e-bd34-90b09d298359.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p><em>La vida es una mierda maravillosa</em></p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Camino-Frances/faq/e2d4b4c0-00fb-414e-bd34-90b09d298360.jpg" data-caption="&lt;p&gt;Le &lt;em&gt;camino&lt;/em&gt; démarre maintenant, le meilleur reste à venir !&lt;/p&gt;
+">
+    <img src="/assets/images/Camino-Frances/faq/e2d4b4c0-00fb-414e-bd34-90b09d298360.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Le <em>camino</em> démarre maintenant, le meilleur reste à venir !</p>
+</figcaption>
+</figure>
+
+<blockquote>
+  <p>Making the most of it all<br>
+Get up when you fall<br>
+Eudaimonia<br>
+No one but me<br>
+My recipe <br></p>
+</blockquote>
+
+<blockquote>
+  <p>Euzen <cite>Eudamonia</cite></p>
+</blockquote>
+
+<h2 id="ça-a-donné-quoi-cette-rencontre-de-lhumain-">Ça a donné quoi cette rencontre de l’humain ?</h2>
+
+<p>De la discussion fugace à plusieurs jours de marche, j’ai cotoyé une merveilleuse diversité d’âmes uniques dont :</p>
+
+<p><ruby><rb>Éric</rb><rt>🇫🇷</rt></ruby>, 
+<ruby><rb>Françoise</rb><rt>🇫🇷</rt></ruby>, 
+<ruby><rb>Bernard</rb><rt>🇫🇷</rt></ruby>, 
+<ruby><rb>Pierre-Henri</rb><rt>🇫🇷</rt></ruby>, 
+<ruby><rb>Kees</rb><rt>🇳🇱</rt></ruby>, 
+<ruby><rb>Balazs</rb><rt>🇭🇺</rt></ruby>, 
+<ruby><rb>Kacey</rb><rt>🇺🇸</rt></ruby>, 
+<ruby><rb>Fabrizio</rb><rt>🇮🇹</rt></ruby>, 
+<ruby><rb>Julian</rb><rt>🇩🇪</rt></ruby>, 
+<ruby><rb>Frédéric</rb><rt>🇫🇷</rt></ruby>, 
+<ruby><rb>Johannes</rb><rt>🇩🇪</rt></ruby>, 
+<ruby><rb>Regina</rb><rt>🇩🇪</rt></ruby>, 
+<ruby><rb>Cindia</rb><rt>🇮🇹</rt></ruby>, 
+<ruby><rb>Kate</rb><rt>🇺🇸</rt></ruby>, 
+<ruby><rb>Hong</rb><rt>🇰🇷</rt><rtc><rt>홍</rt></rtc></ruby>, 
+<ruby><rb>Michael</rb><rt>🇯🇵</rt><rtc><rt>マイケル</rt></rtc></ruby>, 
+<ruby><rb>Olivier</rb><rt>🇫🇷</rt></ruby>, 
+<ruby><rb>Nadia</rb><rt>🇨🇦</rt></ruby>, 
+<ruby><rb>Caro</rb><rt>🇫🇷</rt></ruby>, 
+<ruby><rb>Mary</rb><rt>🇺🇸</rt></ruby>, 
+<ruby><rb>Stephan</rb><rt>🇦🇹</rt></ruby>, 
+<ruby><rb>Stephanie</rb><rt>🇦🇹</rt></ruby>, 
+<ruby><rb>Eva</rb><rt>🇨🇿</rt></ruby>, 
+<ruby><rb>Nick</rb><rt>🇺🇸</rt></ruby>, 
+<ruby><rb>Daniel</rb><rt>🇩🇪</rt></ruby>, 
+<ruby><rb>Sofia</rb><rt>🇺🇸</rt></ruby>, 
+<ruby><rb>Julie</rb><rt>🇮🇪</rt></ruby>, 
+<ruby><rb><em>Le Costaud</em></rb><rt>🇰🇷</rt></ruby>, 
+<ruby><rb>Vincent</rb><rt>🇺🇸</rt></ruby>, 
+<ruby><rb>Maurício</rb><rt>🇧🇷</rt></ruby>, 
+<ruby><rb><em>La Tenace</em></rb><rt>🇹🇼</rt></ruby>, 
+<ruby><rb><em>La Pimpante</em></rb><rt>🇰🇷</rt></ruby>, 
+<ruby><rb>Birgitte</rb><rt>🇩🇰</rt></ruby>, 
+<ruby><rb>Esther</rb><rt>🇪🇸</rt></ruby>, 
+<ruby><rb>Bryan</rb><rt>🇮🇪</rt></ruby>, 
+<ruby><rb>John</rb><rt>🇮🇪</rt></ruby>, 
+<ruby><rb>Chema</rb><rt>🇪🇸</rt></ruby>, 
+<ruby><rb>Timothy James</rb><rt>🇺🇸</rt></ruby>, 
+<ruby><rb>Pascal</rb><rt>🇫🇷</rt></ruby>, 
+<ruby><rb>Andrés</rb><rt>🇪🇸</rt></ruby>, 
+<ruby><rb>Bartek</rb><rt>🇦🇺</rt></ruby>, 
+<ruby><rb><em>Le Beau Gosse</em></rb><rt>🇺🇸</rt></ruby>, 
+<ruby><rb>Francis</rb><rt>🇫🇷</rt></ruby>, 
+<ruby><rb>Elisa</rb><rt>🇮🇹</rt></ruby>, 
+<ruby><rb>Niels</rb><rt>🇺🇸</rt></ruby>, 
+<ruby><rb>Zoe</rb><rt>🇺🇸</rt></ruby>, 
+<ruby><rb>Claire</rb><rt>🇬🇧</rt></ruby>, 
+<ruby><rb>Nayelly</rb><rt>🇲🇽</rt></ruby>, 
+<ruby><rb>Anna</rb><rt>🇩🇪</rt></ruby>, 
+<ruby><rb>John</rb><rt>🇬🇧</rt></ruby>, 
+<ruby><rb>Komak</rb><rt>🇮🇪</rt></ruby>, 
+<ruby><rb>Antonio</rb><rt>🇪🇸</rt></ruby>, 
+<ruby><rb>Jan</rb><rt>🇪🇸</rt></ruby>, 
+<ruby><rb>Olivier</rb><rt>🇫🇷</rt></ruby>, 
+<ruby><rb>Michelle</rb><rt>🇬🇧</rt></ruby>, 
+<ruby><rb>Ulf</rb><rt>🇸🇪</rt></ruby>, 
+<ruby><rb><em>La Cycliste de l’Amour</em></rb><rt>🇪🇸</rt></ruby>, 
+<ruby><rb>Boram</rb><rt>🇰🇷</rt><rtc><rt>보람</rt></rtc></ruby>, 
+<ruby><rb>Ahlim</rb><rt>🇰🇷</rt><rtc><rt>아림</rt></rtc></ruby>, 
+<ruby><rb>Marco</rb><rt>🇮🇹</rt></ruby>, 
+<ruby><rb>Elena</rb><rt>🇮🇹</rt></ruby>, 
+<ruby><rb>Taro</rb><rt>🇮🇹</rt><rtc><rt>タロ</rt></rtc></ruby>, 
+<ruby><rb>Natsuki</rb><rt>🇯🇵</rt><rtc><rt>なつき</rt></rtc></ruby>, 
+<ruby><rb>Will</rb><rt>🇦🇺</rt></ruby>, 
+<ruby><rb>Josiane</rb><rt>🇫🇷</rt></ruby>, 
+<ruby><rb>Dominique</rb><rt>🇫🇷</rt></ruby>, 
+<ruby><rb>Gaëlle</rb><rt>🇫🇷</rt></ruby>, 
+<ruby><rb>Jeanette</rb><rt>🇨🇦</rt></ruby>, 
+<ruby><rb><em>L’égérie publicitaire pour dentifrice</em></rb><rt>🇺🇸</rt></ruby>, 
+<ruby><rb>Georges</rb><rt>🇨🇭</rt></ruby>, 
+<ruby><rb>Bastien</rb><rt>🇫🇷</rt></ruby>, 
+<ruby><rb>Laura</rb><rt>🇮🇹</rt></ruby>, 
+<ruby><rb>Alessio</rb><rt>🇮🇹</rt></ruby>, 
+<ruby><rb><em>Les Groupies</em></rb><rt>🇮🇹</rt></ruby>, 
+<ruby><rb>Camille</rb><rt>🇺🇸</rt></ruby>, 
+<ruby><rb>Kiran</rb><rt>🇺🇸</rt></ruby>, 
+<ruby><rb>Marcia</rb><rt>🇮🇹</rt></ruby>, 
+<ruby><rb>Andy</rb><rt>🇮🇪</rt></ruby>, 
+<ruby><rb>Gillian</rb><rt>🇮🇪</rt></ruby>, 
+<ruby><rb>Nick</rb><rt>🇩🇪</rt></ruby>, 
+<ruby><rb>Johannes</rb><rt>🇩🇪</rt></ruby>, 
+<ruby><rb>Stewart</rb><rt>🇬🇧</rt></ruby>, 
+<ruby><rb>Léo</rb><rt>🇫🇷</rt></ruby>, 
+<ruby><rb>Marí-Carmen</rb><rt>🇪🇸</rt></ruby>, 
+<ruby><rb>Marc</rb><rt>🇺🇸</rt></ruby>, 
+<ruby><rb>Frédéric</rb><rt>🇫🇷</rt></ruby>, 
+<ruby><rb>Susan</rb><rt>🇲🇹</rt></ruby>, 
+<ruby><rb>Roberto</rb><rt>🇪🇸</rt></ruby>, 
+<ruby><rb>Miyo</rb><rt>🇯🇵</rt><rtc><rt>みよ</rt></rtc></ruby>, 
+<ruby><rb>Ralf</rb><rt>🇩🇪</rt></ruby>, 
+<ruby><rb>Pablo</rb><rt>🇪🇸</rt></ruby>, 
+<ruby><rb>Borja</rb><rt>🇪🇸</rt></ruby>, 
+<ruby><rb>Mallaury</rb><rt>🇫🇷</rt></ruby>, 
+<ruby><rb>Julia</rb><rt>🇳🇱</rt></ruby>, 
+<ruby><rb>José Claudio</rb><rt>🇧🇷</rt></ruby>, 
+<ruby><rb>Augusto</rb><rt>🇧🇷</rt></ruby>, 
+<ruby><rb>Joan</rb><rt>🇦🇺</rt></ruby>, 
+<ruby><rb>John</rb><rt>🇦🇺</rt></ruby>, 
+<ruby><rb>Frederico</rb><rt>🇵🇹</rt></ruby>
+et <ruby><rb>Loane</rb><rt>🇫🇷</rt></ruby></p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Camino-Frances/faq/e2d4b4c0-00fb-414e-bd34-90b09d298361.jpg">
+    <img src="/assets/images/Camino-Frances/faq/e2d4b4c0-00fb-414e-bd34-90b09d298361.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  
+</figure>
+
+<blockquote>
+  <p>Tu nous entends, l’Univers ? Tu nous entends ?<br>
+Si tu nous entends, attends-nous ! On arrive<br>
+On voudrait tout comprendre, tout savoir, tout voir, tout vivre<br>
+On cherche la porte du nouveau monde pour pouvoir s’y fondre en grand […]<br>
+Il faut qu’on sonne l’alarme, qu’on s’retrouve<br>
+Qu’on s’rejoigne, qu’on s’embrasse, qu’on soit des milliards de mains, sur des milliards d’épaules<br>
+Qu’on s’répète […] que la vie est un casse du siècle, un putain d’piment rouge<br></p>
+</blockquote>
+
+<blockquote>
+  <p>Fauve <cite>Blizzard</cite></p>
+</blockquote>
+
+<h2 id="tas-marché-longtemps-">T’as marché longtemps ?</h2>
+
+<div id="my-one-and-only-map" style="height: 400px;"></div>
+<p></p>
+<script>
+  if (typeof widgets == 'undefined') { widgets = { } }
+  widgets['my-one-and-only-map'] = { layers: { }, track: { }, map: { } }
+
+  for ([i, alias] of 'TF,OTM,OSM'.split(',').entries()) {
+    if (alias == 'TF')    current_layer = widgets['my-one-and-only-map'].layers['Thunderforest'] =        L.tileLayer.provider('Thunderforest.Landscape', { apikey: 'aa6d138c951e413cae47373621fa6464' })
+    if (alias == 'OTM')   current_layer = widgets['my-one-and-only-map'].layers['OpenTopoMap'] =          L.tileLayer.provider('OpenTopoMap')
+    if (alias == 'OSM')   current_layer = widgets['my-one-and-only-map'].layers['OpenStreetMap'] =        L.tileLayer.provider('OpenStreetMap')
+    if (alias == 'Ortho') current_layer = widgets['my-one-and-only-map'].layers['Orthophoto'] =           L.tileLayer.provider('GeoportailFrance.orthos')
+    if (alias == 'OSMFR') current_layer = widgets['my-one-and-only-map'].layers['OpenStreetMap France'] = L.tileLayer.provider('OpenStreetMap.France')
+    if (i == 0) widgets['my-one-and-only-map'].map = L.map('my-one-and-only-map', { layers: [ current_layer ] })
+  }
+
+  if ('' == 'custom-start-and-end-points') {
+    marker_options = {
+      wptIcons: DEFAULT_MARKER_OPTIONS.wptIcons
+    }
+    marker_options.wptIcons['depart']  = DEFAULT_MARKER_OPTIONS.startIcon
+    marker_options.wptIcons['arrivee'] = DEFAULT_MARKER_OPTIONS.endIcon
+  } else {
+    marker_options = DEFAULT_MARKER_OPTIONS
+  }
+  widgets['my-one-and-only-map'].track = new L.GPX('/assets/tracks/Camino-Frances/faq.gpx', { async: true, marker_options: marker_options })
+  if (true) {
+    initialize_map = function(e) { widgets['my-one-and-only-map'].map.fitBounds(e.target.getBounds()) }
+  } else {
+    initialize_map = function(e) { widgets['my-one-and-only-map'].map.setView(e.target.getBounds().getCenter(), 12) }
+  }
+  widgets['my-one-and-only-map'].track.on('loaded', initialize_map)
+
+  widgets['my-one-and-only-map'].map.addLayer(widgets['my-one-and-only-map'].track)
+  L.control.scale().addTo(widgets['my-one-and-only-map'].map)
+  L.control.layers(widgets['my-one-and-only-map'].layers).addTo(widgets['my-one-and-only-map'].map)
+  widgets['my-one-and-only-map'].map.addControl(new L.control.fullscreen())
+</script>
+
+<ul>
+  <li>28 étapes</li>
+  <li>météo variée, globalement agréable <img class="emoji" title=":sun_behind_rain_cloud:" alt=":sun_behind_rain_cloud:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f326.png" height="20" width="20"> <img class="emoji" title=":sunny:" alt=":sunny:" src="https://github.githubassets.com/images/icons/emoji/unicode/2600.png" height="20" width="20"> <img class="emoji" title=":sun_behind_small_cloud:" alt=":sun_behind_small_cloud:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f324.png" height="20" width="20"> <img class="emoji" title=":sunny:" alt=":sunny:" src="https://github.githubassets.com/images/icons/emoji/unicode/2600.png" height="20" width="20"> <img class="emoji" title=":snowflake:" alt=":snowflake:" src="https://github.githubassets.com/images/icons/emoji/unicode/2744.png" height="20" width="20"> <img class="emoji" title=":sun_behind_small_cloud:" alt=":sun_behind_small_cloud:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f324.png" height="20" width="20"> <img class="emoji" title=":sunny:" alt=":sunny:" src="https://github.githubassets.com/images/icons/emoji/unicode/2600.png" height="20" width="20"> <img class="emoji" title=":sun_behind_rain_cloud:" alt=":sun_behind_rain_cloud:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f326.png" height="20" width="20"> <img class="emoji" title=":cloud:" alt=":cloud:" src="https://github.githubassets.com/images/icons/emoji/unicode/2601.png" height="20" width="20">
+</li>
+  <li>780 km</li>
+  <li>+16,5 km</li>
+  <li>-16,5 km</li>
+</ul>
+
+        
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+
+
+<p>
+<!-- TODO: avoid inline styles please!-->
+</p>
+<table style="display: table; table-layout: fixed;">
+  <tr>
+    <td style="border-bottom: none; width: 50%;"><a href="/Camino-Frances/J17-J18-J19-J20-J21-J22-J23-J24-J25-J26-J27-J28/" style="width: 100%;" class="btn btn--primary ">‹ Page précédente</a></td>
+    <td style="border-bottom: none; width: 50%;"><a href="" style="width: 100%;" class="btn btn--primary btn--disabled ">Page suivante ›</a></td>
+  </tr>
+</table>
+
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-copyright">© 2025 Le Gros Mickey. Propulsé par <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

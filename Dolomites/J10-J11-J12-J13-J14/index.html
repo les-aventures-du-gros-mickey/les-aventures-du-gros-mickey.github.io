@@ -1,0 +1,778 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="fr" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Du Val de Cirele au Rio Cigala - Les aventures du Gros Mickey</title>
+<meta name="description" content="">
+
+
+  <meta name="author" content="Le Gros Mickey">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Les aventures du Gros Mickey">
+<meta property="og:title" content="Du Val de Cirele au Rio Cigala">
+<meta property="og:url" content="/Dolomites/J10-J11-J12-J13-J14/">
+
+
+  <meta property="og:description" content="">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="/Dolomites/J10-J11-J12-J13-J14/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Le Gros Mickey",
+      "url": "/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <!-- https://github.com/fancyapps/fancybox -->
+    <script src="/assets/js/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/assets/js/jquery-fancybox/3.5.6/jquery.fancybox.min.css"/>
+    <script src="/assets/js/jquery-fancybox/3.5.6/jquery.fancybox.min.js"></script>
+    <script>
+      $.fancybox.defaults.animationEffect = "zoom";
+      $.fancybox.defaults.transitionEffect = "tube";
+      $.fancybox.defaults.buttons = [ "fullScreen", "close" ];
+    </script>
+
+    
+      <!-- https://github.com/Leaflet/Leaflet -->
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+      <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+      <!-- https://github.com/mpetazzoni/leaflet-gpx -->
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.4.0/gpx.min.js"></script> -->
+      <script src="/assets/js/leaflet-gpx/1.4.0/gpx-custom.min.js"></script>
+      <!-- https://github.com/elfalem/Leaflet.curve -->
+      <script src="https://cdn.jsdelivr.net/npm/leaflet-curve@1.0.0/leaflet.curve.min.js" integrity="sha384-NGXMSwSy7xysMCI1I+AjcNggRki+cUVXxqBnMX/nxCD5a/lDebdBH7Qqm63t4zpU" crossorigin="anonymous"></script>
+      <!-- https://github.com/leaflet-extras/leaflet-providers -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/1.9.1/leaflet-providers.min.js" integrity="sha384-VXljvKBDJTJymzdt6ZCMeIKzB66kkZJpSpgPZOb8w19sMwJj+e2D3EFeTnINldBL" crossorigin="anonymous"></script>
+      <!-- https://github.com/Leaflet/Leaflet.fullscreen -->
+      <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+      <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+      <!-- https://github.com/FortAwesome/Font-Awesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <!-- https://github.com/lvoogdt/Leaflet.awesome-markers -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" integrity="sha384-AHhmp36MxTYxqK8q9BF7ifcAjDEpcCT+OOmZrBb8vBP6At1I/htDyRK/M8wgzuqx" crossorigin="anonymous">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js" integrity="sha384-e3K/MgD3PfLJJFhUTg4y1zJciOSfdvRZpcgb0IBjxmbvyyyZuuQTKvs3x27hZpLr" crossorigin="anonymous"></script>
+      <!-- set default marker icons -->
+      <script>
+        L.AwesomeMarkers.Icon.prototype.options.prefix = 'fa';
+        const DEFAULT_MARKER_OPTIONS = {
+          wptIcons: {
+            '':         new L.AwesomeMarkers.icon({ icon: 'circle',         markerColor: 'blue'      }),
+            'tente':    new L.AwesomeMarkers.icon({ icon: 'campground',     markerColor: 'black'     }),
+            'logement': new L.AwesomeMarkers.icon({ icon: 'bed',            markerColor: 'black'     }),
+            'train':    new L.AwesomeMarkers.icon({ icon: 'train',          markerColor: 'darkgreen' }),
+            'bus':    new L.AwesomeMarkers.icon({ icon: 'bus',            markerColor: 'cadetblue' })
+          },
+          startIcon:    new L.AwesomeMarkers.icon({ icon: 'flag',           markerColor: 'red'       }),
+          endIcon:      new L.AwesomeMarkers.icon({ icon: 'flag-checkered', markerColor: 'green'     })
+        }
+      </script>
+    
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Les aventures du Gros Mickey
+          
+        </a>
+        <ul class="visible-links">
+<li class="masthead__menu-item">
+              <a href="/treks/">Treks</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/voyages/">Voyages</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/divers/">Divers</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/citations/">Citations</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/a-propos/">À propos</a>
+            </li>
+</ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox">
+  <label for="ac-toc">Menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <span class="nav__sub-title">Les punks dans les Dolomites</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/Dolomites/J1-J2-J3-J4/">D'Innichen au Lech de Lagació</a></li>
+          
+            <li><a href="/Dolomites/J5-J6-J7-J8-J9/">Du Lech de Lagació au Val de Cirele</a></li>
+          
+            <li><a href="/Dolomites/J10-J11-J12-J13-J14/" class="active">Du Val de Cirele au Rio Cigala</a></li>
+          
+            <li><a href="/Dolomites/J15-J16-J17-J18/">Du Rio Cigala à Bassano del Grappa</a></li>
+          
+            <li><a href="/Dolomites/epilogue/">Épilogue</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Du Val de Cirele au Rio Cigala">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="/Dolomites/J10-J11-J12-J13-J14/" class="u-url" itemprop="url">Du Val de Cirele au Rio Cigala
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f518.jpg" data-caption="&lt;p&gt;La lueur du jour se lève sur la &lt;em&gt;Marmolada&lt;/em&gt; en même temps que mes pas&lt;/p&gt;
+">
+    <img src="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f518.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>La lueur du jour se lève sur la <em>Marmolada</em> en même temps que mes pas</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f519.jpg" data-caption="&lt;p&gt;Les rois de l’escalade me proposent un itinéraire trop pentu pour mes larges sabots rigides&lt;/p&gt;
+">
+    <img src="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f519.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Les rois de l’escalade me proposent un itinéraire trop pentu pour mes larges sabots rigides</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f520.jpg" data-caption="&lt;p&gt;Je préfère revêtir mon costume de crabe aux pinces d’argent&lt;/p&gt;
+">
+    <img src="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f520.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Je préfère revêtir mon costume de crabe aux pinces d’argent</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f521.jpg" data-caption="&lt;p&gt;Je grimpe avec Marco, qui comme moi, adopte une allure compatible avec son taux de globules rouges&lt;/p&gt;
+">
+    <img src="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f521.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Je grimpe avec Marco, qui comme moi, adopte une allure compatible avec son taux de globules rouges</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f522.jpg" data-caption="&lt;p&gt;On rejoint le sommet de marbre dans son duvet, tant pis pour le panorama&lt;/p&gt;
+">
+    <img src="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f522.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>On rejoint le sommet de marbre dans son duvet, tant pis pour le panorama</p>
+</figcaption>
+</figure>
+
+<p>Lors de la redescente, les cliquetis des mousquetons tintinnabulent, les ferratistes pullulent, ça bouchonne même par endroits</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f523.jpg" data-caption="&lt;p&gt;Je retrouve Germaine, que j’avais abandonnée au creux d’un fourré, avec de la nourriture, je ne suis pas un monstre&lt;/p&gt;
+">
+    <img src="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f523.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Je retrouve Germaine, que j’avais abandonnée au creux d’un fourré, avec de la nourriture, je ne suis pas un monstre</p>
+</figcaption>
+</figure>
+
+<p>Je la ré-installe au même endroit, et passe l’après-midi dans une douce existence de punk matinal : la sieste !</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f524.jpg" data-caption="&lt;p&gt;Je mets fin à ma léthargie qui s’est prolongée jusqu’au petit matin en évacuant les miettes de sommeil du coin de mes yeux et en saluant le &lt;em&gt;val de Contrin&lt;/em&gt;&lt;/p&gt;
+">
+    <img src="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f524.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Je mets fin à ma léthargie qui s’est prolongée jusqu’au petit matin en évacuant les miettes de sommeil du coin de mes yeux et en saluant le <em>val de Contrin</em></p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f525.jpg" data-caption="&lt;p&gt;Punk à escargot ?&lt;/p&gt;
+">
+    <img src="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f525.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Punk à escargot ?</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f526.jpg" data-caption="&lt;p&gt;Dans les bois, je rencontre Vivana, une punk à hibou, capable de prédire l’avenir et d’offrir l’immortalité&lt;/p&gt;
+">
+    <img src="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f526.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Dans les bois, je rencontre Vivana, une punk à hibou, capable de prédire l’avenir et d’offrir l’immortalité</p>
+</figcaption>
+</figure>
+
+<p>Pour ne pas compromettre ma liberté de keupon, je dissuade la nymphe ladine de jeter ses maléfices sur mon âme</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f527.jpg" data-caption="&lt;p&gt;Un dragon nébuleux saturé en humidité dévore les &lt;em&gt;Pale di San Martino&lt;/em&gt;, bien trop rapidement pour mes enjambées&lt;/p&gt;
+">
+    <img src="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f527.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Un dragon nébuleux saturé en humidité dévore les <em>Pale di San Martino</em>, bien trop rapidement pour mes enjambées</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f528.jpg" data-caption="&lt;p&gt;Je me retrouve trempé jusqu’aux os, un peu ronchonchon&lt;/p&gt;
+">
+    <img src="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f528.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Je me retrouve trempé jusqu’aux os, un peu ronchonchon</p>
+</figcaption>
+</figure>
+
+<p>Les affaires complètement gorgées d’eau, je me dirige vers la <em>casera di Focobon</em>, un abri non-gardé. J’y trouve une troupe de 7 scouts qui s’y sont réfugiés, blottis dans leurs duvets, transis de froid</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f529.jpg" data-caption="&lt;p&gt;L’étroitesse des lieux me pousse tout de même à passer la nuit avec Germaine, nuitée qui sera bercée par le pianotement de 3 averses de grêle&lt;/p&gt;
+">
+    <img src="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f529.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>L’étroitesse des lieux me pousse tout de même à passer la nuit avec Germaine, nuitée qui sera bercée par le pianotement de 3 averses de grêle</p>
+</figcaption>
+</figure>
+
+<p>Les prévisions météorologiques m’annoncent une désastreuse atmosphère liquide, je procrastine ma prochaine étape</p>
+
+<blockquote>
+  <p>Pourquoi faire aujourd’hui<br>
+Qu’est-ce tu pourrais faire demain ?<br></p>
+</blockquote>
+
+<blockquote>
+  <p>Lisa LeBlanc <cite>Pourquoi faire aujourd’hui</cite></p>
+</blockquote>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f530.jpg" data-caption="&lt;p&gt;Dès que quelques rayons de soleil se profilent, la tribu fait s’évaporer autant que faire se peut l’eau des équipements&lt;/p&gt;
+">
+    <img src="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f530.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Dès que quelques rayons de soleil se profilent, la tribu fait s’évaporer autant que faire se peut l’eau des équipements</p>
+</figcaption>
+</figure>
+
+<p>Cette journée consiste à vivre, hors du sentier balisé du temps, au creux de l’accueillant <em>val di Focobon</em>, la simple vie de simples humains</p>
+
+<blockquote>
+  <p><ruby><rb>[Trovare] ogni giorno una via nuova</rb><rt>Trouver chaque jour une nouvelle voie</rt></ruby><br>
+<ruby><rb>Nell’attesa impaziente di un ritorno</rb><rt>En attendant impatiemment un retour</rt></ruby><br>
+<ruby><rb>Ci ritroveremo insieme più decisi</rb><rt>Nous nous retrouverons ensemble plus déterminés</rt></ruby><br>
+<ruby><rb>È il desiderio dentro me che non cancello via</rb><rt>C’est le désir en moi que je n’efface pas</rt></ruby><br></p>
+</blockquote>
+
+<blockquote>
+  <p>We’re all the same, different just by name<br>
+We can make it through until we forget that<br>
+I am you, and you are as I am,<br>
+Living simple life of simple men<br>
+Dream and fly as far as you can plan<br>
+You just believe at what you can <br></p>
+</blockquote>
+
+<blockquote>
+  <p><ruby><rb>Yossi Sassi</rb><rt>יוסי סאסי</rt></ruby> et Mariangela Demurtas <cite>Believe</cite></p>
+</blockquote>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f531.jpg" data-caption="&lt;p&gt;La vie de simple punk consiste à cueillir les denrées à disposition, cuisiner un &lt;del&gt;baba au rhum&lt;/del&gt; gâteau de semoule au whisky, s’instruire sur la condition des keupons et tenter d’apprivoiser la liberté des azurés&lt;/p&gt;
+">
+    <img src="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f531.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>La vie de simple punk consiste à cueillir les denrées à disposition, cuisiner un <del>baba au rhum</del> gâteau de semoule au whisky, s’instruire sur la condition des keupons et tenter d’apprivoiser la liberté des azurés</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f532.jpg" data-caption="
+&lt;p&gt;Après 2 nuits agitées, je retrouve les pointes affutées encore marquées par la &lt;ruby&gt;&lt;rb&gt;&lt;em&gt;grandine&lt;/em&gt;&lt;/rb&gt;&lt;rt&gt;grêle&lt;/rt&gt;&lt;/ruby&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I can’t turn back now&lt;br /&gt;
+So hold on tight&lt;br /&gt;
+I don’t know where the lights are taking us&lt;br /&gt;
+But something in the night is dangerous&lt;br /&gt;
+And nothing’s holding back the two of us&lt;br /&gt;
+But, baby, this is getting serious&lt;br /&gt;
+Danger-dangerous&lt;br /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;David Guetta et Sam Martin &lt;cite&gt;Dangerous&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+">
+    <img src="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f532.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p>Après 2 nuits agitées, je retrouve les pointes affutées encore marquées par la <ruby><rb><em>grandine</em></rb><rt>grêle</rt></ruby></p>
+
+<blockquote>
+  <p>I can’t turn back now<br>
+So hold on tight<br>
+I don’t know where the lights are taking us<br>
+But something in the night is dangerous<br>
+And nothing’s holding back the two of us<br>
+But, baby, this is getting serious<br>
+Danger-dangerous<br></p>
+</blockquote>
+
+<blockquote>
+  <p>David Guetta et Sam Martin <cite>Dangerous</cite></p>
+</blockquote>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f533.jpg" data-caption="&lt;p&gt;Dans les rainures escarpées des reliefs, les rhomboèdriques sorbets de billes craquent sous ma précautionneuse foulée&lt;/p&gt;
+">
+    <img src="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f533.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Dans les rainures escarpées des reliefs, les rhomboèdriques sorbets de billes craquent sous ma précautionneuse foulée</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f534.jpg" data-caption="
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;ruby&gt;&lt;rb&gt;Scorre lento il mio tempo&lt;/rb&gt;&lt;rt&gt;Lentement s’écoule mon temps&lt;/rt&gt;&lt;/ruby&gt;&lt;br /&gt;
+&lt;ruby&gt;&lt;rb&gt;Che scivola sul velo della mia pelle nuda&lt;/rb&gt;&lt;rt&gt;Glissant sur le voile de ma peau nue&lt;/rt&gt;&lt;/ruby&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Lacuna Coil &lt;cite&gt;&lt;ruby&gt;&lt;rb&gt;Senzafine&lt;/rb&gt;&lt;rt&gt;Sans fin&lt;/rt&gt;&lt;/ruby&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+">
+    <img src="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f534.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<blockquote>
+  <p><ruby><rb>Scorre lento il mio tempo</rb><rt>Lentement s’écoule mon temps</rt></ruby><br>
+<ruby><rb>Che scivola sul velo della mia pelle nuda</rb><rt>Glissant sur le voile de ma peau nue</rt></ruby><br></p>
+</blockquote>
+
+<blockquote>
+  <p>Lacuna Coil <cite><ruby><rb>Senzafine</rb><rt>Sans fin</rt></ruby></cite></p>
+</blockquote>
+</figcaption>
+</figure>
+
+<p>Mon étape s’éternise, je décide de mettre de côté le non-conformisme de punk en passant la nuit dans un refuge, où breuvages à prix exhorbitants s’entrechoquent jusqu’à la disparition du jour</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f535.jpg" data-caption="
+&lt;blockquote&gt;
+  &lt;p&gt;Emotional landscapes&lt;br /&gt;
+They puzzle me&lt;br /&gt;
+The riddle gets solved&lt;br /&gt;
+And you push me up to&lt;br /&gt;
+This state of emergency&lt;br /&gt;
+How beautiful to be&lt;br /&gt;
+State of emergency&lt;br /&gt;
+Is where I want to be&lt;br /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Björk &lt;cite&gt;Jóga&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+">
+    <img src="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f535.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<blockquote>
+  <p>Emotional landscapes<br>
+They puzzle me<br>
+The riddle gets solved<br>
+And you push me up to<br>
+This state of emergency<br>
+How beautiful to be<br>
+State of emergency<br>
+Is where I want to be<br></p>
+</blockquote>
+
+<blockquote>
+  <p>Björk <cite>Jóga</cite></p>
+</blockquote>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f536.jpg" data-caption="&lt;p&gt;Alors que mes vivres diminuent, la providence m’envoie des restes de punks de montagnes au &lt;em&gt;bivacco&lt;/em&gt; Carlo Minazio, et qui plus est, des légumineuses dont je rafole !&lt;/p&gt;
+">
+    <img src="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f536.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Alors que mes vivres diminuent, la providence m’envoie des restes de punks de montagnes au <em>bivacco</em> Carlo Minazio, et qui plus est, des légumineuses dont je rafole !</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f537.jpg" data-caption="
+&lt;p&gt;J’y retrouve également &lt;ruby&gt;&lt;rb&gt;Manny&lt;/rb&gt;&lt;rt&gt;מֶנִי&lt;/rt&gt;&lt;/ruby&gt;, rencontré la veille, qui parcourt l’&lt;em&gt;Alta Via 2&lt;/em&gt; du nord au sud&lt;/p&gt;
+">
+    <img src="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f537.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p>J’y retrouve également <ruby><rb>Manny</rb><rt>מֶנִי</rt></ruby>, rencontré la veille, qui parcourt l’<em>Alta Via 2</em> du nord au sud</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f538.jpg" data-caption="&lt;p&gt;Sur le chemin de la &lt;em&gt;forcella d’Oltro&lt;/em&gt;, je fais la connaissance de Congo, un véritable chien à punk, tellement punk qu’il dévore un caillou, dont le croquant résonne dans mes esgourdes !&lt;/p&gt;
+">
+    <img src="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f538.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Sur le chemin de la <em>forcella d’Oltro</em>, je fais la connaissance de Congo, un véritable chien à punk, tellement punk qu’il dévore un caillou, dont le croquant résonne dans mes esgourdes !</p>
+</figcaption>
+</figure>
+
+<p>Je ne parviens pas à contenir ma joie et braille la chanson de la victoire :</p>
+
+<blockquote>
+  <p>Punk à chien, punk à chien<br>
+Hooka, hooka, hooka<br>
+Punk à chien, punk à chien<br>
+L’histoire d’amitié entre une bête et un chien<br></p>
+</blockquote>
+
+<blockquote>
+  <p>Oldelaf Et Monsieur D <cite>Punk à chien</cite></p>
+</blockquote>
+
+<p>Je déchante rapidement, Congo ayant déjà une esclave à sa solde, je n’ai d’autre choix que de reprendre mon chemin pour poursuivre ma quête</p>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f539.jpg" data-caption="&lt;p&gt;Je parviens à me faufiler dans une magnifique forêt de monolithes, aiguisés au marteau-piqueur, sans y laisser mon épiderme&lt;/p&gt;
+">
+    <img src="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f539.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Je parviens à me faufiler dans une magnifique forêt de monolithes, aiguisés au marteau-piqueur, sans y laisser mon épiderme</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f540.jpg" data-caption="&lt;p&gt;Punk à poule ?&lt;/p&gt;
+">
+    <img src="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f540.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Punk à poule ?</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f541.jpg" data-caption="&lt;p&gt;Ni Dieu ni maître, dans cette pente forestière, mes rêves s’apprêtent pratiquer la glissade sur toboggan&lt;/p&gt;
+">
+    <img src="/assets/images/Dolomites/J10-J11-J12-J13-J14/fd5e8bfa-b240-4922-81ed-b2019d12f541.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Ni Dieu ni maître, dans cette pente forestière, mes rêves s’apprêtent pratiquer la glissade sur toboggan</p>
+</figcaption>
+</figure>
+
+<div id="my-one-and-only-map" style="height: 400px;"></div>
+<p></p>
+<script>
+  if (typeof widgets == 'undefined') { widgets = { } }
+  widgets['my-one-and-only-map'] = { layers: { }, track: { }, map: { } }
+
+  for ([i, alias] of 'TF,OTM,OSM'.split(',').entries()) {
+    if (alias == 'TF')    current_layer = widgets['my-one-and-only-map'].layers['Thunderforest'] =        L.tileLayer.provider('Thunderforest.Landscape', { apikey: 'aa6d138c951e413cae47373621fa6464' })
+    if (alias == 'OTM')   current_layer = widgets['my-one-and-only-map'].layers['OpenTopoMap'] =          L.tileLayer.provider('OpenTopoMap')
+    if (alias == 'OSM')   current_layer = widgets['my-one-and-only-map'].layers['OpenStreetMap'] =        L.tileLayer.provider('OpenStreetMap')
+    if (alias == 'Ortho') current_layer = widgets['my-one-and-only-map'].layers['Orthophoto'] =           L.tileLayer.provider('GeoportailFrance.orthos')
+    if (alias == 'OSMFR') current_layer = widgets['my-one-and-only-map'].layers['OpenStreetMap France'] = L.tileLayer.provider('OpenStreetMap.France')
+    if (i == 0) widgets['my-one-and-only-map'].map = L.map('my-one-and-only-map', { layers: [ current_layer ] })
+  }
+
+  if ('' == 'custom-start-and-end-points') {
+    marker_options = {
+      wptIcons: DEFAULT_MARKER_OPTIONS.wptIcons
+    }
+    marker_options.wptIcons['depart']  = DEFAULT_MARKER_OPTIONS.startIcon
+    marker_options.wptIcons['arrivee'] = DEFAULT_MARKER_OPTIONS.endIcon
+  } else {
+    marker_options = DEFAULT_MARKER_OPTIONS
+  }
+  widgets['my-one-and-only-map'].track = new L.GPX('/assets/tracks/Dolomites/J10-J11-J12-J13-J14.gpx', { async: true, marker_options: marker_options })
+  if (true) {
+    initialize_map = function(e) { widgets['my-one-and-only-map'].map.fitBounds(e.target.getBounds()) }
+  } else {
+    initialize_map = function(e) { widgets['my-one-and-only-map'].map.setView(e.target.getBounds().getCenter(), 12) }
+  }
+  widgets['my-one-and-only-map'].track.on('loaded', initialize_map)
+
+  widgets['my-one-and-only-map'].map.addLayer(widgets['my-one-and-only-map'].track)
+  L.control.scale().addTo(widgets['my-one-and-only-map'].map)
+  L.control.layers(widgets['my-one-and-only-map'].layers).addTo(widgets['my-one-and-only-map'].map)
+  widgets['my-one-and-only-map'].map.addControl(new L.control.fullscreen())
+</script>
+
+<p>Détails d’étapes :</p>
+<ul>
+  <li>4 étapes</li>
+  <li>1 jour de repos</li>
+  <li>Globalement nuageux <img class="emoji" title=":cloud:" alt=":cloud:" src="https://github.githubassets.com/images/icons/emoji/unicode/2601.png" height="20" width="20"> <img class="emoji" title=":sun_behind_small_cloud:" alt=":sun_behind_small_cloud:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f324.png" height="20" width="20"> <img class="emoji" title=":fog:" alt=":fog:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f32b.png" height="20" width="20">
+</li>
+  <li>59 km</li>
+  <li>+5650 m</li>
+  <li>-6500 m</li>
+</ul>
+
+        
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+    
+
+
+<p>
+<!-- TODO: avoid inline styles please!-->
+</p>
+<table style="display: table; table-layout: fixed;">
+  <tr>
+    <td style="border-bottom: none; width: 50%;"><a href="/Dolomites/J5-J6-J7-J8-J9/" style="width: 100%;" class="btn btn--primary ">‹ Page précédente</a></td>
+    <td style="border-bottom: none; width: 50%;"><a href="/Dolomites/J15-J16-J17-J18/" style="width: 100%;" class="btn btn--primary ">Page suivante ›</a></td>
+  </tr>
+</table>
+
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-copyright">© 2025 Le Gros Mickey. Propulsé par <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

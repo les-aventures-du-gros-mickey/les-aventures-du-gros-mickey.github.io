@@ -1,0 +1,521 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="fr" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>D’Abriès à la Chau - Les aventures du Gros Mickey</title>
+<meta name="description" content="">
+
+
+  <meta name="author" content="Le Gros Mickey">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Les aventures du Gros Mickey">
+<meta property="og:title" content="D’Abriès à la Chau">
+<meta property="og:url" content="/Queyras/J4-J5-J6/">
+
+
+  <meta property="og:description" content="">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="/Queyras/J4-J5-J6/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Le Gros Mickey",
+      "url": "/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <!-- https://github.com/fancyapps/fancybox -->
+    <script src="/assets/js/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/assets/js/jquery-fancybox/3.5.6/jquery.fancybox.min.css"/>
+    <script src="/assets/js/jquery-fancybox/3.5.6/jquery.fancybox.min.js"></script>
+    <script>
+      $.fancybox.defaults.animationEffect = "zoom";
+      $.fancybox.defaults.transitionEffect = "tube";
+      $.fancybox.defaults.buttons = [ "fullScreen", "close" ];
+    </script>
+
+    
+      <!-- https://github.com/Leaflet/Leaflet -->
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+      <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+      <!-- https://github.com/mpetazzoni/leaflet-gpx -->
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.4.0/gpx.min.js"></script> -->
+      <script src="/assets/js/leaflet-gpx/1.4.0/gpx-custom.min.js"></script>
+      <!-- https://github.com/elfalem/Leaflet.curve -->
+      <script src="https://cdn.jsdelivr.net/npm/leaflet-curve@1.0.0/leaflet.curve.min.js" integrity="sha384-NGXMSwSy7xysMCI1I+AjcNggRki+cUVXxqBnMX/nxCD5a/lDebdBH7Qqm63t4zpU" crossorigin="anonymous"></script>
+      <!-- https://github.com/leaflet-extras/leaflet-providers -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/1.9.1/leaflet-providers.min.js" integrity="sha384-VXljvKBDJTJymzdt6ZCMeIKzB66kkZJpSpgPZOb8w19sMwJj+e2D3EFeTnINldBL" crossorigin="anonymous"></script>
+      <!-- https://github.com/Leaflet/Leaflet.fullscreen -->
+      <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+      <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+      <!-- https://github.com/FortAwesome/Font-Awesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <!-- https://github.com/lvoogdt/Leaflet.awesome-markers -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" integrity="sha384-AHhmp36MxTYxqK8q9BF7ifcAjDEpcCT+OOmZrBb8vBP6At1I/htDyRK/M8wgzuqx" crossorigin="anonymous">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js" integrity="sha384-e3K/MgD3PfLJJFhUTg4y1zJciOSfdvRZpcgb0IBjxmbvyyyZuuQTKvs3x27hZpLr" crossorigin="anonymous"></script>
+      <!-- set default marker icons -->
+      <script>
+        L.AwesomeMarkers.Icon.prototype.options.prefix = 'fa';
+        const DEFAULT_MARKER_OPTIONS = {
+          wptIcons: {
+            '':         new L.AwesomeMarkers.icon({ icon: 'circle',         markerColor: 'blue'      }),
+            'tente':    new L.AwesomeMarkers.icon({ icon: 'campground',     markerColor: 'black'     }),
+            'logement': new L.AwesomeMarkers.icon({ icon: 'bed',            markerColor: 'black'     }),
+            'train':    new L.AwesomeMarkers.icon({ icon: 'train',          markerColor: 'darkgreen' }),
+            'bus':    new L.AwesomeMarkers.icon({ icon: 'bus',            markerColor: 'cadetblue' })
+          },
+          startIcon:    new L.AwesomeMarkers.icon({ icon: 'flag',           markerColor: 'red'       }),
+          endIcon:      new L.AwesomeMarkers.icon({ icon: 'flag-checkered', markerColor: 'green'     })
+        }
+      </script>
+    
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Les aventures du Gros Mickey
+          
+        </a>
+        <ul class="visible-links">
+<li class="masthead__menu-item">
+              <a href="/treks/">Treks</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/voyages/">Voyages</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/divers/">Divers</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/citations/">Citations</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/a-propos/">À propos</a>
+            </li>
+</ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox">
+  <label for="ac-toc">Menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <span class="nav__sub-title">Les kaïras dans le Queyras</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/Queyras/J1-J2-J3/">De Saint-Véran à Abriès</a></li>
+          
+            <li><a href="/Queyras/J4-J5-J6/" class="active">D'Abriès à la Chau</a></li>
+          
+            <li><a href="/Queyras/bref/">En bref</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="D’Abriès à la Chau">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="/Queyras/J4-J5-J6/" class="u-url" itemprop="url">D’Abriès à la Chau
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Queyras/J4-J5-J6/4815b4a8-6bc9-4bc4-8b1b-63ef6737e132.jpg" data-caption="
+&lt;p&gt;&lt;ruby&gt;&lt;rb&gt;&lt;em&gt;Kanyars&lt;/em&gt;&lt;/rb&gt;&lt;rt&gt;Voyous&lt;/rt&gt;&lt;/ruby&gt; sous le cagnard, on délaisse nos blousons noirs pour se hisser vers les lacs Malrif&lt;/p&gt;
+">
+    <img src="/assets/images/Queyras/J4-J5-J6/4815b4a8-6bc9-4bc4-8b1b-63ef6737e132.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p><ruby><rb><em>Kanyars</em></rb><rt>Voyous</rt></ruby> sous le cagnard, on délaisse nos blousons noirs pour se hisser vers les lacs Malrif</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Queyras/J4-J5-J6/4815b4a8-6bc9-4bc4-8b1b-63ef6737e133.jpg" data-caption="&lt;p&gt;Lors de notre lessive, des mouches &lt;em&gt;viennent nous faire la guerre&lt;/em&gt; et &lt;em&gt;la parole poudrière&lt;/em&gt; ne suffit pas pour se défendre, j’improvise un bouclier anti-nuées&lt;/p&gt;
+">
+    <img src="/assets/images/Queyras/J4-J5-J6/4815b4a8-6bc9-4bc4-8b1b-63ef6737e133.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Lors de notre lessive, des mouches <em>viennent nous faire la guerre</em> et <em>la parole poudrière</em> ne suffit pas pour se défendre, j’improvise un bouclier anti-nuées</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Queyras/J4-J5-J6/4815b4a8-6bc9-4bc4-8b1b-63ef6737e134.jpg" data-caption="&lt;p&gt;La suée ascensionnelle se poursuit au-dessus du vallon du Malrif&lt;/p&gt;
+">
+    <img src="/assets/images/Queyras/J4-J5-J6/4815b4a8-6bc9-4bc4-8b1b-63ef6737e134.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>La suée ascensionnelle se poursuit au-dessus du vallon du Malrif</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Queyras/J4-J5-J6/4815b4a8-6bc9-4bc4-8b1b-63ef6737e135.jpg" data-caption="&lt;p&gt;On coupe les moteurs le temps d’une pause, à côté de zonards des montagnes, &lt;em&gt;en trombe, en nombre&lt;/em&gt;&lt;/p&gt;
+">
+    <img src="/assets/images/Queyras/J4-J5-J6/4815b4a8-6bc9-4bc4-8b1b-63ef6737e135.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>On coupe les moteurs le temps d’une pause, à côté de zonards des montagnes, <em>en trombe, en nombre</em></p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Queyras/J4-J5-J6/4815b4a8-6bc9-4bc4-8b1b-63ef6737e136.jpg" data-caption='
+&lt;p&gt;Zyva la &lt;a href="https://fr.wikipedia.org/wiki/Zyg%C3%A8ne_des_sommets"&gt;zygène&lt;/a&gt;, tu t’crois où là ?&lt;/p&gt;
+'>
+    <img src="/assets/images/Queyras/J4-J5-J6/4815b4a8-6bc9-4bc4-8b1b-63ef6737e136.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p>Zyva la <a href="https://fr.wikipedia.org/wiki/Zyg%C3%A8ne_des_sommets">zygène</a>, tu t’crois où là ?</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Queyras/J4-J5-J6/4815b4a8-6bc9-4bc4-8b1b-63ef6737e137.jpg" data-caption="&lt;p&gt;La téci du lac du Grand Laus se calme au fur et à mesure que l’après-midi avance&lt;/p&gt;
+">
+    <img src="/assets/images/Queyras/J4-J5-J6/4815b4a8-6bc9-4bc4-8b1b-63ef6737e137.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>La téci du lac du Grand Laus se calme au fur et à mesure que l’après-midi avance</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Queyras/J4-J5-J6/4815b4a8-6bc9-4bc4-8b1b-63ef6737e138.jpg" data-caption="&lt;p&gt;On choisit cependant de &lt;em&gt;vivre extra-muros&lt;/em&gt; sur les terrasses du lac Mézan, miraculeuses grâces de l’univers&lt;/p&gt;
+">
+    <img src="/assets/images/Queyras/J4-J5-J6/4815b4a8-6bc9-4bc4-8b1b-63ef6737e138.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>On choisit cependant de <em>vivre extra-muros</em> sur les terrasses du lac Mézan, miraculeuses grâces de l’univers</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Queyras/J4-J5-J6/4815b4a8-6bc9-4bc4-8b1b-63ef6737e139.jpg" data-caption="&lt;p&gt;Le coucher du jour, &lt;em&gt;intense comme un fruit qu’on savoure&lt;/em&gt;, nous berce juste avant le repos nocturne&lt;/p&gt;
+">
+    <img src="/assets/images/Queyras/J4-J5-J6/4815b4a8-6bc9-4bc4-8b1b-63ef6737e139.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Le coucher du jour, <em>intense comme un fruit qu’on savoure</em>, nous berce juste avant le repos nocturne</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Queyras/J4-J5-J6/4815b4a8-6bc9-4bc4-8b1b-63ef6737e140.jpg" data-caption="&lt;p&gt;La crête du Malrif, c’est pas du gâteau, la crête du Malrif, tel est notre ghetto&lt;/p&gt;
+">
+    <img src="/assets/images/Queyras/J4-J5-J6/4815b4a8-6bc9-4bc4-8b1b-63ef6737e140.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>La crête du Malrif, c’est pas du gâteau, la crête du Malrif, tel est notre ghetto</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Queyras/J4-J5-J6/4815b4a8-6bc9-4bc4-8b1b-63ef6737e141.jpg" data-caption="&lt;p&gt;Des bandes de criquets s’entremêlent dans nos pattes pour nous escorter jusqu’à notre bivouac aux Fonts&lt;/p&gt;
+">
+    <img src="/assets/images/Queyras/J4-J5-J6/4815b4a8-6bc9-4bc4-8b1b-63ef6737e141.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Des bandes de criquets s’entremêlent dans nos pattes pour nous escorter jusqu’à notre bivouac aux Fonts</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Queyras/J4-J5-J6/4815b4a8-6bc9-4bc4-8b1b-63ef6737e142.jpg" data-caption='
+&lt;p&gt;“&lt;em&gt;On nous appelle « PD », « blancos », « bougnoules » ou bien « nègres »&lt;/em&gt;” me chuchotent les loubards locaux, là où je contemple plutôt une radieuse diversité colorée (&lt;a href="https://fr.wikipedia.org/wiki/Argus_bleu-nacr%C3%A9"&gt;argus bleu-nacré&lt;/a&gt;, &lt;a href="https://fr.wikipedia.org/wiki/Apollon_(papillon)"&gt;apollon&lt;/a&gt;, &lt;a href="https://fr.wikipedia.org/wiki/Chiffre_(papillon)"&gt;chiffre&lt;/a&gt; et &lt;a href="https://fr.wikipedia.org/wiki/Marmotte"&gt;marmotte&lt;/a&gt;)&lt;/p&gt;
+'>
+    <img src="/assets/images/Queyras/J4-J5-J6/4815b4a8-6bc9-4bc4-8b1b-63ef6737e142.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;">
+<p>“<em>On nous appelle « PD », « blancos », « bougnoules » ou bien « nègres »</em>” me chuchotent les loubards locaux, là où je contemple plutôt une radieuse diversité colorée (<a href="https://fr.wikipedia.org/wiki/Argus_bleu-nacr%C3%A9">argus bleu-nacré</a>, <a href="https://fr.wikipedia.org/wiki/Apollon_(papillon)">apollon</a>, <a href="https://fr.wikipedia.org/wiki/Chiffre_(papillon)">chiffre</a> et <a href="https://fr.wikipedia.org/wiki/Marmotte">marmotte</a>)</p>
+</figcaption>
+</figure>
+
+<figure style="display: inline-block; display: table; margin: 1em auto;">
+  <a data-fancybox="gallery" href="/assets/images/Queyras/J4-J5-J6/4815b4a8-6bc9-4bc4-8b1b-63ef6737e143.jpg" data-caption="&lt;p&gt;Et c’est avec cet arc-en-ciel flamboyant dans nos têtes, au travers du marais du Bourget, que nos carcasses de kaïras prennent congé du Queyras&lt;/p&gt;
+">
+    <img src="/assets/images/Queyras/J4-J5-J6/4815b4a8-6bc9-4bc4-8b1b-63ef6737e143.jpg">
+  </a>
+  <!-- TODO: avoid inline styles please!-->
+  <figcaption style="text-align: center;"><p>Et c’est avec cet arc-en-ciel flamboyant dans nos têtes, au travers du marais du Bourget, que nos carcasses de kaïras prennent congé du Queyras</p>
+</figcaption>
+</figure>
+
+<div id="my-one-and-only-map" style="height: 400px;"></div>
+<p></p>
+<script>
+  if (typeof widgets == 'undefined') { widgets = { } }
+  widgets['my-one-and-only-map'] = { layers: { }, track: { }, map: { } }
+
+  for ([i, alias] of 'TF,OTM,OSM,Ortho'.split(',').entries()) {
+    if (alias == 'TF')    current_layer = widgets['my-one-and-only-map'].layers['Thunderforest'] =        L.tileLayer.provider('Thunderforest.Landscape', { apikey: 'aa6d138c951e413cae47373621fa6464' })
+    if (alias == 'OTM')   current_layer = widgets['my-one-and-only-map'].layers['OpenTopoMap'] =          L.tileLayer.provider('OpenTopoMap')
+    if (alias == 'OSM')   current_layer = widgets['my-one-and-only-map'].layers['OpenStreetMap'] =        L.tileLayer.provider('OpenStreetMap')
+    if (alias == 'Ortho') current_layer = widgets['my-one-and-only-map'].layers['Orthophoto'] =           L.tileLayer.provider('GeoportailFrance.orthos')
+    if (alias == 'OSMFR') current_layer = widgets['my-one-and-only-map'].layers['OpenStreetMap France'] = L.tileLayer.provider('OpenStreetMap.France')
+    if (i == 0) widgets['my-one-and-only-map'].map = L.map('my-one-and-only-map', { layers: [ current_layer ] })
+  }
+
+  if ('' == 'custom-start-and-end-points') {
+    marker_options = {
+      wptIcons: DEFAULT_MARKER_OPTIONS.wptIcons
+    }
+    marker_options.wptIcons['depart']  = DEFAULT_MARKER_OPTIONS.startIcon
+    marker_options.wptIcons['arrivee'] = DEFAULT_MARKER_OPTIONS.endIcon
+  } else {
+    marker_options = DEFAULT_MARKER_OPTIONS
+  }
+  widgets['my-one-and-only-map'].track = new L.GPX('/assets/tracks/Queyras/J4-J5-J6.gpx', { async: true, marker_options: marker_options })
+  if (true) {
+    initialize_map = function(e) { widgets['my-one-and-only-map'].map.fitBounds(e.target.getBounds()) }
+  } else {
+    initialize_map = function(e) { widgets['my-one-and-only-map'].map.setView(e.target.getBounds().getCenter(), 12) }
+  }
+  widgets['my-one-and-only-map'].track.on('loaded', initialize_map)
+
+  widgets['my-one-and-only-map'].map.addLayer(widgets['my-one-and-only-map'].track)
+  L.control.scale().addTo(widgets['my-one-and-only-map'].map)
+  L.control.layers(widgets['my-one-and-only-map'].layers).addTo(widgets['my-one-and-only-map'].map)
+  widgets['my-one-and-only-map'].map.addControl(new L.control.fullscreen())
+</script>
+
+<p>Détails d’étapes :</p>
+<ul>
+  <li>3 étapes</li>
+  <li>Ciel bleu et éclaircies <img class="emoji" title=":sunny:" alt=":sunny:" src="https://github.githubassets.com/images/icons/emoji/unicode/2600.png" height="20" width="20"> <img class="emoji" title=":sun_behind_small_cloud:" alt=":sun_behind_small_cloud:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f324.png" height="20" width="20">
+</li>
+  <li>24 km</li>
+  <li>+1550 m</li>
+  <li>-1200 m</li>
+</ul>
+
+        
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+    
+
+
+<p>
+<!-- TODO: avoid inline styles please!-->
+</p>
+<table style="display: table; table-layout: fixed;">
+  <tr>
+    <td style="border-bottom: none; width: 50%;"><a href="/Queyras/J1-J2-J3/" style="width: 100%;" class="btn btn--primary ">‹ Page précédente</a></td>
+    <td style="border-bottom: none; width: 50%;"><a href="/Queyras/bref/" style="width: 100%;" class="btn btn--primary ">Page suivante ›</a></td>
+  </tr>
+</table>
+
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-copyright">© 2025 Le Gros Mickey. Propulsé par <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
